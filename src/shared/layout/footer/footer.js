@@ -18,7 +18,7 @@ export default function Footer() {
             <button className={styles.heroSecondSubTitleBtn}>
               Explore now
               <Image
-                src="./assets/icons/Arrow-Icon.png"
+                src="/assets/icons/Arrow-Icon.png"
                 width={90}
                 height={0}
                 alt="explore now arrow icon"
