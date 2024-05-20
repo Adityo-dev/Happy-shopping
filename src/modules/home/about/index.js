@@ -47,7 +47,7 @@ export default function AboutHome() {
                       src="/assets/icons/Arrow-Icon.png"
                       width={90}
                       height={0}
-                      alt="Learn more arrow icon"
+                      alt="Learn more arrow icons"
                     />
                   </button>
                 </Link>
