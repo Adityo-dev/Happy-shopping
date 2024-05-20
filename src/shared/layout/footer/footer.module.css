@@ -1,0 +1,71 @@
+.footerContainer {
+  background-color: #11112b;
+  color: #fff;
+  position: relative;
+}
+
+.footerDataTextContainer {
+  padding-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerDataContainerFirstTextTitle {
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.footerDataContainerSecondTextTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+}
+
+.footerDataContainerSecondTextTitleFirstText {
+  font-size: 90px;
+  font-size: 700;
+}
+
+.footerDataContainerSecondTextTitleSecondText {
+  font-size: 80px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.footerTitleBtn {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 26px 45px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  background-color: #11112b;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 3.5rem;
+}
+
+.footerBg {
+  position: absolute;
+  bottom: 20px;
+}
+
+.footerItemsContainer {
+  padding-top: 150px;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30%;
+}
+
+.footerListItemsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+}
