@@ -1,0 +1,102 @@
+.heroContainer {
+  background-color: #11112b;
+  padding-top: 100px;
+}
+
+.heroAllTitleContainer {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.heroFirstTitleContainer {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 39px;
+}
+.heroSecondTitleContainer {
+  display: flex;
+  align-items: center;
+  gap: 47px;
+}
+
+.heroFirstTitleText {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  font-size: 170px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 0px;
+}
+.heroOImage {
+  width: 170px;
+  height: 125px;
+}
+
+.heroSecondTitleText {
+  display: flex;
+  align-items: center;
+  gap: 3.8rem;
+  font-size: 170px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 220px;
+}
+
+.heroContainerSubTitle {
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
+  padding-top: 70px;
+}
+
+.heroSecondSubTitleBtn {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 26px 45px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  background-color: #11112b;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 3.5rem;
+}
+
+.textItalic {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 160px;
+}
+
+.textTransparentColor {
+  background: linear-gradient(97deg, #92deed 30.1%, #fff 94.6%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroBg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.heroFirstBoxStyle {
+  width: 90px;
+  height: 75px;
+  background: #d9d9d9;
+  margin-bottom: 60px;
+}
+.herSecondoBoxStyle {
+  width: 39px;
+  height: 40px;
+  background: #d9d9d9;
+  position: absolute;
+  top: 18%;
+  right: 10%;
+}
