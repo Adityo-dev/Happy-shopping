@@ -1,6 +1,8 @@
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import logo from "../../../assets/logo/Navbar/ecoysoft-logo.png";
+
 export default function Navbar() {
   const navBarItems = [
     { itemName: "Home", url: "/" },
@@ -18,12 +20,7 @@ export default function Navbar() {
           <div>
             <li>
               <Link className={styles.navBarItems} href="/">
-                <Image
-                  src={"/assets/logo/Navbar/ecoysoft-logo.Png"}
-                  width={180}
-                  height={100}
-                  alt="Picture of the author"
-                />
+                <Image src={logo} width={180} height={100} alt="Logo" />
               </Link>
             </li>
           </div>

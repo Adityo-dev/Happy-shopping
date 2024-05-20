@@ -1,6 +1,7 @@
 import styles from "./about.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import arrowIcon from "../../../assets/icons/Arrow-Icon.png";
 
 export default function AboutHome() {
   return (
@@ -44,7 +45,7 @@ export default function AboutHome() {
                   <button className={styles.aboutHomeLearnMoreDataContainerBtn}>
                     Learn more
                     <Image
-                      src="/assets/icons/Arrow-Icon.png"
+                      src={arrowIcon}
                       width={90}
                       height={0}
                       alt="Learn more arrow icons"

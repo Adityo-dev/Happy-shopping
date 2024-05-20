@@ -2,6 +2,9 @@ import AboutHome from "../about";
 import styles from "./hero.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import O from "../../../assets/image/Hero/O.png";
+import arrowIcon from "../../../assets/icons/Arrow-Icon.png";
+import wireFrame from "../../../assets/image/Hero/Wireframe-Vector.png";
 
 export default function Hero() {
   return (
@@ -18,7 +21,7 @@ export default function Hero() {
               <div>
                 <Image
                   className={styles.heroOImage}
-                  src={"/assets/image/Hero/O.Png"}
+                  src={O}
                   width={100}
                   height={100}
                   alt="Picture of the author"
@@ -28,7 +31,7 @@ export default function Hero() {
             </h1>
 
             <p className={styles.heroContainerSubTitle}>
-              Create your future <br /> IT business with <br /> WaveNet.
+              Create your future <br /> IT business with <br /> ecoysoft.
             </p>
           </div>
 
@@ -43,10 +46,10 @@ export default function Hero() {
                 <button className={styles.heroSecondSubTitleBtn}>
                   Explore now
                   <Image
-                    src={"/assets/icons/Arrow-Icon.Png"}
+                    src={arrowIcon}
                     width={90}
                     height={0}
-                    alt="explore now arrow icon"
+                    alt="arrow icon"
                   />
                 </button>
               </Link>
@@ -55,10 +58,10 @@ export default function Hero() {
 
           <div className={styles.heroBg}>
             <Image
-              src={"/assets/image/Hero/Wireframe-Vector.Png"}
+              src={wireFrame}
               width={1900}
               height={1000}
-              alt="Picture of the author"
+              alt="Wireframe"
             />
           </div>
         </div>
