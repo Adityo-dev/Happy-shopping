@@ -2,9 +2,6 @@ import AboutHome from "../about";
 import styles from "./hero.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import o_image from "../../../assets/image/Hero/O.Png";
-import bg_image from "../../../assets/image/Hero/Wireframe-Vector.Png";
-import Arrow_icon from "../../../assets/icons/Arrow-Icon.Png";
 
 export default function Hero() {
   return (
@@ -21,7 +18,7 @@ export default function Hero() {
               <div>
                 <Image
                   className={styles.heroOImage}
-                  src={o_image}
+                  src={"/assets/image/Hero/O.Png"}
                   width={100}
                   height={100}
                   alt="Picture of the author"
@@ -46,7 +43,7 @@ export default function Hero() {
                 <button className={styles.heroSecondSubTitleBtn}>
                   Explore now
                   <Image
-                    src={Arrow_icon}
+                    src={"/assets/icons/Arrow-Icon.Png"}
                     width={90}
                     height={0}
                     alt="explore now arrow icon"
@@ -58,7 +55,7 @@ export default function Hero() {
 
           <div className={styles.heroBg}>
             <Image
-              src={bg_image}
+              src={"/assets/image/Hero/Wireframe-Vector.Png"}
               width={1900}
               height={1000}
               alt="Picture of the author"
