@@ -1,9 +1,10 @@
 .navBarContaine {
   background-color: #11112b;
   padding: 30px 0;
-  z-index: 1000;
 }
 .navBarAllItemsContainer {
+  position: relative;
+  z-index: 1001;
   width: 85%;
   margin: 0 auto;
   display: flex;

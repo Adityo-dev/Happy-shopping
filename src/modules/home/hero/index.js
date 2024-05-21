@@ -56,11 +56,12 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className={styles.heroBg}>
+          <div>
             <Image
+              className={styles.heroBg}
               src={wireFrame}
-              width={1900}
-              height={1000}
+              width={0}
+              height={0}
               alt="Wireframe"
             />
           </div>

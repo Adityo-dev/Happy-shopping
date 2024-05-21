@@ -38,8 +38,8 @@
 .footerTitleBtn {
   display: flex;
   align-items: center;
-  gap: 28px;
-  padding: 26px 45px;
+  gap: 25px;
+  padding: 30px 45px;
   border-radius: 15px;
   border: 1px solid #fff;
   background-color: #11112b;
@@ -47,25 +47,97 @@
   font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
-  margin-top: 3.5rem;
+  margin-top: 3rem;
+  position: relative;
+  z-index: 1001;
 }
 
 .footerBg {
   position: absolute;
-  bottom: 20px;
+  top: -10%;
+  right: 0;
+  width: 100vw;
+  background-size: cover;
+  z-index: 100;
 }
 
-.footerItemsContainer {
+.footerAllItemsContainer {
+  position: relative;
+  z-index: 1001;
   padding-top: 150px;
   width: 85%;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 30%;
+  justify-content: center;
+  gap: 25%;
+}
+.footerContactAllLogoContaier {
+  display: flex;
+  flex-direction: column;
+  gap: 18vh;
+}
+
+.footerContactLogoContaier {
+  display: flex;
+  gap: 64px;
+}
+.footerContactLogo {
+  width: 40px;
+  height: 40px;
 }
 
 .footerListItemsContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 100px;
+}
+
+.footerListTitle {
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.footerItemsContainer {
+  margin-top: 30px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footerItems {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  line-height: 30px;
+}
+
+.footerNewsSecContainer {
+  width: 25vw;
+}
+
+.footerEmailField {
+  background-color: #11112b;
+  border-radius: 5px;
+  border: 1px solid #d5d9e5;
+  margin-top: 40px;
+  padding: 25px 40px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.footerHr {
+  width: 85%;
+  margin: 0 auto;
+  opacity: 0.5;
+  margin-top: 80px;
+}
+
+.footerCopyrigthContainer {
+  padding: 15px 0 80px 0;
+  opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
 }
