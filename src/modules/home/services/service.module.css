@@ -1,1 +1,83 @@
+.servicesHomeContainer {
+  background-color: #11112b;
+  color: #fff;
+  padding-top: 25px;
+}
 
+.servicesHomeAllDataContainer {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.servicesHomeMainTitleText {
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.servicesCardFirstPartAllContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.servicesCardDataContainer {
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  backdrop-filter: blur(5px);
+  padding: 45px;
+}
+.servicesCardHighlightBackground {
+  background: #92deed;
+}
+
+/* .servicesCardArrowIconHighlightBackground {
+  color: #fff;
+  background-color: #fff;
+} */
+
+.servicesCardImage {
+  width: 85px;
+  height: 85px;
+  text-align: left;
+}
+
+.servicesCardFirstPartTextDataContainer {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.servicesCardText {
+  font-size: 45px;
+  font-weight: 700;
+  width: 0%;
+  line-height: 65px;
+}
+
+.servicesCardArrowIcon {
+  width: 50px;
+  height: 50px;
+  text-align: right;
+  margin-top: 12%;
+}
+
+.servicesCardSecondPartAllContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.servicesCardSecondPartImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}

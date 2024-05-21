@@ -15,6 +15,8 @@
   gap: 39px;
 }
 .heroSecondTitleContainer {
+  position: relative;
+  z-index: 1001;
   display: flex;
   align-items: center;
   gap: 47px;
@@ -24,7 +26,7 @@
   display: flex;
   align-items: center;
   gap: 3.5rem;
-  font-size: 170px;
+  font-size: 185px;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
@@ -39,7 +41,7 @@
   display: flex;
   align-items: center;
   gap: 3.8rem;
-  font-size: 170px;
+  font-size: 185px;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
@@ -71,7 +73,7 @@
 .textItalic {
   font-style: italic;
   font-weight: 300;
-  font-size: 160px;
+  font-size: 165px;
 }
 
 .textTransparentColor {
@@ -84,6 +86,9 @@
   position: absolute;
   top: 0;
   right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
 }
 
 .heroFirstBoxStyle {
