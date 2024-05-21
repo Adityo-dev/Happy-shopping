@@ -145,7 +145,7 @@ export default function Footer() {
               </p>
 
               <div>
-                <label for="emails"></label>
+                <label htmlFor="emails"></label>
                 <input
                   className={styles.footerEmailField}
                   type="email"
