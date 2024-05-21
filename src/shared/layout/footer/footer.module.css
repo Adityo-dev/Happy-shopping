@@ -98,6 +98,7 @@
 }
 
 .footerItemsContainer {
+  opacity: 0.75;
   margin-top: 30px;
   list-style-type: none;
   display: flex;
@@ -113,6 +114,7 @@
 }
 
 .footerNewsSecContainer {
+  opacity: 0.75;
   width: 25vw;
 }
 
