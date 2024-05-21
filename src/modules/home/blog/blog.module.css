@@ -1,0 +1,96 @@
+.blogsHomeContainer {
+  background-color: #d5d9e5;
+  padding: 160px 0;
+}
+
+.blogsHomeAllDataContainer {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.blogHomeHeaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.blogHoemReadMoreBtn {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 26px 40px;
+  border-radius: 15px;
+  border: 1px solid #11112b;
+  background-color: #d5d9e5;
+  color: #11112b;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.blogsHomeTitleText {
+  font-size: 90px;
+  font-weight: 700;
+  color: #11112b;
+}
+
+.blogsHomeCardsContainer {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.blogHomeRows {
+  grid-row: 1/-1;
+}
+.blogHomeColumns {
+  grid-column: 2/-1;
+}
+
+.blogsHomeCards {
+  padding: 40px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  color: #11112b;
+  box-shadow: 5px 10px 50px 0px rgba(17, 17, 43, 0.05);
+}
+
+.blogHoemCardHighlightBackground {
+  color: #fff;
+  background-color: #11112b;
+}
+
+.BlogHomeDataTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.BlogHomeFirstBoxDataContainer {
+  display: flex;
+  gap: 38vh;
+}
+
+.blogHomeNumberText {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.blogHomeTitle {
+  font-size: 20px;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+}
+
+.blogHomeSubTitle {
+  font-size: 25px;
+  font-weight: 600;
+}

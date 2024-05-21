@@ -1,0 +1,76 @@
+.faqContainer {
+  background-color: #11112b;
+  color: #fff;
+  padding: 150px 0;
+}
+
+.faqAllDataContainer {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faqTitleText {
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 110px;
+}
+
+.faqMessgeContainer {
+  border-radius: 50px;
+  border: 1px solid var(--Stroke-Gradient, rgba(255, 255, 255, 0.2));
+  background: var(
+    --Gradient-White,
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    )
+  );
+  padding: 60px;
+}
+
+.faqMessgeTitleText {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.faqMessgeSubTitleText {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.faqMessgeFieldContainer {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.messageTextField {
+  width: 100%;
+  padding: 25px;
+  border-radius: 15px;
+  border: none;
+  margin-top: 7px;
+  font-size: 18px;
+}
+
+.faqMessgeSenBtnContainer {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+}
+
+.faqMessgeSenBtn {
+  padding: 19px 50px;
+  background-color: #11112b;
+  color: #fff;
+  border-radius: 15px;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
