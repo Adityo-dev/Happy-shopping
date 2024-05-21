@@ -5,7 +5,7 @@ import Image from "next/image";
 import arrowIcon from "../../../assets/icons/Arrow-Icon.png";
 import wireFrame from "../../../assets/image/Footer/Wireframe-Vector.png";
 import ecoysoft_logo from "../../../assets/logo/Navbar/ecoysoft-logo.png";
-import facebook from "../../../assets/icons/facebook.svg";
+import facebook from "../../../assets/icons/Facebook.svg";
 import Twitter from "../../../assets/icons/Twitter.svg";
 import Instagram from "../../../assets/icons/Instagram.svg";
 
