@@ -2,14 +2,14 @@ import style from "./case.module.css";
 
 export default function CaseStudies() {
   return (
-    <section>
-      <div className={style.CaseStudies}>
+    <section className={style.CaseStudiesContainer}>
+      {/* <div className={style.CaseStudiesAllDataContainer}>
         <div>
-          <h2>Case Studies</h2>
+          <h2 className={style.CaseStudiesTetx}>Case Studies</h2>
 
-          <div>
+          <div className={style.CaseStudiesFirstBoxContainer}>
             <p>2024</p>
-            <h3>Uwang Corp.</h3>
+            <h3 className={style.CaseStudiesBoxTitleText}>Uwang Corp.</h3>
           </div>
         </div>
 
@@ -30,7 +30,7 @@ export default function CaseStudies() {
             <h3>DEF Manufacture</h3>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
