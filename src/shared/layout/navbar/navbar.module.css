@@ -1,36 +1,46 @@
-.navBarContaine {
-  background-color: #11112b;
-  padding: 30px 0;
-}
-.navBarAllItemsContainer {
-  position: relative;
-  z-index: 1001;
-  width: 85%;
+.navbarContainer {
+  position: absolute;
+  top: 0;
+  padding: 0.5% 8%;
+  z-index: 1000;
+  width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.navBarItemsContainer {
-  text-transform: uppercase;
+.ecoyLogo {
+  width: 140px;
+  height: 70px;
+}
+
+.navBavItemsContainer {
   display: flex;
-  list-style-type: none;
-  gap: 64px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
 
-.navBarItems {
-  cursor: pointer;
+.navBavItemData {
+  text-transform: capitalize;
   text-decoration: none;
-  color: #fff;
-}
-
-.navBarTalkBtn {
-  padding: 16px 32px;
-  border: 1px solid #fff;
+  list-style-type: none;
   color: #fff;
   font-weight: 600;
-  border-radius: 10px;
-  background-color: #11112b;
+  letter-spacing: 1.8px;
+}
+
+.navBarBtn {
+  background-color: #fff;
+  color: #1b3447;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 6px;
+  line-height: 28px;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: capitalize;
   cursor: pointer;
 }

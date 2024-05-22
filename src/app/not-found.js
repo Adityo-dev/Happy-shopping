@@ -1,10 +1,63 @@
 import Link from "next/link";
+import styles from "./notFound.module.css";
+import Image from "next/image";
+// IMPORT IMAGE
+import men_img from "../assets/image/ErrorPage/men.png";
+import shado_img from "../assets/image/ErrorPage/shado.png";
+import NotFound404_img from "../assets/image/ErrorPage/404.svg";
+// IMPORT REACT ICONS
+import { GoTriangleRight } from "react-icons/go";
 
 export default function NotFound() {
   return (
-    <main style={{ textAlign: "center" }}>
-      <h1 style={{ fontSize: "80px", letterSpacing: "15px" }}>404-error </h1>
-      <h4 style={{ fontSize: "40px" }}>PAGE NOT FOUND </h4>
-    </main>
+    <section>
+      <div className={styles.notFoundAllDatContainer}>
+        <div className={styles.notFoundContainer}>
+          <div>
+            <h1 className={styles.notFoundTitleText}>404 (Error Page) </h1>
+            <p className={styles.notFoundSubTitleText}>
+              Home <GoTriangleRight /> 404 (Error Page)
+            </p>
+          </div>
+
+          <div>
+            <Image
+              className={styles.notFoundMenImage}
+              src={men_img}
+              width={100}
+              height={100}
+            />
+
+            <Image
+              className={styles.notFoundShadoImage}
+              src={shado_img}
+              width={100}
+              height={100}
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.notFound404DataContainer}>
+        <Image
+          className={styles.notFound404Image}
+          src={NotFound404_img}
+          width={100}
+          height={100}
+        />
+
+        <h1 className={styles.notFound404TitleText}>Oops! Nothing Was Found</h1>
+        <p className={styles.notFound404SubTitleText}>
+          Sorry, we couldn’t find the page you where looking for. We suggest
+          that you return to homepage.
+        </p>
+
+        <Link href={"/"}>
+          <button className={styles.notFound404BackHoemBtn}>
+            Back To Home Page
+          </button>
+        </Link>
+      </div>
+    </section>
   );
 }
