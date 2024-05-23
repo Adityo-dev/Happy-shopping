@@ -117,8 +117,8 @@ export default function Footer() {
         <div>
           <h1 className={styles.footerTitleText}>Our Services</h1>
           <div>
-            {ourServices.map((service) => (
-              <ul className={styles.footerListItemContainer}>
+            {ourServices.map((service, ind) => (
+              <ul key={ind} className={styles.footerListItemContainer}>
                 <GoChevronRight />
                 <Link className={styles.footerItemList} href={service.url}>
                   <li>{service.name}</li>
