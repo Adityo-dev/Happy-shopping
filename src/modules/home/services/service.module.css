@@ -1,83 +1,108 @@
-.servicesHomeContainer {
-  background-color: #11112b;
-  color: #fff;
-  padding-top: 25px;
-}
-
-.servicesHomeAllDataContainer {
-  width: 85%;
+.servicesAllDataContainer {
+  width: 80%;
   margin: 0 auto;
 }
 
-.servicesHomeMainTitleText {
-  font-size: 90px;
-  font-weight: 700;
-  margin-bottom: 50px;
-}
-
-.servicesCardFirstPartAllContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.servicesCardDataContainer {
-  border-radius: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.3) 0%,
-    rgba(255, 255, 255, 0.1) 100%
-  );
-  backdrop-filter: blur(5px);
-  padding: 45px;
-}
-.servicesCardHighlightBackground {
-  background: #92deed;
-}
-
-/* .servicesCardArrowIconHighlightBackground {
-  color: #fff;
-  background-color: #fff;
-} */
-
-.servicesCardImage {
-  width: 85px;
-  height: 85px;
-  text-align: left;
-}
-
-.servicesCardFirstPartTextDataContainer {
-  margin-top: 70px;
+.servicesTitleTextContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 93px 0;
 }
 
-.servicesCardText {
+.servicesTitleText {
+  color: #1b3447;
   font-size: 45px;
   font-weight: 700;
-  width: 0%;
-  line-height: 65px;
 }
 
-.servicesCardArrowIcon {
-  width: 50px;
-  height: 50px;
-  text-align: right;
-  margin-top: 12%;
+.servicesViewAllServicesBtn {
+  color: #1b3447;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-decoration: none;
 }
 
-.servicesCardSecondPartAllContainer {
+.servicesViewAllServicesIcon {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  padding: 7px;
+  background-color: #d1e4fb;
+  color: #4895ef;
+  transition: all 400ms;
+}
+
+.servicesViewAllServicesIcon:hover {
+  background-color: #a8c0df;
+}
+
+.servicesCardContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin-top: 30px;
 }
 
-.servicesCardSecondPartImageContainer {
+.servicesCard {
+  position: relative;
+  padding: 60px 30px 30px 30px;
+  background-color: #f1f5f9;
+  border-radius: 15px;
+}
+
+.servicesHighLightBg {
+  background-color: #4895ef;
+}
+
+.servicesCardImage {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -40px;
+}
+
+.servicesCardTitleText {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1b3447;
+}
+
+.servicesCardSubTitleText {
+  font-size: 18px;
+  color: #1b3447;
+  margin: 15px 0 25px 0;
+}
+
+.servicesHighLightText {
+  color: #fff;
+}
+
+.servicesReadMoreBtn {
+  border: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 70px;
+  text-decoration: none;
+  gap: 7px;
+  font-size: 18px;
+  color: #1b3447;
+  font-weight: 500;
+  transition: all 400ms;
+}
+.servicesReadMoreBtn:hover {
+  margin-left: 10px;
+}
+
+.servicesReadMoreBtnIcon {
+  color: #27ae60;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.servicesReadMoreHighLightBtn {
+  color: #fff;
+}
+
+.servicesReadMoreHighLightBtnIcon {
+  color: #fff;
 }

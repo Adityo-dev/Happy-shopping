@@ -1,45 +1,42 @@
 import styles from "./navbar.module.css";
-import Link from "next/link";
 import Image from "next/image";
-import logo from "../../../assets/logo/Navbar/ecoysoft-logo.png";
+import Link from "next/link";
+// IMPORT IMAGE
+import ecoy_logo from "../../../assets/logo/Navbar/ecoysoft-logo.png";
 
 export default function Navbar() {
-  const navBarItems = [
-    { itemName: "Home", url: "/" },
-    { itemName: "About Us", url: "/about" },
-    { itemName: "Services", url: "/services" },
-    { itemName: "Pricing", url: "/pricing" },
-    { itemName: "Blog", url: "/blog" },
-    { itemName: "Contact", url: "/contact" },
+  const navItems = [
+    { name: "home", url: "/" },
+    { name: "About us", url: "/about" },
+    { name: "services", url: "/services" },
+    { name: "pages", url: "/pages" },
+    { name: "blog", url: "/blog" },
+    { name: "contact", url: "/contact" },
   ];
-
   return (
     <>
-      <section className={styles.navBarContaine}>
-        <nav className={styles.navBarAllItemsContainer}>
+      <section>
+        <nav className={styles.navbarContainer}>
           <div>
-            <li>
-              <Link className={styles.navBarItems} href="/">
-                <Image src={logo} width={180} height={100} alt="Logo" />
+            <Image
+              className={styles.ecoyLogo}
+              src={ecoy_logo}
+              width={120}
+              height={100}
+            ></Image>
+          </div>
+
+          <ul className={styles.navBavItemsContainer}>
+            {navItems.map((item, ind) => (
+              <Link href={item.url} className={styles.navBavItemData} key={ind}>
+                <li>{item.name}</li>
               </Link>
-            </li>
-          </div>
+            ))}
+          </ul>
 
           <div>
-            <ul className={styles.navBarItemsContainer}>
-              {navBarItems.map((item, ind) => (
-                <li key={ind}>
-                  <Link className={styles.navBarItems} href={item.url}>
-                    {item.itemName}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <Link href="/signIn">
-              <button className={styles.navBarTalkBtn}>Let's Talk</button>
+            <Link href={"/"}>
+              <button className={styles.navBarBtn}>Explore Now</button>
             </Link>
           </div>
         </nav>

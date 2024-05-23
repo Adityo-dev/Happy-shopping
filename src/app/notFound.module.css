@@ -1,0 +1,78 @@
+.notFoundAllDatContainer {
+  background-color: #032853;
+  padding: 220px 0 90px 0;
+  position: relative;
+  color: #fff;
+}
+
+.notFoundContainer {
+  width: 85%;
+  height: 30vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 0 3% 0 30%;
+}
+
+.notFoundTitleText {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.notFoundSubTitleText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+
+.notFoundMenImage {
+  position: relative;
+  width: 300px;
+  height: 404px;
+  z-index: 100;
+}
+
+.notFoundShadoImage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+}
+
+.notFound404DataContainer {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.notFound404Image {
+  width: 30%;
+  height: 100%;
+}
+
+.notFound404TitleText {
+  font-size: 48px;
+  color: #1c1c25;
+}
+
+.notFound404SubTitleText {
+  font-size: 18px;
+  color: #797e88;
+  margin: 20px 0;
+}
+
+.notFound404BackHoemBtn {
+  border: none;
+  padding: 20px 40px;
+  border-radius: 6px;
+  background-color: #4895ef;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,90 +1,95 @@
 import styles from "./service.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import Web_icon from "../../../assets/icons/Services/Web-Icon.svg";
-import Mobile_icon from "../../../assets/icons/Services/Mobile-Icon.svg";
-import Security_icon from "../../../assets/icons/Services/Security-Icon.svg";
-import Cloud_icon from "../../../assets/icons/Services/Cloud-Icon.svg";
-import Marketing_icon from "../../../assets/icons/Services/Marketing-Icon.svg";
-import Arrow_icon from "../../../assets/icons/Services/Arrow-Icon.svg";
-import Arrow_icon_bg from "../../../assets/icons/Services/Arrow-Icon-bg.svg";
+// IMPOER IMAGE
+import web_development_icon from "../../../assets/logo/Services/web-development.png";
+import app_development_icon from "../../../assets/logo/Services/app-development.png";
+import security_icon from "../../../assets/logo/Services/security.png";
+// IMPORT REACT ICONS
+import { MdArrowForward } from "react-icons/md";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 export default function ServicesHome() {
-  const servicesCardFirstPart = [
-    { image: Web_icon, name: "Web  Development", url: "/" },
-    { image: Mobile_icon, name: "Mobile Development", url: "/" },
-  ];
-
-  const servicesCardSecondPart = [
-    { image: Security_icon, name: "Cyber Security", url: "/" },
-    { image: Cloud_icon, name: "Cloud Computing", url: "/" },
-    { image: Marketing_icon, name: "Digital Marketing", url: "/" },
+  const services = [
+    {
+      image: web_development_icon,
+      service: "Web Development",
+      title:
+        "Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply ",
+      url: "/service",
+    },
+    {
+      image: app_development_icon,
+      service: "Mobile Development",
+      title:
+        "Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply ",
+      url: "/service",
+    },
+    {
+      image: security_icon,
+      service: "Cyber Security",
+      title:
+        "Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply ",
+      url: "/service",
+    },
   ];
   return (
-    <section className={styles.servicesHomeContainer}>
-      <div className={styles.servicesHomeAllDataContainer}>
-        <h2 className={styles.servicesHomeMainTitleText}>Services</h2>
+    <section className={styles.servicesAllDataContainer}>
+      <div className={styles.servicesTitleTextContainer}>
+        <h2 className={styles.servicesTitleText}>What We Have To Offer</h2>
 
-        <div>
-          <div className={styles.servicesCardFirstPartAllContainer}>
-            {servicesCardFirstPart.map((firstPart, ind) => (
-              <div className={styles.servicesCardDataContainer} key={ind}>
-                <Image
-                  className={styles.servicesCardImage}
-                  src={firstPart.image}
-                  width={90}
-                  height={90}
-                  alt="Logo"
-                />
+        <p>
+          <Link className={styles.servicesViewAllServicesBtn} href={"/service"}>
+            View all Services
+            <MdArrowForward className={styles.servicesViewAllServicesIcon} />
+          </Link>
+        </p>
+      </div>
 
-                <div className={styles.servicesCardFirstPartTextDataContainer}>
-                  <p className={styles.servicesCardText}>{firstPart.name}</p>
+      <div className={styles.servicesCardContainer}>
+        {services.map((service, ind) => (
+          <div
+            className={`${styles.servicesCard} ${
+              ind === 1 ? styles.servicesHighLightBg : ""
+            }`}
+            key={ind}
+          >
+            <Image
+              className={styles.servicesCardImage}
+              src={service?.image}
+              width={70}
+              height={70}
+            />
+            <h3
+              className={`${styles.servicesCardTitleText} ${
+                ind === 1 ? styles.servicesHighLightText : ""
+              }`}
+            >
+              {service?.service}
+            </h3>
+            <p
+              className={`${styles.servicesCardSubTitleText} ${
+                ind === 1 ? styles.servicesHighLightText : ""
+              }`}
+            >
+              {service?.title}
+            </p>
 
-                  <Link href={firstPart.url}>
-                    <Image
-                      className={styles.servicesCardArrowIcon}
-                      src={Arrow_icon}
-                      width={50}
-                      height={50}
-                      alt="Logo"
-                    />
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className={styles.servicesCardSecondPartAllContainer}>
-            {servicesCardSecondPart.map((secondPart, ind) => (
-              <div
-                className={`${styles.servicesCardDataContainer} ${
-                  ind === 1 ? styles.servicesCardHighlightBackground : ""
+            <Link
+              className={`${styles.servicesReadMoreBtn} ${
+                ind === 1 ? styles.servicesReadMoreHighLightBtn : ""
+              }`}
+              href={service?.url}
+            >
+              Read More
+              <IoIosArrowRoundForward
+                className={`${styles.servicesReadMoreBtnIcon} ${
+                  ind === 1 ? styles.servicesReadMoreHighLightBtnIcon : ""
                 }`}
-                key={ind}
-              >
-                <div className={styles.servicesCardSecondPartImageContainer}>
-                  <Image
-                    className={styles.servicesCardImage}
-                    src={secondPart.image}
-                    width={90}
-                    height={90}
-                    alt="Logo"
-                  />
-                  <Link href={secondPart.url}>
-                    <Image
-                      className={styles.servicesCardArrowIcon}
-                      src={ind === 1 ? Arrow_icon_bg : Arrow_icon}
-                      width={50}
-                      height={50}
-                      alt="Logo"
-                    />
-                  </Link>
-                </div>
-                <p className={styles.servicesCardText}>{secondPart.name}</p>
-              </div>
-            ))}
+              />
+            </Link>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );
