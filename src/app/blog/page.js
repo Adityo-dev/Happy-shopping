@@ -5,8 +5,10 @@ import BlogFooter from "@/modules/blog/blogFooter";
 export default function BlogPage() {
   return (
     <>
-      <Blogs />
-      <BlogFooter />
+      <div className={styles.blogPageContainer}>
+        <Blogs />
+        <BlogFooter />
+      </div>
     </>
   );
 }

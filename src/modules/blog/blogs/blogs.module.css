@@ -1,0 +1,101 @@
+.blogsContainer {
+    width: 85%;
+    margin: 5rem auto;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.blogCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 calc(50% - 20px); /* Set width to 50% minus margin */
+    gap: 20px;
+    padding: 1rem;
+    width: 50%;
+    height: 300px;
+    border-radius: 5px;
+    border: 1px solid var(--Gray-200, #E1E1E1);
+    background: var(--white, #FFF);
+}
+.blogContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: self-start;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+.createdDetails {
+ 
+}
+.createdDetails span{
+    color: var(--Font-Color, #1B3447);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+}
+.userIcon {
+    color: var(--Deep-Sky-Blue, #4895EF);
+    font-family: "Font Awesome 6 Free";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.calenderIcon {
+    color: var(--Deep-Sky-Blue, #4895EF);
+    font-family: "Font Awesome 6 Free";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.rightArrowIcon {
+    color: var(--Font-Color, #1B3447);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.blogImage {
+    width: 176px;
+    /* height: 245px; */
+}
+.blogTitle {
+    color: var(--Font-Color, #1B3447);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px; /* 141.667% */
+}
+.blogDescription {
+    color: var(--Grey-Color, #797E88);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+}
+.blogBtn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    border: none;
+    gap: 7px;
+    width: 100%;
+    color: #1b3447;
+    transition: all 400ms;
+}
+.blogBtn:hover {
+     margin-left: 10px;
+     color: #4895EF;
+}
