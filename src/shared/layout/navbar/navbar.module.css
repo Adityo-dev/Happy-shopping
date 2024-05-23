@@ -1,14 +1,17 @@
-.navbarContainer {
-  position: absolute;
-  top: 0;
-  padding: 0.5% 8%;
-  z-index: 1000;
+.navBarBtnAllDataContainer {
+  background: linear-gradient(135deg, #0b3d91, #47236e);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 8px 0;
   width: 100%;
+  z-index: 1000;
+}
+
+.navbarContainer {
+  width: 80%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .ecoyLogo {

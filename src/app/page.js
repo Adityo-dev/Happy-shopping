@@ -9,7 +9,7 @@ import ClientCompany from "@/modules/home/clientCompany";
 import Pricing from "@/modules/home/pricing";
 import Blog from "@/modules/home/blog";
 import FAQ from "@/modules/home/FAQ";
-import OurIntroduction from "@/modules/home/whyus/OurIntroduction";
+import OurIntroduction from "@/modules/home/OurIntroduction/OurIntroduction";
 
 export default function Home() {
   return (

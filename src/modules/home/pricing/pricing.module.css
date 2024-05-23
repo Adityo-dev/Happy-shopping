@@ -1,0 +1,131 @@
+.pricingAllDataContainer {
+  position: relative;
+  padding: 120px 0;
+}
+
+.pricingDataContainer {
+  width: 62%;
+  margin: 0 auto;
+}
+
+.pricingHeaderTitleTextContainer {
+  text-align: center;
+}
+
+.pricingHeaderPricingTextContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  margin-bottom: 25px;
+}
+
+.pricingHeaderPricingText {
+  color: #4895ef;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.pricingHeaderPricingTextHrLine {
+  background-color: #4895ef;
+  width: 35px;
+  height: 3px;
+}
+
+.pricingHeaderTitleText {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1b3447;
+  line-height: 58px;
+  margin-bottom: 60px;
+}
+
+.pricingCardTextContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  padding: 40px 45px;
+  margin-top: 30px;
+}
+
+.pricingCardTextHighLightContainer {
+  background-color: #4895ef;
+  color: #fff;
+}
+
+.pricingCategoryContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.pricingCategory {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.pricingTypeText {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1b3447;
+}
+
+.pricingPriceText {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  color: #4895ef;
+}
+
+.pricingDollarText {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.pricingMonthText {
+  font-size: 18px;
+  margin: 13px 0 0 5px;
+}
+
+.pricingCategoryCheckbox {
+  color: #1b3447;
+}
+
+.pricingHighLight {
+  color: #fff;
+}
+
+.pricingCategoryText {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.pricingCardGetStartBtn {
+  padding: 20px 30px;
+  background-color: #fff;
+  font-size: 18px;
+  color: #1b3447;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.pricingHighLightBtn {
+  border: none;
+}
+
+.pricingUnionIcons {
+  position: absolute;
+  bottom: 65px;
+  left: 55px;
+}
