@@ -29,7 +29,7 @@ export default function Hero() {
                 slightly believable.
               </p>
 
-              <dvi className={styles.ButtonContainer}>
+              <div className={styles.ButtonContainer}>
                 <Link href={"/"}>
                   <button className={styles.heroStartNowBtn}>Start Now</button>
                 </Link>
@@ -44,7 +44,7 @@ export default function Hero() {
                 </Link>
 
                 <p>Watch Demo </p>
-              </dvi>
+              </div>
             </div>
 
             <div className={styles.heroDataImageContainer}>
