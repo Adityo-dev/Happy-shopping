@@ -1,12 +1,15 @@
-import ServicesHero from "@/modules/services/hero";
 import styles from "./services.module.css";
-import HowItWorks from "@/modules/services/howItWorks";
+import ServicesCategory from "@/modules/services/category";
+import RecentProject from "@/modules/services/recentProject";
+import LatestNews from "@/modules/services/latestNews";
 
 export default function Services() {
   return (
     <>
-      <ServicesHero />
-      <HowItWorks />
+      <ServicesCategory />
+      {/* <>Who we are component will there</> */}
+      <RecentProject />
+      <LatestNews />
     </>
   );
 }
