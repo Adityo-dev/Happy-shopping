@@ -108,7 +108,7 @@ export default function OurIntroduction() {
               {items.map((item, ind) => (
                 <p className={styles.ourIntoItemsList} key={ind}>
                   <Image src={chevron_double_o_image} width={24} height={24} />
-                  <p>{item}</p>
+                  <span>{item}</span>
                 </p>
               ))}
             </div>
