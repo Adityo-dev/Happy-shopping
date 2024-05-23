@@ -15,7 +15,7 @@ export default function Navbar() {
   ];
   return (
     <>
-      <section>
+      <section className={styles.navBarBtnAllDataContainer}>
         <nav className={styles.navbarContainer}>
           <div>
             <Image
