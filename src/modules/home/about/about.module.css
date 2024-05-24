@@ -1,0 +1,164 @@
+.aboutAllDataContainer {
+  margin-top: 120px;
+}
+
+.aboutDataContainer {
+  width: 80%;
+  margin: 80px auto;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+
+.aboutHeaderTitleText {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  color: #1b3447;
+  text-align: center;
+}
+
+.aboutImageAllDataContainer {
+  position: relative;
+  display: flex;
+  gap: 30px;
+}
+
+.aboutTextDataContainer {
+  width: 40%;
+}
+
+.aboutTitleText {
+  font-size: 24px;
+  color: #1b3447;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+.aboutSubTitleText {
+  font-size: 18px;
+  color: #1b3447;
+  line-height: 28px;
+  margin: 40px 0;
+}
+
+.aboutServicesItemContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.aboutServicesItem {
+  display: flex;
+  align-content: center;
+  gap: 15px;
+  font-size: 14px;
+  color: #1b3447;
+}
+
+.aboutCEOAllDataContainer {
+  margin: 40px 0 50px 0;
+  display: flex;
+  gap: 30%;
+  align-items: center;
+}
+
+.aboutCEOContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.aboutCEONameText {
+  font-size: 24px;
+  font-weight: 600;
+  color: #191919;
+}
+
+.aboutCEOText {
+  font-size: 18px;
+  color: #808285;
+  margin-top: 10px;
+}
+
+.aboutDiscoverMoreBtn {
+  padding: 17px 40px;
+  background-color: #4895ef;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+.aboutFirstImageDataContainer {
+  position: relative;
+}
+
+.aboutFirstImage {
+  width: 299px;
+  height: 401px;
+  position: relative;
+}
+.aboutFirstImageFrame1 {
+  position: absolute;
+  bottom: 19px;
+  left: 85px;
+}
+
+.aboutFirstImageFrame2 {
+  width: 93px;
+  height: 93px;
+  position: absolute;
+  top: -45px;
+  right: -45px;
+}
+
+.aboutSecondImageDataContainer {
+  position: relative;
+  margin-top: 73px;
+}
+
+.aboutSecondImage {
+  position: relative;
+  width: 299px;
+  height: 418px;
+}
+
+.aboutSecondImageDesignIcon {
+  width: 152px;
+  height: 159px;
+  position: absolute;
+  top: -80px;
+  right: -50px;
+}
+
+.aboutSecondImageRectangleTopIcon {
+  width: 171px;
+  height: 175px;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+}
+
+.aboutSecondImageRectangleLeftIcon {
+  width: 171px;
+  height: 175px;
+  position: absolute;
+  right: 0;
+}
+
+.aboutSecondImageDottedFrameIcon {
+  width: 70px;
+  height: 260px;
+  position: absolute;
+  right: -100px;
+  top: 78px;
+}
+
+.aboutSecondImagePlayButtonIcon {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 110px;
+  top: 170px;
+}

@@ -1,0 +1,53 @@
+.contactAllDataContainer {
+  position: relative;
+  margin-top: 120px;
+  background-color: #faf9f7;
+  padding: 100px 0;
+}
+
+.contactDataContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactTextAllDataContainer {
+  /* position: relative; */
+}
+
+.contactFieldAllDataContainer {
+  position: relative;
+}
+
+.contactWomenImage {
+  width: 290px;
+  height: 520px;
+  position: relative;
+  z-index: 100;
+}
+.contactFieldContainer {
+  position: absolute;
+  top: -5px;
+  right: 224px;
+  width: 500px;
+  height: 520px;
+  background-color: #fff;
+  border-top: 6px solid #4895ef;
+  padding: 30px;
+}
+
+.contactFieldHeaderTitleText {
+  color: #1b3447;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+/* .contactSpiderWebFrameImage {
+  width: 1000px;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+} */
