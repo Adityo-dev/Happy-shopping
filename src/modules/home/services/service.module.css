@@ -1,6 +1,8 @@
 .servicesAllDataContainer {
+  position: relative;
   width: 80%;
   margin: 0 auto;
+  z-index: 100;
 }
 
 .servicesTitleTextContainer {

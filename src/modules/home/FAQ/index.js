@@ -1,4 +1,3 @@
-import FaqFooter from "../faqFooter";
 import styles from "./faq.module.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -36,7 +35,6 @@ export default function FAQ() {
           </div>
         </div>
       </section>
-      <FaqFooter />
     </>
   );
 }

@@ -10,6 +10,7 @@ import Pricing from "@/modules/home/pricing";
 import Blog from "@/modules/home/blog";
 import FAQ from "@/modules/home/FAQ";
 import OurIntroduction from "@/modules/home/OurIntroduction/OurIntroduction";
+import Contact from "@/modules/home/Contact";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <ClientCompany />
       <Pricing />
       <Blog />
+      <Contact />
       <FAQ />
     </>
   );
