@@ -12,10 +12,6 @@
   justify-content: space-between;
 }
 
-.contactTextAllDataContainer {
-  /* position: relative; */
-}
-
 .contactFieldAllDataContainer {
   position: relative;
 }
@@ -43,11 +39,3 @@
   font-weight: 600;
   margin-top: 25px;
 }
-
-/* .contactSpiderWebFrameImage {
-  width: 1000px;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 40%;
-} */
