@@ -16,9 +16,68 @@
   position: relative;
 }
 
+.contactTextAllDataContainer {
+  width: 40%;
+}
+
+.contactHeaderTitleText {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #4895ef;
+}
+
+.contactTitleHtLine {
+  width: 35px;
+  height: 3px;
+  background-color: #4895ef;
+  margin-top: 10px;
+}
+
+.contactTitleText {
+  font-size: 48px;
+  color: #1b3447;
+  font-weight: 700;
+  line-height: 58px;
+  margin: 30px 0 35px 0;
+}
+
+.contactSubTitleText {
+  color: #797e88;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.contactIconsContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.contactIconsList {
+  font-size: 20px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8eff6;
+  border-radius: 22.5px 0px;
+  color: #4895ef;
+  transition: 0.3s;
+}
+
+.contactIconsList:hover {
+  color: #fff;
+  background-color: #4895ef;
+}
+
 .contactWomenImage {
-  width: 290px;
-  height: 520px;
+  width: 300px;
+  height: 568px;
   position: relative;
   z-index: 100;
 }
@@ -27,10 +86,11 @@
   top: -5px;
   right: 224px;
   width: 500px;
-  height: 520px;
+  height: 570px;
   background-color: #fff;
   border-top: 6px solid #4895ef;
   padding: 30px;
+  border-radius: 10px;
 }
 
 .contactFieldHeaderTitleText {
@@ -38,4 +98,60 @@
   font-size: 18px;
   font-weight: 600;
   margin-top: 25px;
+}
+
+.contactInputFieldContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.contactInputField {
+  position: relative;
+  width: 92%;
+  height: 100%;
+}
+
+.contactNameInputFieldContainer {
+  position: relative;
+}
+
+.contactInputFieldUserIcon {
+  position: absolute;
+  right: 50px;
+  top: 18px;
+  font-size: 18px;
+}
+
+.contactNumberAndEmailInputFieldContainer {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 92%;
+}
+
+.contactInputFieldPhoneIcon {
+  position: absolute;
+  left: 40%;
+  font-size: 18px;
+}
+
+.contactInputFieldEmailIcon {
+  position: absolute;
+  right: 3%;
+  font-size: 18px;
+}
+
+.contactSendMessageBtn {
+  text-align: center;
+  width: 45%;
+  padding: 19px 40px;
+  text-decoration: none;
+  background-color: #4895ef;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
 }

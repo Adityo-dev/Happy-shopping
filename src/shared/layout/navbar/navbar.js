@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 // IMPORT IMAGE
 import ecoy_logo from "../../../assets/logo/Navbar/ecoysoft-logo.png";
+// IMPORT REACT ICON
+import { FiMenu } from "react-icons/fi";
+import { FiX } from "react-icons/fi";
 
 export default function Navbar() {
   const navItems = [
@@ -13,10 +16,15 @@ export default function Navbar() {
     { name: "blog", url: "/blog" },
     { name: "contact", url: "/contact" },
   ];
+
   return (
     <>
       <section className={styles.navBarBtnAllDataContainer}>
         <nav className={styles.navbarContainer}>
+          <div className={styles.togoContainer}>
+            <FiMenu /> <FiX />
+          </div>
+
           <div>
             <Image
               className={styles.ecoyLogo}

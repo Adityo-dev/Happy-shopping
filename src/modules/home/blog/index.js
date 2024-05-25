@@ -2,8 +2,8 @@ import styles from "./blog.module.css";
 import Link from "next/link";
 import Image from "next/image";
 //IMPORT IMAGE
-import newsAndBlog_image1 from "../../../assets/image/Blog/blog1image.png";
-import newsAndBlog_image2 from "../../../assets/image/Blog/blog2image.png";
+import newsAndBlog_image1 from "../../../assets/image/Blog/blog2image.png";
+import newsAndBlog_image2 from "../../../assets/image/Blog/blog1image.png";
 import Frame from "../../../assets/logo/Blog/Frame1.svg";
 //IMPORT REACT ICONS
 import { FaArrowRightLong } from "react-icons/fa6";

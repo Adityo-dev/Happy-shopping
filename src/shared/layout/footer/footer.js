@@ -88,9 +88,7 @@ export default function Footer() {
           <div className={styles.footerContactIconsContainer}>
             {contactSocialMediaIcon.map((icon, ind) => (
               <Link
-                className={`${styles.footerContactIconsList} ${
-                  ind === 2 ? styles.footerContactIconsHighLiteBg : ""
-                } `}
+                className={styles.footerContactIconsList}
                 href={icon.url}
                 key={ind}
               >

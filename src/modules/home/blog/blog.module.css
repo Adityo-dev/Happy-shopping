@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   gap: 30px;
+  padding-top: 120px;
 }
 .newsAndBlogOurLatestNewsContainer {
   display: flex;

@@ -87,7 +87,6 @@ export default function Hero() {
             ></Image>
           </div>
         </div>
-        <AboutHome />
       </section>
     </>
   );
