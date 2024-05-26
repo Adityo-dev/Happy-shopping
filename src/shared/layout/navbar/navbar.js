@@ -2,7 +2,7 @@ import styles from "./navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
 // IMPORT IMAGE
-import ecoy_logo from "../../../assets/logo/Navbar/ecoysoft-logo.png";
+import ecoysoft from "../../../assets/ecoysoft/ecoysoft.webp";
 // IMPORT REACT ICON
 import { FiMenu } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
@@ -13,7 +13,7 @@ export default function Navbar() {
     { name: "About us", url: "/about" },
     { name: "services", url: "/services" },
     { name: "pages", url: "/pages" },
-    { name: "blog", url: "/blog" },
+    { name: "blog", url: "/blogs" },
     { name: "contact", url: "/contact" },
   ];
 
@@ -26,12 +26,15 @@ export default function Navbar() {
           </div>
 
           <div>
-            <Image
-              className={styles.ecoyLogo}
-              src={ecoy_logo}
-              width={120}
-              height={100}
-            ></Image>
+            <Link href="/">
+              <Image
+                className={styles.ecoyLogo}
+                src={ecoysoft}
+                width={120}
+                height={100}
+                alt="Logo"
+              ></Image>
+            </Link>
           </div>
 
           <ul className={styles.navBavItemsContainer}>
