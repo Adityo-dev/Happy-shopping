@@ -11,21 +11,23 @@ import Blog from "@/modules/home/blog";
 import FAQ from "@/modules/home/FAQ";
 import OurIntroduction from "@/modules/home/OurIntroduction/OurIntroduction";
 import Contact from "@/modules/home/Contact";
+import AboutHome from "@/modules/home/about";
 
 export default function Home() {
   return (
     <>
-      <Button />
+      {/* <Button /> */}
       <Hero />
+      <AboutHome />
       <Services />
       <OurIntroduction />
       <CaseStudies />
       <Feedback />
       <ClientCompany />
       <Pricing />
-      <Blog />
       <Contact />
       <FAQ />
+      <Blog />
     </>
   );
 }

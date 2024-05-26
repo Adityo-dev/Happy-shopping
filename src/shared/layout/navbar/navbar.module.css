@@ -15,8 +15,8 @@
 }
 
 .ecoyLogo {
-  width: 140px;
-  height: 70px;
+  width: 100%;
+  height: 65px;
 }
 
 .navBavItemsContainer {
@@ -46,4 +46,121 @@
   font-weight: 600;
   text-transform: capitalize;
   cursor: pointer;
+}
+
+.togoContainer {
+  display: none;
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1500px) {
+  .navbarContainer {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1249px) {
+  .navbarContainer {
+    width: 90%;
+  }
+
+  .navBavItemsContainer {
+    gap: 30px;
+  }
+
+  .navBavItemData {
+    letter-spacing: 1px;
+  }
+
+  .navBarBtn {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1049px) {
+  .navbarContainer {
+    width: 90%;
+  }
+
+  .navBavItemsContainer {
+    gap: 29px;
+  }
+
+  .navBavItemData {
+    letter-spacing: 0.4px;
+  }
+
+  .navBarBtn {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .navbarContainer {
+    width: 90%;
+  }
+
+  .togoContainer {
+    display: block;
+    font-size: 35px;
+    color: #fff;
+  }
+
+  .navBavItemsContainer {
+    display: none;
+  }
+
+  .navBarBtn {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .navbarContainer {
+    width: 92%;
+  }
+
+  .togoContainer {
+    display: block;
+    font-size: 35px;
+    color: #fff;
+  }
+
+  .navBavItemsContainer {
+    display: none;
+  }
+
+  .navBarBtn {
+    padding: 12px 22px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbarContainer {
+    width: 92%;
+  }
+
+  .togoContainer {
+    display: block;
+    font-size: 25px;
+    color: #fff;
+  }
+
+  .ecoyLogo {
+    width: 95%;
+    height: 55px;
+  }
+
+  .navBavItemsContainer {
+    display: none;
+  }
+
+  .navBarBtn {
+    padding: 8px 17px;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+  }
 }
