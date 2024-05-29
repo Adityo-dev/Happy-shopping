@@ -47,7 +47,7 @@ export default function AboutHome() {
           <div className={styles.aboutServicesItemContainer}>
             {services.map((service, ind) => (
               <div className={styles.aboutServicesItem} key={ind}>
-                <Image src={service.image} width={25} height={25} />
+                <Image src={service.image} width={25} height={25} alt="" />
                 <p>{service.name}</p>
               </div>
             ))}
@@ -55,7 +55,7 @@ export default function AboutHome() {
 
           <div className={styles.aboutCEOAllDataContainer}>
             <div className={styles.aboutCEOContainer}>
-              <Image src={ceo_image} width={75} height={75} />
+              <Image src={ceo_image} width={75} height={75} alt="" />
               <div>
                 <h3 className={styles.aboutCEONameText}>Esther Howard</h3>
                 <p className={styles.aboutCEOText}>CEO & Founder </p>
@@ -63,7 +63,7 @@ export default function AboutHome() {
             </div>
 
             <div>
-              <Image src={signature_image} width={110} height={65} />
+              <Image src={signature_image} width={110} height={65} alt="" />
             </div>
           </div>
 
@@ -79,18 +79,21 @@ export default function AboutHome() {
               src={about_image1}
               width={300}
               height={410}
+              alt=""
             />
             <Image
               className={styles.aboutFirstImageFrame1}
               src={Frame_icon}
               width={0}
               height={0}
+              alt=""
             />
             <Image
               className={styles.aboutFirstImageFrame2}
               src={Frame2_icon}
               width={0}
               height={0}
+              alt=""
             />
           </div>
 
@@ -100,6 +103,7 @@ export default function AboutHome() {
               src={about_image2}
               width={300}
               height={418}
+              alt=""
             />
 
             <Image
@@ -107,6 +111,7 @@ export default function AboutHome() {
               src={Design_icon}
               width={0}
               height={0}
+              alt=""
             />
 
             <Image
@@ -114,6 +119,7 @@ export default function AboutHome() {
               src={Rectangle_Top_icon}
               width={0}
               height={0}
+              alt=""
             />
 
             <Image
@@ -121,6 +127,7 @@ export default function AboutHome() {
               src={Rectangle_Left_icon}
               width={0}
               height={0}
+              alt=""
             />
 
             <Image
@@ -128,6 +135,7 @@ export default function AboutHome() {
               src={Dotted_Frame_icon}
               width={0}
               height={0}
+              alt=""
             />
 
             <Link href={"/"}>
@@ -136,6 +144,7 @@ export default function AboutHome() {
                 src={Play_button_icon}
                 width={80}
                 height={80}
+                alt=""
               />
             </Link>
           </div>

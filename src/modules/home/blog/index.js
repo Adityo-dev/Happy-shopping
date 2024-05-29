@@ -41,7 +41,7 @@ export default function Blog() {
               <h2 className={styles.newsAndBlogOurLatestNewsText}>
                 Our Latest News
               </h2>
-              <Link className={styles.newsAndBlogViewAllBtn} href={"/blog"}>
+              <Link className={styles.newsAndBlogViewAllBtn} href={"/blogs"}>
                 View all
               </Link>
             </div>

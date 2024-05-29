@@ -3,7 +3,8 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   padding: 8px 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 10000;
+  position: relative;
 }
 
 .navbarContainer {
@@ -111,6 +112,23 @@
     display: none;
   }
 
+  .navBavItemsContainer {
+    position: absolute;
+    top: 88px;
+    left: -500px;
+    background: linear-gradient(135deg, #47236e, #0b3d91);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+    padding: 50px 0 44vh 0;
+    transition: all 0.5s;
+  }
+
+  .navBarResContact {
+    left: 0;
+  }
+
   .navBarBtn {
     padding: 12px 25px;
     font-size: 15px;
@@ -128,13 +146,36 @@
     color: #fff;
   }
 
+  .ecoyLogo {
+    width: 95%;
+    height: 55px;
+  }
+
   .navBavItemsContainer {
     display: none;
   }
 
+  .navBavItemsContainer {
+    position: absolute;
+    top: 78px;
+    left: -400px;
+    background: linear-gradient(135deg, #47236e, #0b3d91);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+    padding: 50px 0 44vh 0;
+    transition: all 0.5s;
+  }
+
+  .navBarResContact {
+    left: 0;
+  }
+
   .navBarBtn {
-    padding: 12px 22px;
-    font-size: 13px;
+    padding: 8px 17px;
+    font-size: 11px;
+    letter-spacing: 0.2px;
   }
 }
 
@@ -145,17 +186,30 @@
 
   .togoContainer {
     display: block;
-    font-size: 25px;
+    font-size: 30px;
     color: #fff;
   }
 
   .ecoyLogo {
     width: 95%;
-    height: 55px;
+    height: 53px;
   }
 
   .navBavItemsContainer {
-    display: none;
+    position: absolute;
+    top: 76px;
+    left: -300px;
+    background: linear-gradient(135deg, #47236e, #0b3d91);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+    padding: 50px 0 45vh 0;
+    transition: all 0.5s;
+  }
+
+  .navBarResContact {
+    left: 0;
   }
 
   .navBarBtn {

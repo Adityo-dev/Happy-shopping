@@ -26,6 +26,7 @@ export default function NotFound() {
               src={men_img}
               width={100}
               height={100}
+              alt=""
             />
 
             <Image
@@ -33,6 +34,7 @@ export default function NotFound() {
               src={shado_img}
               width={100}
               height={100}
+              alt=""
             />
           </div>
         </div>
@@ -44,6 +46,7 @@ export default function NotFound() {
           src={NotFound404_img}
           width={100}
           height={100}
+          alt=""
         />
 
         <h1 className={styles.notFound404TitleText}>Oops! Nothing Was Found</h1>

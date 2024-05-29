@@ -40,6 +40,7 @@ export default function Hero() {
                     src={heco_Play_Bottun}
                     width={60}
                     height={60}
+                    alt=""
                   ></Image>
                 </Link>
 
@@ -53,6 +54,7 @@ export default function Hero() {
                 src={heco_Computer_img}
                 width={1500}
                 height={1000}
+                alt=""
               ></Image>
 
               <Image
@@ -60,21 +62,8 @@ export default function Hero() {
                 src={points_group_img1}
                 width={1000}
                 height={1000}
+                alt=""
               ></Image>
-
-              {/* <Image
-                className={styles.heroPontsGroupImage2}
-                src={points_group_img2}
-                width={1000}
-                height={1000}
-              ></Image> */}
-
-              {/* <Image
-                className={styles.heroPontsGroupImage3}
-                src={points_group_img3}
-                width={1000}
-                height={1000}
-              ></Image> */}
             </div>
           </div>
 
@@ -84,6 +73,7 @@ export default function Hero() {
               src={spider_web_img}
               width={1000}
               height={1000}
+              alt=""
             ></Image>
           </div>
         </div>

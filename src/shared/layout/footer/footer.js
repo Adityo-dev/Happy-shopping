@@ -68,104 +68,107 @@ export default function Footer() {
     { item: "Contact Us", url: "/" },
   ];
   return (
-    <footer className={styles.footerAllDataContainer}>
-      <div className={styles.footerTextDataContainer}>
-        <div>
-          <h1 className={styles.footerTitleText}>About Company</h1>
-          <Image
-            className={styles.footerLineBgImageContainer}
-            src={Line_bg}
-            width={70}
-            height={0}
-          />
-
-          <p>
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised
-          </p>
-
-          <div className={styles.footerContactIconsContainer}>
-            {contactSocialMediaIcon.map((icon, ind) => (
-              <Link
-                className={styles.footerContactIconsList}
-                href={icon.url}
-                key={ind}
-              >
-                <p>{icon.icon}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <h1 className={styles.footerTitleText}>Get Free Link</h1>
+    <>
+      {/* <footer className={styles.footerAllDataContainer}>
+        <div className={styles.footerTextDataContainer}>
           <div>
-            {getFreeLink.map((getItem, ind) => (
-              <ul key={ind} className={styles.footerListItemContainer}>
-                <GoChevronRight />
-                <Link className={styles.footerItemList} href={getItem.url}>
-                  <li>{getItem.name}</li>
-                </Link>
-              </ul>
-            ))}
-          </div>
-        </div>
+            <h1 className={styles.footerTitleText}>About Company</h1>
+            <Image
+              className={styles.footerLineBgImageContainer}
+              src={Line_bg}
+              width={70}
+              height={0}
+              alt=""
+            />
 
-        <div>
-          <h1 className={styles.footerTitleText}>Our Services</h1>
-          <div>
-            {ourServices.map((service, ind) => (
-              <ul key={ind} className={styles.footerListItemContainer}>
-                <GoChevronRight />
-                <Link className={styles.footerItemList} href={service.url}>
-                  <li>{service.name}</li>
-                </Link>
-              </ul>
-            ))}
-          </div>
-        </div>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised
+            </p>
 
-        <div>
-          <h1 className={styles.footerTitleText}>About Us</h1>
-          <div>
-            {aboutUs.map((about, ind) => (
-              <ul key={ind} className={styles.footerListItemContainer}>
-                <GoChevronRight />
-                <Link className={styles.footerItemList} href={about.url}>
-                  <li>{about.name}</li>
+            <div className={styles.footerContactIconsContainer}>
+              {contactSocialMediaIcon.map((icon, ind) => (
+                <Link
+                  className={styles.footerContactIconsList}
+                  href={icon.url}
+                  key={ind}
+                >
+                  <p>{icon.icon}</p>
                 </Link>
-              </ul>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div className={styles.footerContactContainer}>
-        {contactIcons?.map((icon, ind) => (
-          <div className={styles.footerContactTextContainer} key={ind}>
-            <p className={styles.footerContactIcon}>{icon?.icon}</p>
-            <div className={styles.footerContactInfoTextContainer}>
-              <p>{icon?.title}</p>
-              <p>{icon?.subTitle}</p>
+              ))}
             </div>
           </div>
-        ))}
-      </div>
 
-      <div className={styles.copyRightFooterListItemContainer}>
-        <p>© ecoysoft 2024 | All Rights Reserved</p>
+          <div>
+            <h1 className={styles.footerTitleText}>Get Free Link</h1>
+            <div>
+              {getFreeLink.map((getItem, ind) => (
+                <ul key={ind} className={styles.footerListItemContainer}>
+                  <GoChevronRight />
+                  <Link className={styles.footerItemList} href={getItem.url}>
+                    <li>{getItem.name}</li>
+                  </Link>
+                </ul>
+              ))}
+            </div>
+          </div>
 
-        <div className={styles.copyRightFooterListItem}>
-          {copyRightFooterListItem.map((item, ind) => (
-            <ul key={ind}>
-              <Link className={styles.copyRightFooterItem} href={item.url}>
-                <li>{item.item}</li>
-              </Link>
-            </ul>
+          <div>
+            <h1 className={styles.footerTitleText}>Our Services</h1>
+            <div>
+              {ourServices.map((service, ind) => (
+                <ul key={ind} className={styles.footerListItemContainer}>
+                  <GoChevronRight />
+                  <Link className={styles.footerItemList} href={service.url}>
+                    <li>{service.name}</li>
+                  </Link>
+                </ul>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h1 className={styles.footerTitleText}>About Us</h1>
+            <div>
+              {aboutUs.map((about, ind) => (
+                <ul key={ind} className={styles.footerListItemContainer}>
+                  <GoChevronRight />
+                  <Link className={styles.footerItemList} href={about.url}>
+                    <li>{about.name}</li>
+                  </Link>
+                </ul>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.footerContactContainer}>
+          {contactIcons?.map((icon, ind) => (
+            <div className={styles.footerContactTextContainer} key={ind}>
+              <p className={styles.footerContactIcon}>{icon?.icon}</p>
+              <div className={styles.footerContactInfoTextContainer}>
+                <p>{icon?.title}</p>
+                <p>{icon?.subTitle}</p>
+              </div>
+            </div>
           ))}
         </div>
-      </div>
-    </footer>
+
+        <div className={styles.copyRightFooterListItemContainer}>
+          <p>© ecoysoft 2024 | All Rights Reserved</p>
+
+          <div className={styles.copyRightFooterListItem}>
+            {copyRightFooterListItem.map((item, ind) => (
+              <ul key={ind}>
+                <Link className={styles.copyRightFooterItem} href={item.url}>
+                  <li>{item.item}</li>
+                </Link>
+              </ul>
+            ))}
+          </div>
+        </div>
+      </footer> */}
+    </>
   );
 }

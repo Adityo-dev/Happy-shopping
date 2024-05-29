@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import styles from "./navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,12 +20,13 @@ export default function Navbar() {
     { name: "contact", url: "/contact" },
   ];
 
+  const [open, setOpen] = useState(false);
   return (
     <>
       <section className={styles.navBarBtnAllDataContainer}>
         <nav className={styles.navbarContainer}>
-          <div className={styles.togoContainer}>
-            <FiMenu /> <FiX />
+          <div onClick={() => setOpen(!open)} className={styles.togoContainer}>
+            {open ? <FiX /> : <FiMenu />}
           </div>
 
           <div>
@@ -37,7 +41,11 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <ul className={styles.navBavItemsContainer}>
+          <ul
+            className={`${styles.navBavItemsContainer} ${
+              open === true ? styles.navBarResContact : ""
+            }`}
+          >
             {navItems.map((item, ind) => (
               <Link href={item.url} className={styles.navBavItemData} key={ind}>
                 <li>{item.name}</li>
