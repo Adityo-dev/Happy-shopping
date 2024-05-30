@@ -43,8 +43,7 @@ export default function Hero() {
                     alt=""
                   ></Image>
                 </Link>
-
-                <p>Watch Demo </p>
+                <p className={styles.heroPalyBtnText}>Watch Demo </p>
               </div>
             </div>
 
