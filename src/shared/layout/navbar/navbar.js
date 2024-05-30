@@ -48,7 +48,7 @@ export default function Navbar() {
           >
             {navItems.map((item, ind) => (
               <Link href={item.url} className={styles.navBavItemData} key={ind}>
-                <li>{item.name}</li>
+                <li onClick={open == true}>{item.name}</li>
               </Link>
             ))}
           </ul>
