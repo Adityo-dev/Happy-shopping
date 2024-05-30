@@ -45,8 +45,8 @@
 
 .heroComputerImage {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 500px;
+  height: 550px;
   z-index: 100;
 }
 
@@ -59,26 +59,6 @@
   z-index: 0;
   rotate: 20deg;
 }
-
-/* .heroPontsGroupImage2 {
-  width: 150%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 00;
-  rotate: 20deg;
-} */
-
-/* .heroPontsGroupImage3 {
-  width: 200%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 00;
-  rotate: 20deg;
-} */
 
 .ButtonContainer {
   display: flex;
@@ -112,4 +92,284 @@
   right: 0;
   z-index: 0;
   opacity: 0.2;
+}
+
+@media screen and (max-width: 1000px) {
+  .heroComputerImage {
+    width: 90%;
+    height: 100%;
+  }
+
+  .heroContainer {
+    padding: 65px 0;
+    text-align: center;
+  }
+
+  .heroAllDataContainer {
+    width: 90%;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .heroDataTextContainer {
+    margin-left: 0%;
+  }
+
+  .heroSpiderWebImage {
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .hecoFirstTitleText {
+    font-size: 14px;
+  }
+
+  .heroTitleText {
+    font-size: 19.5px;
+    line-height: 40px;
+    margin: 8px 0 20px 0;
+  }
+
+  .heroSubTitleText {
+    display: none;
+  }
+
+  .ButtonContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .heroStartNowBtn {
+    padding: 15px 45px;
+  }
+
+  .heroPalyBtn {
+    display: none;
+  }
+
+  .heroPalyBtnText {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 500px) {
+  .hecoFirstTitleText {
+    font-size: 14px;
+  }
+
+  .heroTitleText {
+    font-size: 25px;
+    line-height: 50px;
+    margin: 10px 0 15px 0;
+  }
+
+  .heroSubTitleText {
+    width: 95%;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+
+  .ButtonContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .heroStartNowBtn {
+    padding: 14px 30px;
+    font-size: 18px;
+  }
+
+  .heroPalyBtn {
+    width: 100%;
+    height: 100%;
+  }
+
+  .heroPalyBtnText {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .heroComputerImage {
+    width: 400px;
+  }
+
+  .hecoFirstTitleText {
+    font-size: 15px;
+  }
+
+  .heroTitleText {
+    font-size: 30px;
+    line-height: 57px;
+    margin: 10px 0 17px 0;
+  }
+
+  .heroSubTitleText {
+    width: 95%;
+    line-height: 25px;
+  }
+
+  .ButtonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .heroStartNowBtn {
+    padding: 15px 40px;
+    font-size: 18px;
+  }
+
+  .heroPalyBtn {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  .heroComputerImage {
+    width: 450px;
+  }
+
+  .heroSpiderWebImage {
+    height: 45vh;
+  }
+
+  .heroComputerImage {
+    width: 450px;
+    height: 100%;
+  }
+
+  .hecoFirstTitleText {
+    font-size: 17px;
+  }
+
+  .heroTitleText {
+    font-size: 42px;
+    line-height: 88px;
+    margin: 10px 0 20px 0;
+  }
+
+  .heroSubTitleText {
+    font-size: 20px;
+    width: 95%;
+    line-height: 32px;
+  }
+
+  .ButtonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1150px) {
+  .heroContainer {
+    padding: 100px 0;
+  }
+
+  .heroAllDataContainer {
+    width: 90%;
+    gap: 30px;
+  }
+
+  .heroDataTextContainer {
+    margin-left: 3%;
+  }
+
+  .heroSpiderWebImage {
+    height: 45vh;
+  }
+
+  .heroComputerImage {
+    width: 400px;
+    height: 100%;
+  }
+
+  .hecoFirstTitleText {
+    font-size: 16px;
+  }
+
+  .heroTitleText {
+    font-size: 30px;
+    line-height: 65px;
+    margin: 10px 0 18px 0;
+  }
+
+  .heroSubTitleText {
+    font-size: 16px;
+    line-height: 28px;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1500px) {
+  .heroContainer {
+    padding: 100px 0;
+  }
+
+  .heroAllDataContainer {
+    width: 90%;
+    gap: 30px;
+  }
+
+  .heroDataTextContainer {
+    margin-left: 5%;
+  }
+
+  .heroSpiderWebImage {
+    height: 45vh;
+  }
+
+  .heroComputerImage {
+    width: 400px;
+    height: 100%;
+  }
+
+  .hecoFirstTitleText {
+    font-size: 16px;
+  }
+
+  .heroTitleText {
+    font-size: 40px;
+    line-height: 65px;
+  }
+
+  .heroSubTitleText {
+    font-size: 17px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 1501px) and (max-width: 1800px) {
+  .heroContainer {
+    padding: 120px 0;
+  }
+
+  .heroAllDataContainer {
+    width: 90%;
+  }
+
+  .heroDataTextContainer {
+    margin-left: 5%;
+  }
+
+  .heroSpiderWebImage {
+    height: 45vh;
+  }
+
+  .heroComputerImage {
+    width: 450px;
+    height: 100%;
+  }
+
+  .hecoFirstTitleText {
+    font-size: 19px;
+  }
+
+  .heroTitleText {
+    font-size: 55px;
+    line-height: 100px;
+  }
 }

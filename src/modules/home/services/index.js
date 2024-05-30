@@ -64,6 +64,7 @@ export default function ServicesHome() {
                 src={service?.image}
                 width={70}
                 height={70}
+                alt=""
               />
               <h3
                 className={`${styles.servicesCardTitleText} ${
@@ -97,7 +98,7 @@ export default function ServicesHome() {
           ))}
         </div>
       </section>
-      <WhoWeAre />
+      {/* <WhoWeAre /> */}
     </>
   );
 }

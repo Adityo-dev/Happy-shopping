@@ -5,13 +5,13 @@
 }
 
 .faqDataContainer {
+  position: relative;
   width: 80%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 120px 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 80px;
+  justify-content: center;
+  gap: 90px;
 }
 
 .faqTitleText {
@@ -21,7 +21,71 @@
   line-height: 58px;
 }
 
-.faqDadImage {
-  width: 574px;
-  height: 562px;
+.faqMenImageContainer {
+  position: relative;
+}
+
+.faqMenImage {
+  width: 580px;
+  height: 600px;
+}
+
+.faqCompoContainer {
+  margin-top: 60px;
+}
+
+.faqFrameImage {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 118px;
+  height: 155px;
+}
+
+.faqFrame2Image {
+  position: absolute;
+  right: 500px;
+  opacity: 0.65;
+  width: 142px;
+  height: 58px;
+}
+
+.faqStart1Image {
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  left: 83px;
+  bottom: 185px;
+}
+
+.faqStart2Image {
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  left: 143px;
+  top: 80px;
+}
+
+.faqStart3Image {
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  top: 385px;
+  right: 760px;
+}
+
+.faqStart4Image {
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  top: 26px;
+  right: 250px;
+}
+
+.faqStart5Image {
+  position: absolute;
+  width: 12px;
+  height: 16px;
+  top: 100px;
+  left: 250px;
 }
