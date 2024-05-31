@@ -46,7 +46,13 @@ export default function OurIntroduction() {
 
         <div className={styles.ourIntroductionMainDataContainer}>
           <div className={styles.ourIntroductionMainDataImageContainer}>
-            <Image src={ourInto} width={400} height={400} />
+            <Image
+              className={styles.ourourIntroductionMainDataImage}
+              src={ourInto}
+              width={400}
+              height={400}
+              alt=""
+            />
 
             <div className={styles.ourIntroductionExpetriseBoxContainer}>
               <p className={styles.ourIntroductionExpetriseBoxTitle}>
@@ -61,6 +67,7 @@ export default function OurIntroduction() {
                   src={line_image}
                   width={8}
                   height={106}
+                  alt=""
                 />
 
                 <div
@@ -89,7 +96,8 @@ export default function OurIntroduction() {
                         src={item.lineLevel}
                         width={100}
                         height={0}
-                      ></Image>
+                        alt=""
+                      />
                     </div>
                   ))}
                 </div>
@@ -107,7 +115,13 @@ export default function OurIntroduction() {
             <div className={styles.ourIntoItemsContainer}>
               {items.map((item, ind) => (
                 <p className={styles.ourIntoItemsList} key={ind}>
-                  <Image src={chevron_double_o_image} width={24} height={24} />
+                  <Image
+                    className={styles.ourIntoItemsListIcon}
+                    src={chevron_double_o_image}
+                    width={24}
+                    height={24}
+                    alt=""
+                  />
                   <span>{item}</span>
                 </p>
               ))}
@@ -120,7 +134,13 @@ export default function OurIntroduction() {
             <div className={styles.ourIntoTPRCardContainer}>
               {teamProjectAndReview.map((tpr, ind) => (
                 <div className={styles.ourIntoTPRCardDataContainer} key={ind}>
-                  <Image src={tpr.image} width={40} height={40}></Image>
+                  <Image
+                    className={styles.ourIntoTPRCardIcon}
+                    src={tpr.image}
+                    width={40}
+                    height={40}
+                    alt=""
+                  />
                   <p className={styles.ourIntoTPRCardDataNumberText}>
                     {tpr.num}
                   </p>

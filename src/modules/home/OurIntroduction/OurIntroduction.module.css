@@ -176,3 +176,317 @@
   color: #1b3447;
   line-height: 28px;
 }
+
+@media screen and (max-width: 800px) {
+  .ourIntroductionDataContainer {
+    width: 90%;
+  }
+
+  .ourIntroductionSubTitleTextContainer {
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .ourIntroductionGetStBtn {
+    padding: 14px 100px;
+    font-size: 17px;
+  }
+
+  .ourIntroductionMainDataTextContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .ourIntroductionSubTitleText {
+    font-size: 16px;
+  }
+
+  .ourIntroductionSubTitleBorderLine {
+    width: 25px;
+    height: 1.5px;
+    margin-top: 11px;
+  }
+
+  .ourIntroductionTitleText {
+    text-align: center;
+    font-size: 30px;
+    line-height: 42px;
+    margin-top: 12px;
+  }
+
+  .ourIntroductionMainDataContainer {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  /* ................. */
+
+  .ourIntroductionMainDataImageContainer {
+    display: none;
+  }
+
+  /* .................. */
+
+  .ourIntroductionMainSubText {
+    font-size: 16px;
+  }
+
+  .ourIntoItemsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .ourIntoItemsList {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .ourIntoItemsListIcon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .ourIntoTPRCardContainer {
+    display: flex;
+    gap: 0px;
+  }
+
+  .ourIntoTPRCardDataContainer {
+    text-align: center;
+  }
+
+  .ourIntoTPRCardDataNumberText {
+    text-align: center;
+    font-size: 21px;
+    line-height: 40px;
+  }
+
+  .ourIntoTPRCardIcon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .ourIntoTPRCardDataCategortText {
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 550px) {
+  .ourIntroductionSubTitleText {
+    font-size: 16px;
+  }
+
+  .ourIntroductionSubTitleBorderLine {
+    width: 25px;
+    height: 1.5px;
+    margin-top: 11px;
+  }
+
+  .ourIntroductionTitleText {
+    text-align: center;
+    font-size: 30px;
+    line-height: 42px;
+    margin-top: 12px;
+  }
+
+  .ourIntroductionMainDataContainer {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  /* ................. */
+
+  .ourIntroductionMainDataImageContainer {
+    display: none;
+  }
+
+  /* .................. */
+
+  .ourIntroductionMainSubText {
+    font-size: 16px;
+  }
+
+  .ourIntoItemsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .ourIntoItemsList {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .ourIntoItemsListIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .ourIntoTPRCardContainer {
+    display: flex;
+    justify-content: space-around;
+    gap: 0px;
+  }
+
+  .ourIntoTPRCardDataNumberText {
+    text-align: center;
+    font-size: 23px;
+    line-height: 40px;
+  }
+
+  .ourIntoTPRCardIcon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .ourIntoTPRCardDataCategortText {
+    text-align: center;
+    font-size: 13.5px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 800px) {
+  .ourIntroductionDataContainer {
+    width: 90%;
+  }
+
+  .ourIntroductionSubTitleTextContainer {
+    justify-content: center;
+  }
+
+  .ourIntroductionSubTitleText {
+    font-size: 18px;
+  }
+
+  .ourIntroductionSubTitleBorderLine {
+    width: 30px;
+    height: 2px;
+  }
+
+  .ourIntroductionTitleText {
+    text-align: center;
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .ourIntroductionMainDataContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ourIntroductionMainDataImageContainer {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ourIntroductionMainDataTextContainer {
+    text-align: center;
+    width: 100%;
+  }
+
+  .ourourIntroductionMainDataImage {
+    width: 300px;
+    height: 290px;
+  }
+
+  .ourIntroductionExpetriseBoxContainer {
+    top: 35px;
+    left: 199px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .ourIntroductionExpetriseBoxTitle {
+    font-size: 16px;
+    padding: 20px 20px 0px 20px;
+    line-height: 26px;
+  }
+
+  .ourIntroductionExpetriseBoxLevelContainer {
+    padding: 0 10px 10px 20px;
+  }
+
+  .ourIntroductionExpetriseBoxLevelItemContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ourIntroductionExpetriseBoxLevelItemText {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+    line-height: 24px;
+  }
+
+  .ourIntroductionExpetriseLevelItemContainer {
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .ourIntroductionExpetriseBoxHLineImage {
+    width: 12px;
+  }
+
+  /* .................. */
+
+  .ourIntroductionMainSubText {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 18px;
+  }
+
+  .ourIntoItemsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    font-size: 17px;
+  }
+
+  .ourIntoItemsList {
+    gap: 10px;
+  }
+
+  .ourIntroductionGetStBtn {
+    padding: 14px 100px;
+    font-size: 17px;
+  }
+
+  .ourIntoItemsListIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ourIntoTPRCardContainer {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .ourIntoTPRCardDataNumberText {
+    font-size: 28px;
+  }
+
+  .ourIntoTPRCardIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ourIntoTPRCardDataCategortText {
+    text-align: center;
+  }
+}

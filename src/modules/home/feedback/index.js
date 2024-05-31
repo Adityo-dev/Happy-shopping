@@ -29,7 +29,7 @@ export default function Feedback() {
 
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 2500,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -38,7 +38,7 @@ export default function Feedback() {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 1400,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -46,7 +46,7 @@ export default function Feedback() {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 900,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -101,11 +101,18 @@ export default function Feedback() {
             {clientsFeedback.map((fb, ind) => (
               <div className={styles.clientsFeedbackCard} key={ind}>
                 <div className={styles.clientsFeedbackCardHeaderLogo}>
-                  <Image src={logo} width={0} height={0} alt="" />
+                  <Image
+                    className={styles.clientsFeedbackLogo}
+                    src={logo}
+                    width={0}
+                    height={0}
+                    alt=""
+                  />
 
                   <div className={styles.clientsFeedbackCardStart}>
                     {fb.starts.map((start, ind) => (
                       <Image
+                        className={styles.clientsFeedbackStartImage}
                         key={ind}
                         src={start}
                         width={0}
@@ -122,6 +129,7 @@ export default function Feedback() {
 
                 <div className={styles.clientsFeedbackCardDataContainer}>
                   <Image
+                    className={styles.clientsFeedbackClientsImage}
                     src={fb.image}
                     width={0}
                     height={0}
