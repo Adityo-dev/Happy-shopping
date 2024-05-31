@@ -115,3 +115,296 @@
   top: -100px;
   right: 85px;
 }
+
+@media screen and (max-width: 500px) {
+  .clientsFeedbackAllDatContainer {
+    width: 90%;
+  }
+
+  .clientsFeedbackHeaderTitleTextContainer {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .clientsFeedbackHeaderTitleText {
+    font-size: 16px;
+  }
+
+  .clientsFeedbackHeaderTitleTextHrLine {
+    width: 25px;
+    height: 2px;
+  }
+
+  .clientsFeedbackCard {
+    padding: 25px 10px;
+  }
+
+  .clientsFeedbackCardTitleText {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .clientsFeedbackTitleText {
+    text-align: center;
+    font-size: 28px;
+    width: 100%;
+    line-height: 42px;
+    margin-top: 10px;
+    margin-bottom: 80px;
+  }
+
+  .clientsFeedbackCardDataContainer {
+    margin-top: 25px;
+  }
+
+  .clientsFeedbackCardHrLine {
+    margin-top: 30px;
+    border-bottom: 1.5px solid #4895ef;
+  }
+
+  .clientsFeedbackCardName {
+    font-size: 17px;
+  }
+
+  .clientsFeedbackCardService {
+    font-size: 13px;
+  }
+
+  .clientsFeedbackLogo {
+    width: 30px;
+    height: 25px;
+  }
+
+  .clientsFeedbackStartImage {
+    width: 20px;
+    height: 20px;
+  }
+
+  .clientsFeedbackClientsImage {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* ...Arrow Container style... */
+  .nextArrowContainer {
+    width: 45px;
+    height: 45px;
+    padding: 12px;
+    top: -50px;
+    right: 30%;
+  }
+
+  .prevArrowContainer {
+    width: 45px;
+    height: 45px;
+    padding: 12px;
+    top: -50px;
+    left: 30%;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 500px) {
+  /* ...Arrow Container style... */
+  .nextArrowContainer {
+    width: 45px;
+    height: 45px;
+    padding: 12px;
+    top: -50px;
+    right: 32%;
+  }
+
+  .prevArrowContainer {
+    width: 45px;
+    height: 45px;
+    padding: 12px;
+    top: -50px;
+    left: 30%;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 900px) {
+  .clientsFeedbackAllDatContainer {
+    width: 90%;
+  }
+
+  .clientsFeedbackHeaderTitleTextContainer {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .clientsFeedbackHeaderTitleText {
+    font-size: 17.5px;
+  }
+
+  .clientsFeedbackHeaderTitleTextHrLine {
+    width: 25px;
+    height: 2px;
+  }
+
+  .clientsFeedbackTitleText {
+    text-align: center;
+    font-size: 35px;
+    width: 100%;
+    line-height: 42px;
+    margin-top: 15px;
+    margin-bottom: 100px;
+  }
+
+  .clientsFeedbackCardDataContainer {
+    margin-top: 25px;
+  }
+
+  .clientsFeedbackCardHrLine {
+    margin-top: 30px;
+  }
+
+  .clientsFeedbackCardName {
+    font-size: 18px;
+  }
+
+  .clientsFeedbackLogo {
+    width: 35px;
+    height: 30px;
+  }
+
+  .clientsFeedbackStartImage {
+    width: 25px;
+    height: 25px;
+  }
+
+  .clientsFeedbackClientsImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* ...Arrow Container style... */
+  .nextArrowContainer {
+    width: 45px;
+    height: 45px;
+    padding: 12px;
+    top: -50px;
+    right: 33%;
+  }
+
+  .prevArrowContainer {
+    width: 45px;
+    height: 45px;
+    padding: 12px;
+    top: -50px;
+    left: 33%;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .clientsFeedbackAllDatContainer {
+    width: 90%;
+  }
+
+  .clientsFeedbackHeaderTitleTextContainer {
+    gap: 10px;
+  }
+
+  .clientsFeedbackHeaderTitleText {
+    font-size: 20px;
+  }
+
+  .clientsFeedbackHeaderTitleTextHrLine {
+    width: 30px;
+    height: 2px;
+  }
+
+  .clientsFeedbackTitleText {
+    font-size: 40px;
+    width: 100%;
+    line-height: 42px;
+    margin-top: 15px;
+    margin-bottom: 100px;
+  }
+
+  .clientsFeedbackCardDataContainer {
+    margin-top: 25px;
+  }
+
+  .clientsFeedbackCardHrLine {
+    margin-top: 30px;
+  }
+
+  .clientsFeedbackCardName {
+    font-size: 19px;
+  }
+
+  .clientsFeedbackLogo {
+    width: 35px;
+    height: 30px;
+  }
+
+  .clientsFeedbackStartImage {
+    width: 22px;
+    height: 22px;
+  }
+
+  .clientsFeedbackClientsImage {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* ...Arrow Container style... */
+  .nextArrowContainer {
+    width: 45px;
+    height: 45px;
+    padding: 12px;
+  }
+
+  .prevArrowContainer {
+    width: 45px;
+    height: 45px;
+    padding: 12px;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+  .clientsFeedbackAllDatContainer {
+    width: 90%;
+  }
+
+  .clientsFeedbackHeaderTitleTextContainer {
+    gap: 12px;
+  }
+
+  .clientsFeedbackHeaderTitleText {
+    font-size: 22px;
+  }
+
+  .clientsFeedbackTitleText {
+    font-size: 42px;
+    width: 100%;
+  }
+
+  .clientsFeedbackLogo {
+    width: 40px;
+    height: 35px;
+  }
+
+  .clientsFeedbackStartImage {
+    width: 25px;
+    height: 25px;
+  }
+
+  .clientsFeedbackClientsImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* ...Arrow Container style... */
+  .nextArrowContainer {
+    width: 45px;
+    height: 45px;
+    padding: 12px;
+  }
+
+  .prevArrowContainer {
+    width: 45px;
+    height: 45px;
+    padding: 12px;
+  }
+}
