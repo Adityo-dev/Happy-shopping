@@ -18,14 +18,14 @@ export default function Home() {
     <>
       {/* <Button /> */}
       <Hero />
-      {/* <AboutHome /> */}
+      <AboutHome />
       <Services />
       <OurIntroduction />
       {/* <CaseStudies /> */}
       <Feedback />
       {/* <ClientCompany /> */}
-      {/* <Pricing /> */}
-      {/* <Contact /> */}
+      <Pricing />
+      <Contact />
       {/* <FAQ /> */}
       {/* <Blog /> */}
     </>
