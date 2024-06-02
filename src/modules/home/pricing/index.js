@@ -16,7 +16,7 @@ export default function Pricing() {
         "Mistakes to avoid",
         "knew about fonts",
         "Your startup",
-        "Winning metric for your startup",
+        "Winning metric for your ",
         "Knew about fonts",
         "Your startup",
       ],
@@ -28,7 +28,7 @@ export default function Pricing() {
         "Mistakes to avoid",
         "knew about fonts",
         "Your startup",
-        "Winning metric for your startup",
+        "Winning metric for your",
         "Knew about fonts",
         "Your startup",
       ],
@@ -40,7 +40,7 @@ export default function Pricing() {
         "Mistakes to avoid",
         "knew about fonts",
         "Your startup",
-        "Winning metric for your startup",
+        "Winning metric for your ",
         "Knew about fonts",
         "Your startup",
       ],
@@ -116,6 +116,7 @@ export default function Pricing() {
         src={Union_icon}
         width={0}
         height={0}
+        alt=""
       />
     </section>
   );

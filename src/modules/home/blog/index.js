@@ -56,9 +56,14 @@ export default function Blog() {
             <Image
               className={styles.newsAndBlogImage1}
               src={newsAndBlogs?.newsAndBlog1?.image}
+              alt=""
             />
 
-            <Image className={styles.newsAndBlogFrameImage1} src={Frame} />
+            <Image
+              className={styles.newsAndBlogFrameImage1}
+              src={Frame}
+              alt=""
+            />
 
             <div className={styles.newsAndBlog1TextContainer}>
               <h3 className={styles.newsAndBlogTitleText}>
@@ -85,9 +90,10 @@ export default function Blog() {
           <Image
             className={styles.newsAndBlogImage2}
             src={newsAndBlogs?.newsAndBlog2?.image}
+            alt=""
           />
 
-          <Image className={styles.newsAndBlogFrameImage2} src={Frame} />
+          <Image className={styles.newsAndBlogFrameImage2} src={Frame} alt="" />
 
           <div className={styles.newsAndBlog2TextContainer}>
             <h3 className={styles.newsAndBlogTitleText}>

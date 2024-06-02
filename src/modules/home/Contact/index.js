@@ -61,6 +61,7 @@ export default function Contact() {
             src={wepik_export}
             width={289}
             height={520}
+            alt=""
           />
 
           <div className={styles.contactFieldContainer}>

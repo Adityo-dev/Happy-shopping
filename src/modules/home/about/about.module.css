@@ -9,6 +9,7 @@
   display: flex;
   gap: 80px;
   justify-content: center;
+  align-items: center;
 }
 
 .aboutHeaderTitleText {
@@ -96,7 +97,7 @@
 }
 
 .aboutFirstImage {
-  width: 299px;
+  width: 100%;
   height: 401px;
   position: relative;
 }
@@ -121,7 +122,7 @@
 
 .aboutSecondImage {
   position: relative;
-  width: 299px;
+  width: 100%;
   height: 418px;
 }
 
@@ -164,53 +165,31 @@
   top: 170px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1100px) {
   .aboutAllDataContainer {
-    margin-top: 120px;
+    margin-top: 100px;
   }
 
   .aboutDataContainer {
     width: 90%;
-    margin: 80px auto;
+    margin: 70px auto;
     flex-direction: column-reverse;
-    gap: 80px;
   }
 
-  .aboutHeaderTitleText {
-    font-size: 35px;
-    line-height: 50px;
+  .aboutTitleText {
+    text-align: center;
   }
 
-  .aboutImageAllDataContainer {
-    position: relative;
-    display: flex;
-    gap: 20px;
+  .aboutSubTitleText {
+    text-align: center;
+  }
+
+  .aboutServicesItem {
+    align-items: center;
   }
 
   .aboutTextDataContainer {
     width: 100%;
-  }
-
-  .aboutTitleText {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .aboutSubTitleText {
-    font-size: 16px;
-    line-height: 28px;
-    margin: 20px 0;
-  }
-
-  .aboutServicesItemContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .aboutServicesItem {
-    gap: 12px;
-    font-size: 10px;
   }
 
   .aboutCEOAllDataContainer {
@@ -234,12 +213,66 @@
   }
 
   .aboutDiscoverMoreBtn {
-    padding: 15px 35px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutSecondImageDesignIcon {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    right: -25px;
+  }
+
+  .aboutSecondImageRectangleTopIcon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .aboutSecondImageDottedFrameIcon {
+    display: none;
+  }
+
+  .aboutServicesItemContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .aboutServicesItem {
+    gap: 12px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .aboutHeaderTitleText {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .aboutImageAllDataContainer {
+    gap: 10px;
+  }
+
+  .aboutTitleText {
+    text-align: center;
     font-size: 18px;
   }
 
+  .aboutSubTitleText {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .aboutServicesItem {
+    align-items: center;
+    gap: 8px;
+    font-size: 10px;
+  }
+
   .aboutFirstImage {
-    width: 155px;
     height: 200px;
   }
   .aboutFirstImageFrame1 {
@@ -250,10 +283,10 @@
   }
 
   .aboutFirstImageFrame2 {
-    width: 50px;
-    height: 50px;
-    top: -25px;
-    right: -25px;
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    right: -20px;
   }
 
   .aboutSecondImageDataContainer {
@@ -261,21 +294,7 @@
   }
 
   .aboutSecondImage {
-    position: relative;
-    width: 155px;
     height: 200px;
-  }
-
-  .aboutSecondImageDesignIcon {
-    width: 70px;
-    height: 70px;
-    top: -35px;
-    right: -35px;
-  }
-
-  .aboutSecondImageRectangleTopIcon {
-    width: 70px;
-    height: 70px;
   }
 
   .aboutSecondImageRectangleLeftIcon {
@@ -283,8 +302,9 @@
     height: 70px;
   }
 
-  .aboutSecondImageDottedFrameIcon {
-    display: none;
+  .aboutSecondImageRectangleTopIcon {
+    width: 70px;
+    height: 70px;
   }
 
   .aboutSecondImagePlayButtonIcon {
@@ -292,5 +312,318 @@
     height: 40px;
     left: 60px;
     top: 90px;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 500px) {
+  .aboutHeaderTitleText {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .aboutImageAllDataContainer {
+    gap: 25px;
+  }
+
+  .aboutTitleText {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .aboutSubTitleText {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .aboutServicesItem {
+    align-items: center;
+    font-size: 11px;
+  }
+
+  .aboutFirstImage {
+    height: 250px;
+  }
+
+  .aboutFirstImageFrame1 {
+    width: 55px;
+    height: 55px;
+    bottom: 0;
+    left: 85px;
+  }
+
+  .aboutFirstImageFrame2 {
+    width: 50px;
+    height: 48px;
+    top: -20px;
+    right: -24px;
+  }
+
+  .aboutSecondImageDataContainer {
+    margin-top: 56px;
+  }
+
+  .aboutSecondImage {
+    height: 250px;
+  }
+
+  .aboutSecondImageRectangleLeftIcon {
+    width: 70px;
+    height: 70px;
+  }
+  .aboutSecondImageRectangleTopIcon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .aboutSecondImagePlayButtonIcon {
+    width: 50px;
+    height: 50px;
+    left: 60px;
+    top: 110px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .aboutHeaderTitleText {
+    font-size: 38px;
+  }
+
+  .aboutTitleText {
+    text-align: center;
+  }
+
+  .aboutSubTitleText {
+    text-align: center;
+    font-size: 17px;
+  }
+
+  .aboutServicesItem {
+    align-items: center;
+    font-size: 11px;
+  }
+
+  .aboutFirstImage {
+    height: 300px;
+  }
+
+  .aboutFirstImageFrame1 {
+    width: 60px;
+    height: 60px;
+    bottom: 8px;
+  }
+
+  .aboutFirstImageFrame2 {
+    width: 55px;
+    height: 55px;
+    top: -27px;
+    right: -26px;
+  }
+
+  .aboutSecondImage {
+    height: 300px;
+  }
+
+  .aboutSecondImageRectangleLeftIcon {
+    width: 75px;
+    height: 75px;
+  }
+  .aboutSecondImageRectangleTopIcon {
+    width: 75px;
+    height: 75px;
+  }
+
+  .aboutSecondImagePlayButtonIcon {
+    width: 60px;
+    height: 60px;
+    left: 70px;
+    top: 140px;
+  }
+
+  .aboutCEOAllDataContainer {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .aboutCEOContainer {
+    flex-direction: row;
+    justify-content: left;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+  .aboutHeaderTitleText {
+    font-size: 42px;
+  }
+
+  .aboutServicesItem {
+    font-size: 16px;
+  }
+
+  .aboutFirstImage {
+    height: 390px;
+  }
+
+  .aboutFirstImageFrame1 {
+    width: 70px;
+    height: 70px;
+    bottom: 0px;
+    left: 110px;
+  }
+
+  .aboutFirstImageFrame2 {
+    width: 65px;
+    height: 65px;
+    top: -33px;
+    right: -32px;
+  }
+
+  .aboutSecondImage {
+    height: 390px;
+  }
+
+  .aboutSecondImageRectangleLeftIcon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .aboutSecondImageRectangleTopIcon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .aboutSecondImagePlayButtonIcon {
+    left: 100px;
+    top: 150px;
+  }
+
+  .aboutCEOAllDataContainer {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .aboutCEOContainer {
+    flex-direction: row;
+    justify-content: left;
+  }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1500px) {
+  .aboutAllDataContainer {
+    margin-top: 100px;
+  }
+
+  .aboutDataContainer {
+    width: 90%;
+    gap: 50px;
+  }
+
+  .aboutHeaderTitleText {
+    font-size: 45px;
+  }
+
+  .aboutImageAllDataContainer {
+    gap: 20px;
+  }
+
+  .aboutTextDataContainer {
+    width: 50%;
+  }
+
+  .aboutTitleText {
+    font-size: 20px;
+  }
+
+  .aboutSubTitleText {
+    font-size: 16px;
+  }
+
+  .aboutServicesItemContainer {
+    gap: 20px;
+  }
+
+  .aboutServicesItem {
+    gap: 10px;
+  }
+
+  .aboutCEOAllDataContainer {
+    margin: 40px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .aboutCEOContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .aboutCEONameText {
+    font-size: 24px;
+  }
+
+  .aboutCEOText {
+    font-size: 18px;
+  }
+
+  .aboutDiscoverMoreBtn {
+    padding: 15px 60px;
+  }
+
+  .aboutFirstImage {
+    width: 100%;
+    height: 320px;
+  }
+
+  .aboutFirstImageFrame1 {
+    width: 70px;
+    height: 70px;
+    bottom: -10px;
+  }
+
+  .aboutFirstImageFrame2 {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    right: -30px;
+  }
+
+  .aboutSecondImageDataContainer {
+    margin-top: 60px;
+  }
+
+  .aboutSecondImage {
+    width: 100%;
+    height: 320px;
+  }
+
+  .aboutSecondImageDesignIcon {
+    width: 90px;
+    height: 90px;
+    top: -45px;
+    right: -44px;
+  }
+
+  .aboutSecondImageRectangleTopIcon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .aboutSecondImageRectangleLeftIcon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .aboutSecondImageDottedFrameIcon {
+    display: none;
+  }
+
+  .aboutSecondImagePlayButtonIcon {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 110px;
+    top: 170px;
   }
 }

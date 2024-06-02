@@ -129,3 +129,277 @@
   bottom: 65px;
   left: 55px;
 }
+
+@media screen and (max-width: 1200px) {
+  .pricingDataContainer {
+    width: 90%;
+  }
+
+  .pricingHeaderTitleTextContainer {
+    text-align: center;
+  }
+
+  .pricingHeaderPricingTextHrLine {
+    width: 25px;
+    height: 2px;
+    margin-top: 10px;
+  }
+
+  .pricingCardTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 5px;
+    margin-top: 30px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .pricingHeaderPricingTextContainer {
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .pricingHeaderPricingText {
+    font-size: 16px;
+  }
+
+  .pricingHeaderTitleText {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .pricingCategory {
+    gap: 10px;
+  }
+
+  .pricingTypeText {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .pricingPriceText {
+    justify-content: center;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .pricingDollarText {
+    font-size: 17px;
+  }
+
+  .pricingMonthText {
+    font-size: 16px;
+    margin: 10px 0 0 2px;
+  }
+
+  .pricingCategoryCheckbox {
+    width: 15px;
+    height: 15px;
+  }
+
+  .pricingCategoryText {
+    font-size: 11px;
+    gap: 0px;
+    line-height: 25px;
+  }
+
+  .pricingCardGetStartBtn {
+    padding: 15px 30px;
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .pricingUnionIcons {
+    opacity: 0.75;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 5px;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 500px) {
+  .pricingHeaderPricingTextContainer {
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .pricingHeaderPricingText {
+    font-size: 18px;
+  }
+
+  .pricingHeaderTitleText {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .pricingTypeText {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .pricingPriceText {
+    justify-content: center;
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .pricingMonthText {
+    margin: 10px 0 0 2px;
+  }
+
+  .pricingCategoryText {
+    font-size: 12px;
+  }
+
+  .pricingCardGetStartBtn {
+    padding: 18px 30px;
+    font-size: 17px;
+    gap: 8px;
+  }
+
+  .pricingUnionIcons {
+    opacity: 0.75;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 5px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  .pricingHeaderPricingTextContainer {
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .pricingHeaderPricingText {
+    font-size: 18px;
+  }
+
+  .pricingHeaderTitleText {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .pricingTypeText {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .pricingPriceText {
+    justify-content: center;
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .pricingMonthText {
+    margin: 10px 0 0 2px;
+  }
+
+  .pricingCategoryText {
+    font-size: 16px;
+  }
+
+  .pricingCardGetStartBtn {
+    padding: 18px 30px;
+    font-size: 17px;
+    gap: 8px;
+  }
+
+  .pricingUnionIcons {
+    opacity: 0.75;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 5px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1200px) {
+  .pricingHeaderPricingText {
+    font-size: 20px;
+  }
+
+  .pricingHeaderTitleText {
+    font-size: 42px;
+    line-height: 45px;
+  }
+
+  .pricingTypeText {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .pricingPriceText {
+    justify-content: center;
+  }
+
+  .pricingMonthText {
+    margin: 10px 0 0 2px;
+  }
+  .pricingCategoryContainer {
+    width: 100%;
+    margin-left: 90px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .pricingUnionIcons {
+    opacity: 0.75;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 5px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .pricingCategoryContainer {
+    width: 100%;
+    margin-left: 200px;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+  .pricingDataContainer {
+    width: 90%;
+  }
+
+  .pricingHeaderPricingTextHrLine {
+    height: 2px;
+    margin-top: 10px;
+  }
+
+  .pricingCardTextContainer {
+    display: flex;
+    padding: 40px 30px;
+    border-radius: 5px;
+  }
+
+  .pricingTypeText {
+    font-size: 20px;
+  }
+
+  .pricingPriceText {
+    justify-content: center;
+  }
+
+  .pricingCategoryContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricingUnionIcons {
+    opacity: 0.75;
+    width: 120px;
+    height: 120px;
+    top: 50px;
+    left: 100px;
+  }
+}

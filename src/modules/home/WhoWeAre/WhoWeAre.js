@@ -20,18 +20,20 @@ export default function WhoWeAre() {
   return (
     <section className={styles.whoWeAreAllDataContainer}>
       <div className={styles.whoWeAreDataContainer}>
-        <div>
+        <div className={styles.whoWeAreImageContainer}>
           <Image
             className={styles.whoWeAreImage}
             src={WhoWeAre_img}
             width={592}
             height={479}
+            alt=""
           />
           <Image
             className={styles.whoWeAreImageVector1}
             src={vector2_img}
             width={100}
             height={100}
+            alt=""
           />
           <div className={styles.whoWeAreImageSuccessContainer}>
             <Image
@@ -39,9 +41,10 @@ export default function WhoWeAre() {
               src={Success_img}
               width={44}
               height={62}
+              alt=""
             />
             <p className={styles.whoWeAreImageSuccessNumText}>200+</p>
-            <p>Awards Winners </p>
+            <p className={styles.whoWeAreImageSuccessText}>Awards Winners </p>
           </div>
         </div>
 
@@ -85,6 +88,7 @@ export default function WhoWeAre() {
           src={vector1_img}
           width={690}
           height={690}
+          alt=""
         />
       </div>
     </section>

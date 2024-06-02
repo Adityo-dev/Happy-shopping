@@ -8,6 +8,10 @@
   gap: 80px;
 }
 
+.whoWeAreImageContainer {
+  position: relative;
+}
+
 .whoWeAreAllDataContainer {
   position: relative;
 }
@@ -124,4 +128,345 @@
   position: absolute;
   top: -32%;
   right: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .whoWeAreDataContainer {
+    width: 90%;
+    margin-top: 100px;
+    flex-direction: column-reverse;
+  }
+
+  .whoWeAreImageVector1 {
+    width: 60px;
+    height: 32px;
+    top: -20px;
+    left: 65%;
+  }
+
+  .whoWeAreImageSuccessContainer {
+    top: 45px;
+    left: 35%;
+  }
+
+  .whoWeAreImageSuccessImg {
+    width: 25px;
+    height: 34px;
+  }
+
+  .whoWeAreImageSuccessNumText {
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  .whoWeAreImageSuccessText {
+    font-size: 11px;
+  }
+
+  .whoWeAreTextDataContainer {
+    width: 100%;
+  }
+
+  .whoWeAreTextContainer {
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .whoWeAreText {
+    font-size: 16px;
+  }
+
+  .whoWeAreHrLine {
+    width: 25px;
+    height: 2px;
+    margin-top: 10px;
+  }
+
+  .whoWeAreTitleText {
+    text-align: center;
+    font-size: 28px;
+    line-height: 42px;
+    margin: 10px 0 30px 0;
+  }
+
+  .whoWeAreSubTitleText {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 17px;
+  }
+
+  .whoWeAreItemsListContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+  }
+
+  .whoWeAreItemsContainer {
+    gap: 5px;
+  }
+
+  .whoWeAreItemsText {
+    font-size: 15px;
+  }
+
+  .whoWeAreReadMoreBtn {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    padding: 14px 0px;
+  }
+
+  .whoWeAreImageVector2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 500px) {
+  .whoWeAreImage {
+    width: 360px;
+    height: 100%;
+  }
+
+  .whoWeAreImageSuccessContainer {
+    top: 52px;
+    left: 34%;
+  }
+
+  .whoWeAreImageSuccessImg {
+    width: 30px;
+    height: 40px;
+  }
+
+  .whoWeAreImageSuccessNumText {
+    font-size: 25px;
+    line-height: 28px;
+  }
+
+  .whoWeAreImageSuccessText {
+    font-size: 14px;
+  }
+
+  .whoWeAreText {
+    font-size: 17px;
+  }
+
+  .whoWeAreTitleText {
+    font-size: 29px;
+  }
+
+  .whoWeAreSubTitleText {
+    font-size: 16px;
+  }
+
+  .whoWeAreItemsContainer {
+    gap: 8px;
+  }
+
+  .whoWeAreItemsText {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .whoWeAreImage {
+    width: 480px;
+    height: 100%;
+  }
+
+  .whoWeAreImageVector1 {
+    width: 75px;
+    height: 40px;
+    top: -20px;
+    left: 65%;
+  }
+
+  .whoWeAreImageSuccessContainer {
+    top: 80px;
+    left: 36%;
+  }
+
+  .whoWeAreImageSuccessImg {
+    width: 45px;
+    height: 56px;
+  }
+
+  .whoWeAreImageSuccessNumText {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .whoWeAreImageSuccessText {
+    font-size: 16px;
+  }
+
+  .whoWeAreText {
+    font-size: 20px;
+  }
+
+  .whoWeAreHrLine {
+    width: 30px;
+    height: 2px;
+    margin-top: 10px;
+  }
+
+  .whoWeAreTitleText {
+    text-align: center;
+    font-size: 35px;
+    line-height: 42px;
+    margin: 10px 0 30px 0;
+  }
+
+  .whoWeAreSubTitleText {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 17px;
+  }
+
+  .whoWeAreReadMoreBtn {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .whoWeAreItemsText {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+  .whoWeAreImage {
+    width: 550px;
+    height: 100%;
+  }
+
+  .whoWeAreImageVector1 {
+    width: 80px;
+    height: 40px;
+    top: -20px;
+    left: 65%;
+  }
+
+  .whoWeAreImageSuccessContainer {
+    top: 85px;
+    left: 35%;
+  }
+
+  .whoWeAreImageSuccessImg {
+    width: 52px;
+    height: 70px;
+  }
+
+  .whoWeAreImageSuccessNumText {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .whoWeAreImageSuccessText {
+    font-size: 19px;
+  }
+
+  .whoWeAreText {
+    font-size: 20px;
+  }
+
+  .whoWeAreHrLine {
+    width: 30px;
+    height: 2px;
+    margin-top: 10px;
+  }
+
+  .whoWeAreTitleText {
+    font-size: 42px;
+  }
+
+  .whoWeAreSubTitleText {
+    font-size: 18px;
+  }
+
+  .whoWeAreReadMoreBtn {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .whoWeAreItemsText {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1500px) {
+  .whoWeAreDataContainer {
+    width: 90%;
+    gap: 50px;
+  }
+
+  .whoWeAreImage {
+    width: 500px;
+    height: 100%;
+  }
+
+  .whoWeAreImageVector1 {
+    width: 80px;
+    height: 40px;
+    top: -25px;
+    left: 320px;
+  }
+
+  .whoWeAreImageSuccessContainer {
+    top: 80px;
+    left: 175px;
+  }
+
+  .whoWeAreImageSuccessImg {
+    width: 38px;
+    height: 55px;
+  }
+
+  .whoWeAreImageSuccessNumText {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .whoWeAreImageSuccessText {
+    font-size: 18px;
+  }
+
+  .whoWeAreTextDataContainer {
+    width: 50%;
+  }
+
+  .whoWeAreHrLine {
+    height: 2px;
+  }
+
+  .whoWeAreText {
+    font-size: 20px;
+  }
+
+  .whoWeAreTitleText {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .whoWeAreSubTitleText {
+    margin-top: 18px;
+  }
+
+  .whoWeAreItemsText {
+    font-size: 17px;
+  }
+
+  .whoWeAreReadMoreBtn {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #4895ef;
+    padding: 16px 42px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .whoWeAreImageVector2 {
+    display: none;
+  }
 }
