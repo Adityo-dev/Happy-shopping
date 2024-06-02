@@ -143,3 +143,136 @@
   color: #fff;
   text-decoration: none;
 }
+
+@media screen and (max-width: 379px) {
+  .newsAndBlogContainer {
+    width: 90%;
+    flex-direction: column;
+    padding-top: 100px;
+  }
+
+  .newsAndBlogOurLatestNewsContainer {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+  }
+
+  .newsAndBlogTextContainer {
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+  .newsAndBlogHrLine {
+    width: 32px;
+    height: 2px;
+  }
+
+  .newsAndBlogText {
+    font-size: 16px;
+  }
+
+  .newsAndBlogOurLatestNewsText {
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  .newsAndBlogHeaderSubTitle {
+    text-align: center;
+    line-height: 22px;
+    margin: 20px 0;
+  }
+
+  .newsAndBlogLeftDataContainer {
+    width: 100%;
+    height: 373px;
+  }
+
+  .newsAndBlogFirstContainer {
+    position: absolute;
+    background-color: #1b3447;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-radius: 5px;
+  }
+
+  .newsAndBlogFrameImage1 {
+    position: absolute;
+    top: 90px;
+    right: 0;
+  }
+
+  .newsAndBlogSecondContainer {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #1b3447;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  .newsAndBlogFrameImage2 {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+  }
+
+  .newsAndBlogImage1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+  }
+  .newsAndBlogImage2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .newsAndBlog1TextContainer {
+    width: 50%;
+  }
+
+  .newsAndBlog2TextContainer {
+    padding: 30px;
+  }
+
+  .newsAndBlogTitleText {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  .newsAndBlogDateText {
+    font-size: 18px;
+    margin: 25px 0;
+  }
+
+  .newsAndBlogSubTitleText {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .newsAndBlogReadMoreBtn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4895ef;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 40px;
+    transition: all 0.3s;
+  }
+  .newsAndBlogReadMoreBtn:hover {
+    margin-left: 10px;
+  }
+
+  .newsAndBlogViewAllBtn {
+    font-size: 16px;
+    padding: 12px 90px;
+  }
+}
