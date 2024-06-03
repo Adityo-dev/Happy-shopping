@@ -2,6 +2,7 @@
   background-color: #f1f5f9;
   position: relative;
   margin-top: 120px;
+  overflow: hidden;
 }
 
 .faqDataContainer {
@@ -88,4 +89,207 @@
   height: 16px;
   top: 100px;
   left: 250px;
+}
+
+.FaqTypographyTitle {
+  padding: 1.5px;
+  color: #1b3447;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.FaqTypographySubTitle {
+  color: #797e88;
+  font-size: 14px;
+  line-height: 24px;
+  width: 70%;
+}
+
+@media screen and (max-width: 1100px) {
+  .faqAllDataContainer {
+    margin-top: 100px;
+  }
+
+  .faqDataContainer {
+    width: 90%;
+    padding: 100px 0;
+    flex-direction: column;
+  }
+
+  .faqBrTitleText {
+    display: none;
+  }
+
+  .faqTitleText {
+    text-align: center;
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .faqMenImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .faqFrameImage {
+    left: -10px;
+    width: 100px;
+    height: 120px;
+  }
+
+  .faqFrame2Image {
+    left: 5px;
+    top: -30px;
+    width: 150px;
+    height: 30px;
+  }
+
+  .faqStart1Image {
+    display: none;
+  }
+
+  .faqStart2Image {
+    display: none;
+  }
+
+  .faqStart3Image {
+    display: none;
+  }
+
+  .faqStart4Image {
+    top: 50px;
+    left: 100px;
+  }
+
+  .faqStart5Image {
+    top: 90px;
+  }
+
+  .FaqTypographyTitle {
+    padding: 0px;
+    font-size: 16px;
+  }
+
+  .FaqTypographySubTitle {
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 500px) {
+  .faqTitleText {
+    font-size: 35px;
+  }
+
+  .faqFrame2Image {
+    height: 40px;
+  }
+
+  .faqStart5Image {
+    top: 85px;
+  }
+
+  .FaqTypographyTitle {
+    padding: 10px 5px;
+  }
+
+  .FaqTypographySubTitle {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .faqTitleText {
+    font-size: 38px;
+  }
+
+  .faqMenImage {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .faqFrame2Image {
+    top: 20px;
+    height: 50px;
+  }
+
+  .faqStart5Image {
+    top: 90px;
+  }
+
+  .FaqTypographyTitle {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .FaqTypographySubTitle {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+  .faqTitleText {
+    font-size: 38px;
+  }
+
+  .faqMenImage {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .faqFrame2Image {
+    top: 20px;
+    height: 50px;
+  }
+
+  .faqStart5Image {
+    top: 90px;
+  }
+
+  .FaqTypographyTitle {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .FaqTypographySubTitle {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1550px) {
+  .faqAllDataContainer {
+    margin-top: 100px;
+  }
+
+  .faqDataContainer {
+    width: 90%;
+    gap: 50px;
+  }
+
+  .faqTitleText {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  .faqMenImage {
+    width: 480px;
+    height: 500px;
+  }
+
+  .faqFrameImage {
+    width: 100px;
+    height: 120px;
+  }
+
+  .faqStart1Image {
+    display: none;
+  }
+
+  .faqStart3Image {
+    display: none;
+  }
 }

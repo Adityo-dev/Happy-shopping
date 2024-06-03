@@ -13,7 +13,8 @@ export default function FAQ() {
         <div className={styles.faqDataContainer}>
           <div>
             <h1 className={styles.faqTitleText}>
-              Frequently <br /> Asked Questions
+              Frequently <br className={styles.faqBrTitleText} /> Asked
+              Questions
             </h1>
 
             <div className={styles.faqCompoContainer}>
