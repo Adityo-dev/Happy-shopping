@@ -69,7 +69,7 @@ export default function Footer() {
   ];
   return (
     <>
-      {/* <footer className={styles.footerAllDataContainer}>
+      <footer className={styles.footerAllDataContainer}>
         <div className={styles.footerTextDataContainer}>
           <div>
             <h1 className={styles.footerTitleText}>About Company</h1>
@@ -81,7 +81,7 @@ export default function Footer() {
               alt=""
             />
 
-            <p>
+            <p className={styles.footerSubTitleText}>
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
               injected humour, or randomised
@@ -168,7 +168,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
-      </footer> */}
+      </footer>
     </>
   );
 }
