@@ -8,6 +8,7 @@
   color: #fff;
   margin-top: 100px;
   position: relative;
+  overflow: hidden;
 }
 
 .footerTextDataContainer {
@@ -235,11 +236,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .footerAllDataContainer {
-    width: 105.5%;
   }
 }
 

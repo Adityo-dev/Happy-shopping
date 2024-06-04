@@ -1,4 +1,6 @@
 "use client";
+import styles from "./faq.module.css";
+
 import * as React from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -52,26 +54,12 @@ export default function ControlledAccordions() {
             style={{ marginTop: "13px" }}
             expandIcon={<ExpandMoreIcon />}
           >
-            <Typography
-              style={{
-                padding: "1.5px",
-                color: "#1B3447",
-                fontSize: "18px",
-                fontWeight: "700",
-              }}
-            >
+            <Typography className={styles.FaqTypographyTitle}>
               {faq.title}
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography
-              style={{
-                color: "#797E88",
-                fontSize: "14px",
-                lineHeight: "24px",
-                width: "70%",
-              }}
-            >
+            <Typography className={styles.FaqTypographySubTitle}>
               {faq.subTitle}
             </Typography>
           </AccordionDetails>

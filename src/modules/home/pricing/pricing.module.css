@@ -1,6 +1,7 @@
 .pricingAllDataContainer {
   position: relative;
   padding: 120px 0;
+  overflow: hidden;
 }
 
 .pricingDataContainer {

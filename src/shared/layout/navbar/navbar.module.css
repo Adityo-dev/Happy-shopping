@@ -5,6 +5,7 @@
   width: 100%;
   z-index: 10000;
   position: relative;
+  overflow: hidden;
 }
 
 .navbarContainer {

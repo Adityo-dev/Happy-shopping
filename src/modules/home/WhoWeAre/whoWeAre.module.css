@@ -6,6 +6,8 @@
   display: flex;
   align-items: center;
   gap: 80px;
+  padding: 50px 0;
+  overflow: hidden;
 }
 
 .whoWeAreImageContainer {
