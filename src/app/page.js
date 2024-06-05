@@ -27,9 +27,9 @@ export default function Home() {
       <Feedback />
       {/* <ClientCompany /> */}
       <Pricing />
-      {/* <Contact /> */}
+      <Contact />
       <FAQ />
-      {/* <Blog /> */}
+      <Blog />
     </>
   );
 }
