@@ -1,10 +1,5 @@
-import Link from "next/link";
 import styles from "./notFound.module.css";
-import Image from "next/image";
-// IMPORT IMAGE
-import men_img from "../assets/image/ErrorPage/men.png";
-import shado_img from "../assets/image/ErrorPage/shado.png";
-import NotFound404_img from "../assets/image/ErrorPage/404.svg";
+
 // IMPORT REACT ICONS
 import { GoTriangleRight } from "react-icons/go";
 

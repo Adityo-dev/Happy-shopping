@@ -1,16 +1,20 @@
-import AboutHero from "@/modules/about/hero";
+import AboutHome from "@/modules/home/about";
 import styles from "./about.module.css";
-import AboutExpertise from "@/modules/about/expertise";
-import AboutVideo from "@/modules/about/video";
-import SuccessCompany from "@/modules/about/successCompany";
+import TeamMembers from "@/modules/about/teamMembers";
+import Blog from "@/modules/home/blog";
+// import WhyClientsLoveUs from "@/modules/about/whyClient’sLoveUs";
+import BrandPotential from "@/modules/about/brandPotential";
+import Feedback from "@/modules/home/feedback";
 
 export default function About() {
   return (
     <>
-      <AboutHero />
-      <AboutExpertise />
-      <AboutVideo />
-      <SuccessCompany />
+      <AboutHome />
+      <TeamMembers />
+      {/* <WhyClientsLoveUs /> */}
+      <Feedback />
+      <BrandPotential />
+      {/* <Blog /> */}
     </>
   );
 }
