@@ -14,6 +14,7 @@ import ui_ux_logo from "../../../assets/logo/Services/ui-ux.png";
 import graphic_designer_logo from "../../../assets/logo/Services/graphic-designer.png";
 import product_designer_logo from "../../../assets/logo/Services/product-design.png";
 import branding_designer_logo from "../../../assets/logo/Services/Branding-design.png";
+import Union_logo from "../../../assets/logo/Services/Union.png";
 
 export default function ServicesCategory() {
   const servicesCategory = [
@@ -101,6 +102,12 @@ export default function ServicesCategory() {
               <Image
                 className={styles.servicesCategoryLogo}
                 src={service.image}
+                alt=""
+              />
+
+              <Image
+                className={styles.servicesCategoryUnionLogo}
+                src={Union_logo}
                 alt=""
               />
               <h4 className={styles.servicesCategoryNumber}>

@@ -19,6 +19,7 @@
   line-height: 26px;
   text-align: center;
   padding: 30px 0 60px 0;
+  z-index: 100;
 }
 
 .servicesCategoryCardContainer {
@@ -28,10 +29,18 @@
 }
 
 .servicesCategoryCardDataContainer {
+  position: relative;
   background: #fff;
   box-shadow: 0px 10px 40px 0px rgba(52, 55, 170, 0.1);
   padding: 40px;
   border-radius: 5px;
+}
+
+.servicesCategoryUnionLogo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .servicesCategoryImageAndNumContainer {
