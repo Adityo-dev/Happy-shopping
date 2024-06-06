@@ -1,0 +1,200 @@
+.servicesCategoryAllDataContainer {
+  position: relative;
+  z-index: 100;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+
+.servicesCategoryHeaderTitle {
+  color: #1b3447;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: center;
+}
+
+.servicesCategoryHeaderSubTitle {
+  color: #4f5663;
+  line-height: 26px;
+  text-align: center;
+  padding: 30px 0 60px 0;
+}
+
+.servicesCategoryCardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.servicesCategoryCardDataContainer {
+  background: #fff;
+  box-shadow: 0px 10px 40px 0px rgba(52, 55, 170, 0.1);
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.servicesCategoryImageAndNumContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.servicesCategoryLogo {
+  width: 65px;
+  height: 65px;
+}
+
+.servicesCategoryNumber {
+  font-size: 80px;
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+}
+
+.servicesCategoryName {
+  color: #1b3447;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  margin-top: 30px;
+}
+
+.servicesCategoryTitle {
+  color: #808285;
+  line-height: 26px;
+  padding: 20px 0 30px 0;
+}
+
+.servicesCategoryBtn {
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #1b3447;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 1200px) {
+  .servicesCategoryAllDataContainer {
+    width: 90%;
+    padding-top: 100px;
+  }
+
+  .servicesCategoryHeaderTitle {
+    font-size: 28px;
+  }
+
+  .servicesCategoryHeaderSubTitle {
+    padding: 15px 0 50px 0;
+  }
+
+  .servicesCategoryCardContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .servicesCategoryCardDataContainer {
+    padding: 30px;
+  }
+
+  .servicesCategoryLogo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .servicesCategoryNumber {
+    font-size: 50px;
+  }
+
+  .servicesCategoryName {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .servicesCategoryTitle {
+    padding: 15px 0 25px 0;
+  }
+
+  .servicesCategoryBtn {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 750px) {
+  .servicesCategoryHeaderTitle {
+    font-size: 35px;
+  }
+
+  .servicesCategoryHeaderSubTitle {
+    padding: 20px 0 60px 0;
+  }
+
+  .servicesCategoryCardDataContainer {
+    padding: 35px;
+  }
+
+  .servicesCategoryLogo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .servicesCategoryNumber {
+    font-size: 65px;
+  }
+
+  .servicesCategoryName {
+    font-size: 24px;
+  }
+
+  .servicesCategoryBtn {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1200px) {
+  .servicesCategoryHeaderTitle {
+    font-size: 45px;
+  }
+
+  .servicesCategoryHeaderSubTitle {
+    padding: 30px 0 60px 0;
+  }
+
+  .servicesCategoryCardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .servicesCategoryCardDataContainer {
+    padding: 30px;
+  }
+
+  .servicesCategoryLogo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .servicesCategoryNumber {
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1550px) {
+  .servicesCategoryAllDataContainer {
+    width: 90%;
+    padding-top: 100px;
+  }
+
+  .servicesCategoryCardDataContainer {
+    padding: 35px;
+  }
+
+  .servicesCategoryLogo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .servicesCategoryNumber {
+    font-size: 60px;
+  }
+}
