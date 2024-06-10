@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./blogs.module.css";
 import blog1 from "@/assets/image/Blog/Blog-image1.png";
 import blog2 from "@/assets/image/Blog/Blog-image2.png";
@@ -74,8 +75,12 @@ export default function Blogs() {
         {blogsData.map((blog) => {
           return (
             <div key={blog.id} className={styles.blogCard}>
-              <div>
-                <Image src={blog.blogImage} className={styles.blogImage} />
+              <div className={styles.blogCardImageContainer}>
+                <Image
+                  src={blog.blogImage}
+                  className={styles.blogImage}
+                  alt=""
+                />
               </div>
               <div className={styles.blogContent}>
                 <div className={styles.createdDetails}>
@@ -92,10 +97,10 @@ export default function Blogs() {
                 </div>
                 <h1 className={styles.blogTitle}>{blog.blogTitle}</h1>
                 <p className={styles.blogDescription}>{blog.blogDescription}</p>
-                <button className={styles.blogBtn}>
+                <Link href={"/"} className={styles.blogBtn}>
                   <span>Read more &nbsp;</span>
                   <FaArrowRight className={styles.rightArrowIcon} />
-                </button>
+                </Link>
               </div>
             </div>
           );

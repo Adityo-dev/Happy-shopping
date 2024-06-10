@@ -80,11 +80,24 @@ export default function AboutHome() {
             onChange={handleChange}
             aria-label="basic tabs example"
           >
-            <Tab label="01 About Company" {...a11yProps(0)} />
-            <Tab label="02 Our Story" {...a11yProps(1)} />
-            <Tab label="03 Years of Experience" {...a11yProps(2)} />
+            <Tab
+              className={styles.aboutTab}
+              label="01 About Company"
+              {...a11yProps(0)}
+            />
+            <Tab
+              className={styles.aboutTab}
+              label="02 Our Story"
+              {...a11yProps(1)}
+            />
+            <Tab
+              className={styles.aboutTab}
+              label="03 Years of Experience"
+              {...a11yProps(2)}
+            />
           </Tabs>
         </Box>
+
         <CustomTabPanel value={value} index={0}>
           <div className={styles.aboutDataContainer}>
             <div className={styles.aboutTextDataContainer}>
