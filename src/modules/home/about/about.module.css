@@ -12,6 +12,10 @@
   align-items: flex-start;
 }
 
+.aboutTab {
+  font-size: 10px;
+}
+
 .aboutDataContainer {
   width: 100%;
   margin: 20px auto;
