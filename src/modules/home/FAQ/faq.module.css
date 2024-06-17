@@ -1,7 +1,7 @@
 .faqAllDataContainer {
   background-color: #f1f5f9;
   position: relative;
-  margin-top: 120px;
+  margin-top: var(--section-top);
   overflow: hidden;
 }
 
@@ -12,13 +12,13 @@
   padding: 120px 0;
   display: flex;
   justify-content: center;
-  gap: 90px;
+  gap: var(--gap-9);
 }
 
 .faqTitleText {
-  font-size: 48px;
+  font-size: var(--font-5xl);
   font-weight: 700;
-  color: #1b3447;
+  color: var(--primary);
   line-height: 58px;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .faqCompoContainer {
-  margin-top: 60px;
+  margin-top: var(--margin-6);
 }
 
 .faqFrameImage {
@@ -93,14 +93,14 @@
 
 .FaqTypographyTitle {
   padding: 1.5px;
-  color: #1b3447;
+  color: var(--primary);
   font-size: 18px;
   font-weight: 700;
 }
 
 .FaqTypographySubTitle {
   color: #797e88;
-  font-size: 14px;
+  font-size: var(--font-sm);
   line-height: 24px;
   width: 70%;
 }

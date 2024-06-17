@@ -5,8 +5,8 @@
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
-  color: #fff;
-  margin-top: 100px;
+  color: var(--white);
+  margin-top: var(--section-top);
   position: relative;
   overflow: hidden;
 }
@@ -19,8 +19,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  gap: 100px;
-  margin-bottom: 100px;
+  gap: var(--gap-9);
+  margin-bottom: var(--gap-8);
   position: relative;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .footerTitleText {
-  font-size: 24px;
+  font-size: var(--font-2xl);
   font-weight: 600;
   line-height: 34px;
   color: #fff;
@@ -41,7 +41,7 @@
 .footerListItemContainer {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--gap-1);
   margin-top: 20px;
   list-style: none;
 }

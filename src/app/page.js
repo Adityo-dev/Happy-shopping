@@ -19,17 +19,16 @@ export default function Home() {
     <>
       {/* <Button /> */}
       <Hero />
-      <AboutHome />
-      <Services />
-      <WhoWeAre />
-      <OurIntroduction />
+      {/* <AboutHome /> */}
+      {/* <WhoWeAre /> */}
+      {/* <OurIntroduction /> */}
       {/* <CaseStudies /> */}
-      <Feedback />
+      {/* <Feedback /> */}
       {/* <ClientCompany /> */}
-      <Pricing />
-      <Contact />
-      <FAQ />
-      <Blog />
+      {/* <Pricing /> */}
+      {/* <Contact /> */}
+      {/* <FAQ /> */}
+      {/* <Blog /> */}
     </>
   );
 }

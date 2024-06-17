@@ -1,6 +1,6 @@
 .pricingAllDataContainer {
   position: relative;
-  padding: 120px 0;
+  padding: var(--section-top) 0;
   overflow: hidden;
 }
 
@@ -17,50 +17,50 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 13px;
-  margin-bottom: 25px;
+  gap: var(--gap-1);
+  margin-bottom: var(--margin-2);
 }
 
 .pricingHeaderPricingText {
-  color: #4895ef;
-  font-size: 24px;
+  color: var(--secondary);
+  font-size: var(--font-2xl);
   font-weight: 600;
 }
 
 .pricingHeaderPricingTextHrLine {
-  background-color: #4895ef;
+  background-color: var(--secondary);
   width: 35px;
   height: 3px;
 }
 
 .pricingHeaderTitleText {
-  font-size: 48px;
+  font-size: var(--font-5xl);
   font-weight: 700;
-  color: #1b3447;
+  color: var(--primary);
   line-height: 58px;
-  margin-bottom: 60px;
+  margin-bottom: var(--margin-6);
 }
 
 .pricingCardTextContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
-  background-color: #fff;
+  gap: var(--gap-3);
+  background-color: var(--white);
   border: 1px solid #e1e1e1;
-  padding: 40px 45px;
-  margin-top: 30px;
+  padding: var(--padding-4) var(--padding-5);
+  margin-top: var(--margin-3);
 }
 
 .pricingCardTextHighLightContainer {
-  background-color: #4895ef;
-  color: #fff;
+  background-color: var(--secondary);
+  color: var(--white);
 }
 
 .pricingCategoryContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  gap: var(--gap-2);
 }
 
 .pricingCategory {
@@ -70,50 +70,50 @@
 }
 
 .pricingTypeText {
-  font-size: 24px;
+  font-size: var(--font-2xl);
   font-weight: 600;
-  color: #1b3447;
+  color: var(--primary);
 }
 
 .pricingPriceText {
   display: flex;
   align-items: center;
   gap: 3px;
-  font-size: 48px;
+  font-size: var(--font-5xl);
   font-weight: 700;
   line-height: 58px;
-  color: #4895ef;
+  color: var(--secondary);
 }
 
 .pricingDollarText {
-  font-size: 24px;
+  font-size: var(--font-2xl);
   font-weight: 600;
   margin-bottom: 7px;
 }
 
 .pricingMonthText {
-  font-size: 18px;
+  font-size: var(--font-lg);
   margin: 13px 0 0 5px;
 }
 
 .pricingCategoryCheckbox {
-  color: #1b3447;
+  color: var(--primary);
 }
 
 .pricingHighLight {
-  color: #fff;
+  color: var(--white);
 }
 
 .pricingCategoryText {
-  font-size: 18px;
+  font-size: var(--font-lg);
   line-height: 28px;
 }
 
 .pricingCardGetStartBtn {
   padding: 20px 30px;
-  background-color: #fff;
-  font-size: 18px;
-  color: #1b3447;
+  background-color: var(--white);
+  font-size: var(--font-lg);
+  color: var(--primary);
   cursor: pointer;
   display: flex;
   align-items: center;

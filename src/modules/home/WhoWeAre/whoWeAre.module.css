@@ -2,12 +2,10 @@
   width: 80%;
   margin: 0 auto;
   position: relative;
-  margin-top: 150px;
+  margin-top: var(--section-top);
   display: flex;
   align-items: center;
-  gap: 80px;
-  padding: 50px 0;
-  overflow: hidden;
+  gap: var(--gap-8);
 }
 
 .whoWeAreImageContainer {
@@ -37,7 +35,7 @@
   position: absolute;
   top: 115px;
   left: 225px;
-  color: #fff;
+  color: var(--white);
 }
 
 .whoWeAreImageSuccessImg {
@@ -59,11 +57,11 @@
 .whoWeAreTextContainer {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: var(--gap-1);
 }
 
 .whoWeAreHrLine {
-  background-color: #4895ef;
+  background-color: var(--secondary);
   width: 35px;
   height: 3px;
   margin-top: 15px;
@@ -71,56 +69,56 @@
 
 .whoWeAreText {
   text-transform: capitalize;
-  font-size: 24px;
+  font-size: var(--font-2xl);
   font-weight: 600;
-  color: #4895ef;
+  color: var(--secondary);
 }
 
 .whoWeAreTitleText {
-  font-size: 48px;
+  font-size: var(--font-5xl);
   font-weight: 700;
-  color: #1b3447;
+  color: var(--primary);
   line-height: 58px;
-  margin: 20px 0 30px 0;
+  margin: var(--margin-2) 0 var(--margin-3) 0;
 }
 
 .whoWeAreSubTitleText {
   color: #797e88;
   line-height: 26px;
-  margin-top: 20px;
+  margin-top: var(--margin-1);
 }
 
 .whoWeAreItemsListContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 45px;
+  margin-bottom: var(--margin-4);
 }
 
 .whoWeAreItemsContainer {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 15px;
+  gap: var(--gap-1);
+  margin-top: var(--gap-2);
 }
 
 .whoWeAreItemsCheckIcon {
-  color: #4895ef;
+  color: var(--secondary);
 }
 
 .whoWeAreItemsText {
-  color: #1b3447;
-  font-size: 18px;
+  color: var(--primary);
+  font-size: var(--font-lg);
   font-weight: 500;
   text-transform: capitalize;
 }
 
 .whoWeAreReadMoreBtn {
-  font-size: 18px;
+  font-size: var(--font-lg);
   font-weight: 500;
-  background-color: #4895ef;
+  background-color: var(--secondary);
   padding: 16px 42px;
   border-radius: 5px;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -461,10 +459,10 @@
   .whoWeAreReadMoreBtn {
     font-size: 18px;
     font-weight: 500;
-    background-color: #4895ef;
+    background-color: var(--secondary);
     padding: 16px 42px;
     border-radius: 5px;
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
   }
 

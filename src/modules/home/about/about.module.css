@@ -1,42 +1,30 @@
 .aboutAllDataContainer {
   width: 80%;
   margin: 0 auto;
-  margin-top: 120px;
-  overflow: hidden;
-}
-
-.aboutHomeTabsBox {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.aboutTab {
-  font-size: 10px;
+  margin-top: var(--section-top);
 }
 
 .aboutDataContainer {
   width: 100%;
-  margin: 20px auto;
+  margin: var(--margin-8) auto;
   display: flex;
-  gap: 80px;
+  gap: var(--gap-8);
   justify-content: center;
   align-items: center;
 }
 
 .aboutHeaderTitleText {
-  font-size: 48px;
+  font-size: var(--font-5xl);
   font-weight: 700;
   line-height: 58px;
-  color: #1b3447;
+  color: var(--primary);
   text-align: center;
 }
 
 .aboutImageAllDataContainer {
   position: relative;
   display: flex;
-  gap: 30px;
+  gap: var(--gap-3);
 }
 
 .aboutTextDataContainer {
@@ -44,35 +32,35 @@
 }
 
 .aboutTitleText {
-  font-size: 24px;
-  color: #1b3447;
+  font-size: var(--font-2xl);
+  color: var(--primary);
   font-weight: 600;
   line-height: 34px;
 }
 
 .aboutSubTitleText {
-  font-size: 18px;
-  color: #1b3447;
+  font-size: var(--font-lg);
+  color: var(--primary);
   line-height: 28px;
-  margin: 40px 0;
+  margin: var(--margin-3) 0;
 }
 
 .aboutServicesItemContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: var(--gap-3);
 }
 
 .aboutServicesItem {
   display: flex;
   align-content: center;
-  gap: 15px;
-  font-size: 14px;
-  color: #1b3447;
+  gap: var(--gap-1);
+  font-size: var(--font-sm);
+  color: var(--primary);
 }
 
 .aboutCEOAllDataContainer {
-  margin: 40px 0 50px 0;
+  margin: var(--margin-4) 0 var(--margin-5) 0;
   display: flex;
   gap: 30%;
   align-items: center;
@@ -81,28 +69,28 @@
 .aboutCEOContainer {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: var(--gap-2);
 }
 
 .aboutCEONameText {
-  font-size: 24px;
+  font-size: var(--font-2xl);
   font-weight: 600;
   color: #191919;
 }
 
 .aboutCEOText {
-  font-size: 18px;
+  font-size: var(--font-lg);
   color: #808285;
-  margin-top: 10px;
+  margin-top: var(--margin-1);
 }
 
 .aboutDiscoverMoreBtn {
   padding: 17px 40px;
-  background-color: #4895ef;
+  background-color: var(--secondary);
   border-radius: 5px;
   text-decoration: none;
-  font-size: 18px;
-  color: #fff;
+  font-size: var(--font-lg);
+  color: var(--white);
 }
 
 .aboutFirstImageDataContainer {
@@ -184,7 +172,7 @@
   }
 
   .aboutDataContainer {
-    width: 90%;
+    width: 100%;
     margin: 70px auto;
     flex-direction: column-reverse;
   }
@@ -261,8 +249,8 @@
 
 @media screen and (max-width: 379px) {
   .aboutHeaderTitleText {
-    font-size: 28px;
-    line-height: 42px;
+    font-size: 20px;
+    line-height: 35px;
   }
 
   .aboutImageAllDataContainer {
@@ -271,7 +259,8 @@
 
   .aboutTitleText {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 30px;
   }
 
   .aboutSubTitleText {

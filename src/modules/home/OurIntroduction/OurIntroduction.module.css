@@ -1,5 +1,5 @@
 .ourIntroductionAllDataContainer {
-  padding: 120px 0;
+  margin-top: var(--section-top);
   overflow: hidden;
 }
 
@@ -11,32 +11,32 @@
 .ourIntroductionSubTitleTextContainer {
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: var(--gap-1);
 }
 
 .ourIntroductionSubTitleText {
-  font-size: 24px;
+  font-size: var(--font-2xl);
   font-weight: 600;
-  color: #4895ef;
+  color: var(--secondary);
 }
 
 .ourIntroductionSubTitleBorderLine {
   width: 35px;
   height: 3px;
-  background-color: #4895ef;
+  background-color: var(--secondary);
   margin-top: 15px;
 }
 
 .ourIntroductionTitleText {
-  font-size: 48px;
+  font-size: var(--font-5xl);
   font-weight: 700;
-  color: #1b3447;
+  color: var(--primary);
   line-height: 58px;
-  margin-top: 15px;
+  margin-top: var(--margin-2);
 }
 
 .ourIntroductionMainDataContainer {
-  margin-top: 54px;
+  margin-top: var(--margin-6);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,13 +59,13 @@
   left: 257px;
   width: 355px;
   height: 320px;
-  background-color: #fff;
+  background-color: var(--white);
   box-shadow: 0px 15px 50px 0px rgba(55, 52, 170, 0.15);
 }
 
 .ourIntroductionExpetriseBoxTitle {
   padding: 25px 25px 0 25px;
-  color: #1b3447;
+  color: var(--primary);
   line-height: 30px;
   margin-bottom: 20px;
   font-weight: 550;
@@ -82,18 +82,18 @@
   padding: 0 0 25px 25px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 20px;
+  gap: var(--gap-1);
+  margin-top: var(--margin-2);
 }
 
 .ourIntroductionExpetriseBoxLevelItemContainer {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--gap-1);
 }
 
 .ourIntroductionExpetriseBoxLevelItemText {
-  font-size: 14px;
+  font-size: var(--font-sm);
   font-weight: 600;
   color: #000;
   line-height: 24px;
@@ -101,7 +101,7 @@
 
 .ourIntroductionExpetriseLevelItemContainer {
   display: flex;
-  gap: 96px;
+  gap: var(--gap-9);
   align-items: center;
   justify-content: space-between;
 }
@@ -120,18 +120,18 @@
 
 .ourIntroductionMainSubText {
   color: #797e88;
-  font-size: 17px;
+  font-size: var(--font-lg);
   font-weight: 500;
   margin-bottom: 30px;
   line-height: 26px;
 }
 .ourIntoItemsContainer {
   display: flex;
-  gap: 30px;
+  gap: var(--gap-3);
   flex-wrap: wrap;
   width: 70%;
   color: #797e88;
-  font-size: 17px;
+  font-size: var(--font-lg);
   font-weight: 500;
   margin-bottom: 50px;
 }
@@ -139,15 +139,15 @@
 .ourIntoItemsList {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--gap-1);
 }
 
 .ourIntroductionGetStBtn {
   padding: 16px 42px;
-  background-color: #4895ef;
-  font-size: 18px;
+  background-color: var(--secondary);
+  font-size: var(--font-lg);
   font-weight: 600;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   border-radius: 6px;
 }
@@ -156,7 +156,7 @@
   margin-top: 50px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: var(--gap-2);
 }
 
 .ourIntoTPRCardDataContainer {
@@ -165,16 +165,16 @@
 
 .ourIntoTPRCardDataNumberText {
   text-align: center;
-  color: #1b3447;
-  font-size: 36px;
+  color: var(--primary);
+  font-size: var(--font-4xl);
   font-weight: 600;
   line-height: 46px;
 }
 
 .ourIntoTPRCardDataCategortText {
   text-align: center;
-  font-size: 18px;
-  color: #1b3447;
+  font-size: var(--font-lg);
+  color: var(--primary);
   line-height: 28px;
 }
 

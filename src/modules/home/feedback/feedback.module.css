@@ -1,36 +1,36 @@
 .clientsFeedbackAllDatContainer {
   width: 80%;
-  margin: 0 auto;
+  margin: var(--section-top) auto;
   overflow: hidden;
 }
 
 .clientsFeedbackHeaderTitleTextContainer {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: var(--gap-1);
 }
 
 .clientsFeedbackHeaderTitleText {
-  font-size: 24px;
+  font-size: var(--font-2xl);
   text-transform: capitalize;
-  color: #4895ef;
+  color: var(--secondary);
   font-weight: 600;
 }
 
 .clientsFeedbackHeaderTitleTextHrLine {
   width: 35px;
   height: 3px;
-  background-color: #4895ef;
-  margin-top: 18px;
+  background-color: var(--secondary);
+  margin-top: 16px;
 }
 
 .clientsFeedbackCardContainer {
   position: relative;
   display: flex;
-  gap: 30px;
+  gap: var(--gap-3);
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: var(--margin-5);
 }
 
 .clientsFeedbackCardHeaderLogo {
@@ -47,53 +47,53 @@
 }
 
 .clientsFeedbackCard {
-  padding: 40px 20px;
+  padding: var(--padding-3);
 }
 
 .clientsFeedbackCardTitleText {
   color: #797e88;
   line-height: 28px;
-  margin-top: 20px;
+  margin-top: var(--margin-2);
 }
 
 .clientsFeedbackTitleText {
   font-size: 48px;
   font-weight: 700;
-  color: #1b3447;
+  color: var(--primary);
   width: 30%;
   line-height: 56px;
-  margin-top: 25px;
+  margin-top: var(--margin-3);
 }
 
 .clientsFeedbackCardDataContainer {
   display: flex;
   gap: 15px;
   align-items: center;
-  margin-top: 35px;
+  margin-top: var(--margin-3);
 }
 
 .clientsFeedbackCardHrLine {
-  margin-top: 40px;
-  border-bottom: 3px solid #4895ef;
+  margin-top: var(--margin-2);
+  border-bottom: 3px solid var(--secondary);
 }
 
 .clientsFeedbackCardName {
-  font-size: 20px;
-  color: #1b3447;
+  font-size: var(--font-lg);
+  color: var(--primary);
   font-weight: 700;
   text-transform: capitalize;
 }
 
 .clientsFeedbackCardService {
-  font-size: 14px;
+  font-size: var(--font-sm);
   color: #687179;
   text-transform: capitalize;
 }
 
 /* ...Arrow Container style... */
 .nextArrowContainer {
-  color: #fff;
-  background-color: #4895ef;
+  color: var(--white);
+  background-color: var(--secondary);
   width: 56px;
   height: 56px;
   border-radius: 100%;
@@ -105,8 +105,8 @@
 }
 
 .prevArrowContainer {
-  color: #fff;
-  background-color: #4895ef;
+  color: var(--white);
+  background-color: var(--secondary);
   width: 56px;
   height: 56px;
   border-radius: 100%;
@@ -160,7 +160,7 @@
 
   .clientsFeedbackCardHrLine {
     margin-top: 30px;
-    border-bottom: 1.5px solid #4895ef;
+    border-bottom: 1.5px solid var(--secondary);
   }
 
   .clientsFeedbackCardName {

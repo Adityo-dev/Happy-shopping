@@ -1,6 +1,6 @@
 .contactAllDataContainer {
   position: relative;
-  margin-top: 120px;
+  margin-top: var(--section-top);
   background-color: #faf9f7;
   padding: 100px 0;
   display: flex;
@@ -11,7 +11,7 @@
   width: 80%;
   margin: 0 auto;
   display: flex;
-  gap: 80px;
+  gap: var(--gap-8);
   justify-content: space-between;
 }
 
@@ -26,25 +26,25 @@
 .contactHeaderTitleText {
   display: flex;
   align-items: center;
-  gap: 15px;
-  font-size: 24px;
+  gap: var(--gap-1);
+  font-size: var(--font-2xl);
   font-weight: 600;
-  color: #4895ef;
+  color: var(--secondary);
 }
 
 .contactTitleHtLine {
   width: 35px;
   height: 3px;
-  background-color: #4895ef;
+  background-color: var(--secondary);
   margin-top: 10px;
 }
 
 .contactTitleText {
-  font-size: 48px;
-  color: #1b3447;
+  font-size: var(--font-5xl);
+  color: var(--primary);
   font-weight: 700;
   line-height: 58px;
-  margin: 30px 0 35px 0;
+  margin: var(--margin-2) 0 var(--margin-3) 0;
 }
 
 .contactSubTitleText {
@@ -56,12 +56,12 @@
 .contactIconsContainer {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 30px;
+  gap: var(--gap-1);
+  margin-top: var(--margin-3);
 }
 
 .contactIconsList {
-  font-size: 20px;
+  font-size: var(--font-2xl);
   width: 48px;
   height: 48px;
   display: flex;
@@ -69,13 +69,13 @@
   justify-content: center;
   background-color: #e8eff6;
   border-radius: 22.5px 0px;
-  color: #4895ef;
+  color: var(--secondary);
   transition: 0.3s;
 }
 
 .contactIconsList:hover {
-  color: #fff;
-  background-color: #4895ef;
+  color: var(--white);
+  background-color: var(--secondary);
 }
 
 .contactWomenImage {
@@ -90,24 +90,24 @@
   right: 224px;
   width: 500px;
   height: 570px;
-  background-color: #fff;
-  border-top: 6px solid #4895ef;
-  padding: 30px;
+  background-color: var(--white);
+  border-top: 6px solid var(--secondary);
+  padding: var(--padding-3);
   border-radius: 10px;
 }
 
 .contactFieldHeaderTitleText {
-  color: #1b3447;
-  font-size: 18px;
+  color: var(--primary);
+  font-size: var(--font-lg);
   font-weight: 600;
-  margin-top: 25px;
+  margin-top: var(--margin-3);
 }
 
 .contactInputFieldContainer {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  margin-top: 40px;
+  gap: var(--gap-3);
+  margin-top: var(--margin-4);
 }
 
 .contactInputField {
@@ -124,13 +124,13 @@
   position: absolute;
   right: 50px;
   top: 18px;
-  font-size: 18px;
+  font-size: var(--font-lg);
 }
 
 .contactNumberAndEmailInputFieldContainer {
   position: relative;
   display: flex;
-  gap: 20px;
+  gap: var(--gap-2);
   align-items: center;
   width: 92%;
 }
@@ -144,7 +144,7 @@
 .contactInputFieldEmailIcon {
   position: absolute;
   right: 3%;
-  font-size: 18px;
+  font-size: var(--font-lg);
 }
 
 .contactSendMessageBtn {
@@ -152,8 +152,8 @@
   width: 45%;
   padding: 19px 40px;
   text-decoration: none;
-  background-color: #4895ef;
-  color: #fff;
+  background-color: var(--secondary);
+  color: var(--white);
   font-size: 18px;
   font-weight: 500;
   border-radius: 5px;
@@ -218,7 +218,7 @@
     justify-content: center;
     background-color: #e8eff6;
     border-radius: 22.5px 0px;
-    color: #4895ef;
+    color: var(--secondary);
     transition: 0.3s;
   }
 
@@ -228,7 +228,7 @@
   .contactFieldContainer {
     left: 0;
     width: 100%;
-    border-top: 4px solid #4895ef;
+    border-top: 4px solid var(--secondary);
     padding: 20px;
   }
 
@@ -338,7 +338,7 @@
   }
 
   .contactFieldHeaderTitleText {
-    color: #1b3447;
+    color: var(--primary);
     font-size: 18px;
     font-weight: 600;
     margin-top: 25px;
@@ -400,19 +400,19 @@
     gap: 15px;
     font-size: 24px;
     font-weight: 600;
-    color: #4895ef;
+    color: var(--secondary);
   }
 
   .contactTitleHtLine {
     width: 35px;
     height: 3px;
-    background-color: #4895ef;
+    background-color: var(--secondary);
     margin-top: 10px;
   }
 
   .contactTitleText {
     font-size: 48px;
-    color: #1b3447;
+    color: var(--primary);
     font-weight: 700;
     line-height: 58px;
     margin: 30px 0 35px 0;
@@ -440,13 +440,13 @@
     justify-content: center;
     background-color: #e8eff6;
     border-radius: 22.5px 0px;
-    color: #4895ef;
+    color: var(--secondary);
     transition: 0.3s;
   }
 
   .contactIconsList:hover {
-    color: #fff;
-    background-color: #4895ef;
+    color: var(--white);
+    background-color: var(--secondary);
   }
 
   .contactWomenImage {
@@ -461,14 +461,14 @@
     right: 224px;
     width: 500px;
     height: 570px;
-    background-color: #fff;
-    border-top: 6px solid #4895ef;
+    background-color: var(--white);
+    border-top: 6px solid var(--secondary);
     padding: 30px;
     border-radius: 10px;
   }
 
   .contactFieldHeaderTitleText {
-    color: #1b3447;
+    color: var(--primary);
     font-size: 18px;
     font-weight: 600;
     margin-top: 25px;
@@ -523,8 +523,8 @@
     width: 45%;
     padding: 19px 40px;
     text-decoration: none;
-    background-color: #4895ef;
-    color: #fff;
+    background-color: var(--secondary);
+    color: var(--white);
     font-size: 18px;
     font-weight: 500;
     border-radius: 5px;

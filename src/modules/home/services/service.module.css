@@ -1,7 +1,7 @@
 .servicesAllDataContainer {
   position: relative;
   width: 80%;
-  margin: 0 auto;
+  margin: var(--section-top) auto;
   z-index: 100;
   overflow: hidden;
 }
@@ -10,19 +10,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 93px 0;
+  padding-bottom: var(--padding-9);
 }
 
 .servicesTitleText {
-  color: #1b3447;
-  font-size: 45px;
+  color: var(--primary);
+  font-size: var(--font-5xl);
   font-weight: 700;
 }
 
 .servicesViewAllServicesBtn {
-  color: #1b3447;
+  color: var(--primary);
   display: flex;
-  gap: 12px;
+  gap: var(--gap-2);
   align-items: center;
   text-decoration: none;
 }
@@ -33,7 +33,7 @@
   border-radius: 100%;
   padding: 7px;
   background-color: #d1e4fb;
-  color: #4895ef;
+  color: var(--secondary);
   transition: all 400ms;
 }
 
@@ -44,18 +44,18 @@
 .servicesCardContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: var(--gap-3);
 }
 
 .servicesCard {
   position: relative;
-  padding: 60px 30px 30px 30px;
+  padding: var(--padding-6) var(--padding-3) var(--padding-3) var(--padding-3);
   background-color: #f1f5f9;
   border-radius: 15px;
 }
 
 .servicesHighLightBg {
-  background-color: #4895ef;
+  background-color: var(--secondary);
 }
 
 .servicesCardImage {
@@ -66,19 +66,19 @@
 }
 
 .servicesCardTitleText {
-  font-size: 24px;
+  font-size: var(--font-2xl);
   font-weight: 600;
-  color: #1b3447;
+  color: var(--primary);
 }
 
 .servicesCardSubTitleText {
-  font-size: 18px;
-  color: #1b3447;
+  font-size: var(--font-lg);
+  color: var(--primary);
   margin: 15px 0 25px 0;
 }
 
 .servicesHighLightText {
-  color: #fff;
+  color: var(--white);
 }
 
 .servicesReadMoreBtn {
@@ -87,8 +87,8 @@
   align-items: center;
   text-decoration: none;
   gap: 7px;
-  font-size: 18px;
-  color: #1b3447;
+  font-size: var(--font-lg);
+  color: var(--primary);
   font-weight: 500;
   transition: all 400ms;
 }
@@ -99,15 +99,15 @@
 .servicesReadMoreBtnIcon {
   color: #27ae60;
   font-weight: 900;
-  font-size: 30px;
+  font-size: var(--font-2xl);
 }
 
 .servicesReadMoreHighLightBtn {
-  color: #fff;
+  color: var(--white);
 }
 
 .servicesReadMoreHighLightBtnIcon {
-  color: #fff;
+  color: var(--white);
 }
 
 @media screen and (max-width: 750px) {
