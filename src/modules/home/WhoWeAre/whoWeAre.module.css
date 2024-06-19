@@ -1,6 +1,6 @@
 .whoWeAreDataContainer {
   width: 80%;
-  margin: 0 auto;
+  margin: auto;
   position: relative;
   margin-top: var(--section-top);
   display: flex;

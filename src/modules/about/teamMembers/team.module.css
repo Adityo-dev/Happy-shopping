@@ -1,8 +1,8 @@
 .teamMembersAllDataContainer {
   position: relative;
   width: 80%;
-  padding: 120px 0;
   margin: 0 auto;
+  margin-top: var(--section-top);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,7 @@
 }
 
 .teamMembersHeaderTitleText {
-  font-size: 48px;
+  font-size: var(--font-5xl);
   font-weight: 700;
   color: #1b3447;
   margin-bottom: 70px;
@@ -62,12 +62,13 @@
 
 .teamMembersName {
   color: #1b3447;
-  font-size: 24px;
+  font-size: var(--font-2xl);
   font-weight: 600;
   line-height: 34px;
 }
 
 .teamMembersProfession {
+  font-size: var(--font-base);
   margin-top: 4px;
   color: #797e88;
   line-height: 24px;

@@ -1,6 +1,6 @@
 .pricingAllDataContainer {
   position: relative;
-  padding: var(--section-top) 0;
+  margin-top: var(--section-top);
   overflow: hidden;
 }
 

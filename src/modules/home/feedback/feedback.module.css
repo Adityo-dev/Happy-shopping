@@ -1,6 +1,7 @@
 .clientsFeedbackAllDatContainer {
   width: 80%;
-  margin: var(--section-top) auto;
+  margin: 0 auto;
+  margin-top: var(--section-top);
   overflow: hidden;
 }
 

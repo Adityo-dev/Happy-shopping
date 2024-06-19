@@ -1,6 +1,6 @@
 .blogFooterContainer {
   position: relative;
-  margin-bottom: 10rem;
+  margin: var(--section-top) 0;
 }
 .blogSubFooterContainer {
   width: 80%;
