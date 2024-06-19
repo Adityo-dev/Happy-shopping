@@ -2,6 +2,7 @@
   width: 80%;
   margin: 0 auto;
   margin-top: var(--section-top);
+  overflow: hidden;
 }
 
 .aboutDataContainer {
@@ -166,14 +167,15 @@
   top: 170px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
   .aboutAllDataContainer {
+    width: 90%;
     margin-top: 100px;
   }
 
   .aboutDataContainer {
     width: 100%;
-    margin: 70px auto;
+    margin: 60px auto;
     flex-direction: column-reverse;
   }
 
@@ -214,6 +216,8 @@
   }
 
   .aboutDiscoverMoreBtn {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
   }
@@ -248,8 +252,12 @@
 }
 
 @media screen and (max-width: 379px) {
+  .aboutAllDataContainer {
+    width: 95%;
+  }
+
   .aboutHeaderTitleText {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 35px;
   }
 
@@ -258,29 +266,30 @@
   }
 
   .aboutTitleText {
-    text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
   }
 
   .aboutSubTitleText {
-    text-align: center;
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 20px 0 30px 0;
   }
 
   .aboutServicesItem {
     align-items: center;
     gap: 8px;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .aboutFirstImage {
-    height: 200px;
+    height: 180px;
   }
+
   .aboutFirstImageFrame1 {
     width: 50px;
     height: 50px;
-    bottom: 0;
+    bottom: -8px;
     left: 85px;
   }
 
@@ -292,64 +301,75 @@
   }
 
   .aboutSecondImageDataContainer {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
   .aboutSecondImage {
-    height: 200px;
+    height: 180px;
   }
 
   .aboutSecondImageRectangleLeftIcon {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
 
   .aboutSecondImageRectangleTopIcon {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
 
   .aboutSecondImagePlayButtonIcon {
     width: 40px;
     height: 40px;
-    left: 60px;
+    left: 40px;
     top: 90px;
+  }
+
+  .aboutCEONameText {
+    font-size: 18px;
+  }
+
+  .aboutCEOText {
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 380px) and (max-width: 500px) {
+  .aboutAllDataContainer {
+    width: 95%;
+  }
+
   .aboutHeaderTitleText {
     font-size: 30px;
-    line-height: 42px;
+    line-height: 45px;
   }
 
   .aboutImageAllDataContainer {
-    gap: 25px;
+    gap: 15px;
   }
 
   .aboutTitleText {
-    text-align: center;
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .aboutSubTitleText {
-    text-align: center;
     font-size: 16px;
+    margin: 20px 0 30px 0;
   }
 
   .aboutServicesItem {
-    align-items: center;
-    font-size: 11px;
+    gap: 8px;
+    font-size: 14px;
   }
 
   .aboutFirstImage {
-    height: 250px;
+    height: 215px;
   }
 
   .aboutFirstImageFrame1 {
     width: 55px;
     height: 55px;
-    bottom: 0;
+    bottom: -10px;
     left: 85px;
   }
 
@@ -361,17 +381,18 @@
   }
 
   .aboutSecondImageDataContainer {
-    margin-top: 56px;
+    margin-top: 40px;
   }
 
   .aboutSecondImage {
-    height: 250px;
+    height: 215px;
   }
 
   .aboutSecondImageRectangleLeftIcon {
     width: 70px;
     height: 70px;
   }
+
   .aboutSecondImageRectangleTopIcon {
     width: 70px;
     height: 70px;
@@ -380,123 +401,73 @@
   .aboutSecondImagePlayButtonIcon {
     width: 50px;
     height: 50px;
-    left: 60px;
-    top: 110px;
+    left: 45px;
+    top: 100px;
+  }
+
+  .aboutCEONameText {
+    font-size: 18px;
+  }
+
+  .aboutCEOText {
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 501px) and (max-width: 800px) {
   .aboutHeaderTitleText {
-    font-size: 38px;
+    font-size: 36px;
   }
 
-  .aboutTitleText {
-    text-align: center;
+  .aboutImageAllDataContainer {
+    gap: 20px;
   }
 
   .aboutSubTitleText {
-    text-align: center;
-    font-size: 17px;
+    font-size: 16px;
+    margin: 20px 0 30px 0;
   }
 
   .aboutServicesItem {
-    align-items: center;
-    font-size: 11px;
-  }
-
-  .aboutFirstImage {
-    height: 300px;
-  }
-
-  .aboutFirstImageFrame1 {
-    width: 60px;
-    height: 60px;
-    bottom: 8px;
-  }
-
-  .aboutFirstImageFrame2 {
-    width: 55px;
-    height: 55px;
-    top: -27px;
-    right: -26px;
-  }
-
-  .aboutSecondImage {
-    height: 300px;
-  }
-
-  .aboutSecondImageRectangleLeftIcon {
-    width: 75px;
-    height: 75px;
-  }
-  .aboutSecondImageRectangleTopIcon {
-    width: 75px;
-    height: 75px;
-  }
-
-  .aboutSecondImagePlayButtonIcon {
-    width: 60px;
-    height: 60px;
-    left: 70px;
-    top: 140px;
-  }
-
-  .aboutCEOAllDataContainer {
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: left;
-  }
-
-  .aboutCEOContainer {
-    flex-direction: row;
-    justify-content: left;
-  }
-}
-
-@media screen and (min-width: 801px) and (max-width: 1100px) {
-  .aboutHeaderTitleText {
-    font-size: 42px;
-  }
-
-  .aboutServicesItem {
+    gap: 10px;
     font-size: 16px;
   }
 
   .aboutFirstImage {
-    height: 390px;
+    height: 300px;
   }
 
   .aboutFirstImageFrame1 {
     width: 70px;
     height: 70px;
-    bottom: 0px;
-    left: 110px;
+    bottom: -8px;
   }
 
   .aboutFirstImageFrame2 {
-    width: 65px;
-    height: 65px;
-    top: -33px;
-    right: -32px;
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    right: -30px;
   }
 
   .aboutSecondImage {
-    height: 390px;
+    height: 300px;
   }
 
   .aboutSecondImageRectangleLeftIcon {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
   }
-
   .aboutSecondImageRectangleTopIcon {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
   }
 
   .aboutSecondImagePlayButtonIcon {
-    left: 100px;
-    top: 150px;
+    width: 65px;
+    height: 65px;
+    left: 65px;
+    top: 130px;
   }
 
   .aboutCEOAllDataContainer {
@@ -509,16 +480,98 @@
     flex-direction: row;
     justify-content: left;
   }
+
+  .aboutCEONameText {
+    font-size: 18px;
+  }
+
+  .aboutCEOText {
+    font-size: 14px;
+  }
 }
 
-@media screen and (min-width: 1101px) and (max-width: 1500px) {
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  .aboutHeaderTitleText {
+    font-size: 40px;
+  }
+
+  .aboutSubTitleText {
+    font-size: 16px;
+  }
+
+  .aboutFirstImage {
+    height: 370px;
+  }
+
+  .aboutFirstImageFrame1 {
+    width: 90px;
+    height: 90px;
+    bottom: -20px;
+  }
+
+  .aboutFirstImageFrame2 {
+    width: 70px;
+    height: 70px;
+    top: -33px;
+    right: -33px;
+  }
+
+  .aboutSecondImage {
+    height: 370px;
+  }
+
+  .aboutSecondImageRectangleLeftIcon {
+    width: 100px;
+    height: 100px;
+  }
+  .aboutSecondImageRectangleTopIcon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .aboutSecondImagePlayButtonIcon {
+    width: 75px;
+    height: 75px;
+    left: 90px;
+    top: 150px;
+  }
+
+  .aboutSecondImageDesignIcon {
+    width: 85px;
+    height: 85px;
+    top: -42px;
+    right: -40px;
+  }
+
+  .aboutCEOAllDataContainer {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .aboutCEOContainer {
+    flex-direction: row;
+    justify-content: left;
+  }
+
+  .aboutCEONameText {
+    font-size: 18px;
+  }
+
+  .aboutCEOText {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1500px) {
   .aboutAllDataContainer {
     margin-top: 100px;
+    width: 90%;
   }
 
   .aboutDataContainer {
-    width: 90%;
-    gap: 50px;
+    width: 100%;
+    gap: 30px;
   }
 
   .aboutHeaderTitleText {
@@ -534,48 +587,45 @@
   }
 
   .aboutTitleText {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .aboutSubTitleText {
     font-size: 16px;
+    margin: 10px 0 20px 0;
   }
 
   .aboutServicesItemContainer {
-    gap: 20px;
+    row-gap: 30px;
+    column-gap: 20px;
   }
 
   .aboutServicesItem {
-    gap: 10px;
+    gap: 8px;
   }
 
   .aboutCEOAllDataContainer {
-    margin: 40px 0 50px 0;
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
   }
 
   .aboutCEOContainer {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    flex-direction: column;
+    text-align: center;
   }
 
   .aboutCEONameText {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .aboutCEOText {
-    font-size: 18px;
-  }
-
-  .aboutDiscoverMoreBtn {
-    padding: 15px 60px;
+    font-size: 14px;
+    margin: 8px 0 0 0;
   }
 
   .aboutFirstImage {
-    width: 100%;
-    height: 320px;
+    height: 325px;
   }
 
   .aboutFirstImageFrame1 {

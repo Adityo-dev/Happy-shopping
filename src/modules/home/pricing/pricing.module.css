@@ -168,12 +168,12 @@
   }
 
   .pricingHeaderTitleText {
-    font-size: 28px;
-    line-height: 42px;
+    font-size: 22px;
+    line-height: 35px;
   }
 
   .pricingCategory {
-    gap: 10px;
+    gap: 8px;
   }
 
   .pricingTypeText {
@@ -183,12 +183,12 @@
 
   .pricingPriceText {
     justify-content: center;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
   }
 
   .pricingDollarText {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .pricingMonthText {
@@ -202,7 +202,7 @@
   }
 
   .pricingCategoryText {
-    font-size: 11px;
+    font-size: 12px;
     gap: 0px;
     line-height: 25px;
   }
@@ -329,7 +329,7 @@
   }
 
   .pricingHeaderTitleText {
-    font-size: 42px;
+    font-size: 40px;
     line-height: 45px;
   }
 

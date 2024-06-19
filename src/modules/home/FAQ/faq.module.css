@@ -105,7 +105,7 @@
   width: 70%;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
   .faqAllDataContainer {
     margin-top: 100px;
   }
@@ -176,9 +176,34 @@
   }
 }
 
+@media screen and (max-width: 379px) {
+  .faqTitleText {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .faqCompoContainer {
+    margin-top: 40px;
+  }
+
+  .FaqTypographyTitle {
+    font-size: 16px;
+    padding: 5px 2px;
+  }
+
+  .FaqTypographySubTitle {
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 380px) and (max-width: 500px) {
   .faqTitleText {
-    font-size: 35px;
+    font-size: 30px;
+  }
+
+  .faqCompoContainer {
+    margin-top: 50px;
   }
 
   .faqFrame2Image {
@@ -190,17 +215,18 @@
   }
 
   .FaqTypographyTitle {
+    font-size: 16px;
     padding: 10px 5px;
   }
 
   .FaqTypographySubTitle {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 500px) and (max-width: 800px) {
   .faqTitleText {
-    font-size: 38px;
+    font-size: 36px;
   }
 
   .faqMenImage {
@@ -229,9 +255,9 @@
   }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1100px) {
+@media screen and (min-width: 801px) and (max-width: 1000px) {
   .faqTitleText {
-    font-size: 38px;
+    font-size: 40px;
   }
 
   .faqMenImage {
@@ -260,7 +286,7 @@
   }
 }
 
-@media screen and (min-width: 1101px) and (max-width: 1550px) {
+@media screen and (min-width: 1001px) and (max-width: 1550px) {
   .faqAllDataContainer {
     margin-top: 100px;
   }
@@ -271,7 +297,7 @@
   }
 
   .faqTitleText {
-    font-size: 40px;
+    font-size: 45px;
     line-height: 55px;
   }
 

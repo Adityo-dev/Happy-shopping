@@ -130,7 +130,7 @@
   right: 0;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
   .whoWeAreDataContainer {
     width: 90%;
     margin-top: 100px;
@@ -144,25 +144,6 @@
     left: 65%;
   }
 
-  .whoWeAreImageSuccessContainer {
-    top: 45px;
-    left: 35%;
-  }
-
-  .whoWeAreImageSuccessImg {
-    width: 25px;
-    height: 34px;
-  }
-
-  .whoWeAreImageSuccessNumText {
-    font-size: 20px;
-    line-height: 21px;
-  }
-
-  .whoWeAreImageSuccessText {
-    font-size: 11px;
-  }
-
   .whoWeAreTextDataContainer {
     width: 100%;
   }
@@ -170,10 +151,6 @@
   .whoWeAreTextContainer {
     justify-content: center;
     gap: 5px;
-  }
-
-  .whoWeAreText {
-    font-size: 16px;
   }
 
   .whoWeAreHrLine {
@@ -184,9 +161,8 @@
 
   .whoWeAreTitleText {
     text-align: center;
-    font-size: 28px;
     line-height: 42px;
-    margin: 10px 0 30px 0;
+    margin: 10px 0 20px 0;
   }
 
   .whoWeAreSubTitleText {
@@ -207,10 +183,6 @@
     gap: 5px;
   }
 
-  .whoWeAreItemsText {
-    font-size: 15px;
-  }
-
   .whoWeAreReadMoreBtn {
     font-size: 16px;
     display: flex;
@@ -223,15 +195,63 @@
   }
 }
 
-@media screen and (min-width: 380px) and (max-width: 500px) {
+@media screen and (max-width: 379px) {
   .whoWeAreImage {
-    width: 360px;
+    width: 250px;
     height: 100%;
   }
 
   .whoWeAreImageSuccessContainer {
-    top: 52px;
+    top: 38px;
     left: 34%;
+  }
+
+  .whoWeAreImageSuccessImg {
+    width: 20px;
+    height: 28px;
+  }
+
+  .whoWeAreImageSuccessNumText {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .whoWeAreImageSuccessText {
+    font-size: 10px;
+  }
+
+  .whoWeAreText {
+    font-size: 16px;
+  }
+
+  .whoWeAreTitleText {
+    font-size: 24px;
+    line-height: 35px;
+    margin: 10px 0 20px 0;
+  }
+
+  .whoWeAreSubTitleText {
+    font-size: 14px;
+  }
+
+  .whoWeAreItemsContainer {
+    gap: 8px;
+  }
+
+  .whoWeAreItemsText {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 500px) {
+  .whoWeAreImage {
+    width: 340px;
+    height: 100%;
+  }
+
+  .whoWeAreImageSuccessContainer {
+    top: 50px;
+    left: 33.5%;
   }
 
   .whoWeAreImageSuccessImg {
@@ -240,8 +260,8 @@
   }
 
   .whoWeAreImageSuccessNumText {
-    font-size: 25px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 25px;
   }
 
   .whoWeAreImageSuccessText {
@@ -249,11 +269,13 @@
   }
 
   .whoWeAreText {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .whoWeAreTitleText {
-    font-size: 29px;
+    font-size: 30px;
+    line-height: 45px;
+    margin: 10px 0 20px 0;
   }
 
   .whoWeAreSubTitleText {
@@ -271,25 +293,25 @@
 
 @media screen and (min-width: 501px) and (max-width: 800px) {
   .whoWeAreImage {
-    width: 480px;
+    width: 450px;
     height: 100%;
   }
 
   .whoWeAreImageVector1 {
-    width: 75px;
-    height: 40px;
-    top: -20px;
-    left: 65%;
+    width: 70px;
+    height: 35px;
+    top: -10px;
+    left: 60%;
   }
 
   .whoWeAreImageSuccessContainer {
-    top: 80px;
-    left: 36%;
+    top: 70px;
+    left: 35%;
   }
 
   .whoWeAreImageSuccessImg {
-    width: 45px;
-    height: 56px;
+    width: 40px;
+    height: 50px;
   }
 
   .whoWeAreImageSuccessNumText {
@@ -312,15 +334,13 @@
   }
 
   .whoWeAreTitleText {
-    text-align: center;
-    font-size: 35px;
+    font-size: 36px;
     line-height: 42px;
-    margin: 10px 0 30px 0;
+    margin: 20px 0 30px 0;
   }
 
   .whoWeAreSubTitleText {
     font-size: 16px;
-    text-align: center;
     margin-top: 17px;
   }
 
@@ -334,7 +354,7 @@
   }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1100px) {
+@media screen and (min-width: 801px) and (max-width: 1000px) {
   .whoWeAreImage {
     width: 550px;
     height: 100%;
@@ -349,7 +369,7 @@
 
   .whoWeAreImageSuccessContainer {
     top: 85px;
-    left: 35%;
+    left: 35.5%;
   }
 
   .whoWeAreImageSuccessImg {
@@ -367,7 +387,7 @@
   }
 
   .whoWeAreText {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .whoWeAreHrLine {
@@ -377,11 +397,12 @@
   }
 
   .whoWeAreTitleText {
-    font-size: 42px;
+    font-size: 40px;
+    margin: 20px 0 30px 0;
   }
 
   .whoWeAreSubTitleText {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .whoWeAreReadMoreBtn {
@@ -394,14 +415,14 @@
   }
 }
 
-@media screen and (min-width: 1101px) and (max-width: 1500px) {
+@media screen and (min-width: 1001px) and (max-width: 1500px) {
   .whoWeAreDataContainer {
     width: 90%;
-    gap: 50px;
+    gap: 40px;
   }
 
   .whoWeAreImage {
-    width: 500px;
+    width: 450px;
     height: 100%;
   }
 
@@ -413,8 +434,8 @@
   }
 
   .whoWeAreImageSuccessContainer {
-    top: 80px;
-    left: 175px;
+    top: 70px;
+    left: 158.5px;
   }
 
   .whoWeAreImageSuccessImg {
@@ -423,12 +444,12 @@
   }
 
   .whoWeAreImageSuccessNumText {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 28px;
+    line-height: 35px;
   }
 
   .whoWeAreImageSuccessText {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .whoWeAreTextDataContainer {
@@ -448,12 +469,8 @@
     line-height: 40px;
   }
 
-  .whoWeAreSubTitleText {
-    margin-top: 18px;
-  }
-
   .whoWeAreItemsText {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .whoWeAreReadMoreBtn {
@@ -466,6 +483,12 @@
     text-decoration: none;
   }
 
+  .whoWeAreImageVector2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1501px) and (max-width: 1710px) {
   .whoWeAreImageVector2 {
     display: none;
   }

@@ -22,7 +22,6 @@ const blogsData = [
     createdDate: "January 1, 2024",
   },
   {
-    id: 2,
     blogTitle: "The Best Choice For All Business Needs 2024",
     blogDescription:
       "It is a long established fact that a reader des will oi beik distracted by the readable",
@@ -31,7 +30,6 @@ const blogsData = [
     createdDate: "January 1, 2024",
   },
   {
-    id: 2,
     blogTitle: "The Best Choice For All Business Needs 2024",
     blogDescription:
       "It is a long established fact that a reader des will oi beik distracted by the readable",
@@ -40,7 +38,6 @@ const blogsData = [
     createdDate: "January 1, 2024",
   },
   {
-    id: 2,
     blogTitle: "The Best Choice For All Business Needs 2024",
     blogDescription:
       "It is a long established fact that a reader des will oi beik distracted by the readable",
@@ -49,7 +46,6 @@ const blogsData = [
     createdDate: "January 1, 2024",
   },
   {
-    id: 2,
     blogTitle: "The Best Choice For All Business Needs 2024",
     blogDescription:
       "It is a long established fact that a reader des will oi beik distracted by the readable",
@@ -58,7 +54,6 @@ const blogsData = [
     createdDate: "January 1, 2024",
   },
   {
-    id: 2,
     blogTitle: "The Best Choice For All Business Needs 2024",
     blogDescription:
       "It is a long established fact that a reader des will oi beik distracted by the readable",
@@ -72,9 +67,9 @@ export default function Blogs() {
   return (
     <>
       <div className={styles.blogsContainer}>
-        {blogsData.map((blog) => {
+        {blogsData.map((blog, ind) => {
           return (
-            <div key={blog.id} className={styles.blogCard}>
+            <div key={ind} className={styles.blogCard}>
               <div className={styles.blogCardImageContainer}>
                 <Image
                   src={blog.blogImage}
@@ -82,16 +77,17 @@ export default function Blogs() {
                   alt=""
                 />
               </div>
+
               <div className={styles.blogContent}>
                 <div className={styles.createdDetails}>
                   <span>
                     <FaUser className={styles.userIcon} />
-                    &nbsp;By {blog.creator}
+                    &nbsp; &nbsp;By {blog.creator}
                   </span>{" "}
-                  &nbsp;
+                  &nbsp; &nbsp;
                   <span>
                     <FaCalendarAlt className={styles.calenderIcon} />
-                    &nbsp;
+                    &nbsp; &nbsp;
                     {blog.createdDate}
                   </span>
                 </div>

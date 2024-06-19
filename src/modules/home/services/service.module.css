@@ -113,6 +113,12 @@
 @media screen and (max-width: 750px) {
   .servicesAllDataContainer {
     width: 90%;
+    margin-top: 100px;
+  }
+
+  .servicesTitleTextContainer {
+    flex-direction: column;
+    padding-bottom: 50px;
   }
 
   .servicesCardContainer {
@@ -125,17 +131,25 @@
 }
 
 @media screen and (max-width: 379px) {
-  .servicesTitleTextContainer {
-    flex-direction: column;
-    padding: 93px 0 30px 0;
+  .servicesTitleText {
+    font-size: 24px;
+    line-height: 35px;
   }
 
-  .servicesTitleText {
-    font-size: 30px;
+  .servicesViewAllServicesBtn {
+    font-size: 16px;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .servicesViewAllServicesIcon {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
   }
 
   .servicesCard {
-    padding: 40px 25px 30px 25px;
+    padding: 35px 25px 25px 25px;
     margin-top: 50px;
   }
 
@@ -146,36 +160,32 @@
   }
 
   .servicesCardTitleText {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .servicesCardSubTitleText {
     font-size: 14px;
-    margin: 8px 0 15px 0;
+    margin: 10px 0 15px 0;
   }
 
   .servicesReadMoreBtn {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .servicesReadMoreBtnIcon {
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 
 @media screen and (min-width: 380px) and (max-width: 500px) {
-  .servicesTitleTextContainer {
-    flex-direction: column;
-    padding: 93px 0 30px 0;
-  }
-
   .servicesCard {
-    padding: 40px 25px 30px 25px;
+    padding: 35px 25px 25px 25px;
     margin-top: 50px;
   }
 
   .servicesTitleText {
-    font-size: 32px;
+    font-size: 30px;
+    line-height: 45px;
   }
 
   .servicesCardImage {
@@ -185,12 +195,12 @@
   }
 
   .servicesCardTitleText {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .servicesCardSubTitleText {
-    font-size: 15.5px;
-    margin: 11px 0 18px 0;
+    font-size: 16px;
+    margin: 10px 0 15px 0;
   }
 
   .servicesViewAllServicesBtn {
@@ -202,28 +212,26 @@
   }
 
   .servicesReadMoreBtnIcon {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 
 @media screen and (min-width: 501px) and (max-width: 750px) {
-  .servicesTitleTextContainer {
-    flex-direction: column;
-    padding: 93px 0 35px 0;
+  .servicesTitleText {
+    font-size: 36px;
   }
 
-  .servicesTitleText {
-    font-size: 37px;
+  .servicesCard {
+    margin-top: 50px;
   }
 
   .servicesCardImage {
-    width: 55px;
-    height: 55px;
+    width: 62px;
+    height: 62px;
   }
 
   .servicesCardSubTitleText {
     font-size: 16px;
-    margin: 11px 0 18px 0;
   }
 
   .servicesViewAllServicesBtn {
@@ -231,11 +239,11 @@
   }
 
   .servicesReadMoreBtn {
-    font-size: 16.5px;
+    font-size: 16px;
   }
 
   .servicesReadMoreBtnIcon {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
@@ -244,13 +252,17 @@
     width: 90%;
   }
 
+  .servicesTitleText {
+    font-size: 40px;
+  }
+
   .servicesTitleTextContainer {
     flex-direction: column;
-    padding: 93px 0 50px 0;
+    padding-bottom: 40px;
   }
 
   .servicesCard {
-    padding: 40px 15px 25px 20px;
+    padding: 40px 25px 25px 25px;
     margin-top: 50px;
   }
 
@@ -269,8 +281,8 @@
   }
 
   .servicesCardSubTitleText {
-    font-size: 15px;
-    margin: 13px 0 22px 0;
+    font-size: 16px;
+    margin: 10px 0 15px 0;
   }
 
   .servicesViewAllServicesBtn {
@@ -292,7 +304,7 @@
   }
 
   .servicesTitleTextContainer {
-    padding: 93px 0 50px 0;
+    padding-bottom: 50px;
   }
 
   .servicesTitleText {
@@ -300,7 +312,7 @@
   }
 
   .servicesCard {
-    padding: 40px 25px 30px 25px;
+    padding: 40px 25px 25px 25px;
     margin-top: 50px;
   }
 
@@ -309,21 +321,21 @@
   }
 
   .servicesCardImage {
-    width: 52px;
-    height: 52px;
+    width: 55px;
+    height: 55px;
     top: -38px;
   }
 
   .servicesCardSubTitleText {
-    font-size: 16.5px;
+    font-size: 16px;
   }
 
   .servicesReadMoreBtn {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .servicesReadMoreBtnIcon {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
@@ -333,7 +345,7 @@
   }
 
   .servicesTitleTextContainer {
-    padding: 93px 0 65px 0;
+    padding-bottom: 55px;
   }
 
   .servicesTitleText {
@@ -341,7 +353,7 @@
   }
 
   .servicesCard {
-    padding: 40px 25px 30px 25px;
+    padding: 40px 25px 25px 25px;
     margin-top: 50px;
   }
 
@@ -355,14 +367,14 @@
   }
 
   .servicesCardSubTitleText {
-    font-size: 16.5px;
+    font-size: 16px;
   }
 
   .servicesReadMoreBtn {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .servicesReadMoreBtnIcon {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
