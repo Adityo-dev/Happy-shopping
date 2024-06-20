@@ -103,9 +103,10 @@
   font-size: var(--font-sm);
   line-height: 24px;
   width: 70%;
+  margin-top: -20px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1250px) {
   .faqAllDataContainer {
     margin-top: 100px;
   }
@@ -122,7 +123,6 @@
 
   .faqTitleText {
     text-align: center;
-    font-size: 30px;
     line-height: 42px;
   }
 
@@ -187,12 +187,12 @@
   }
 
   .FaqTypographyTitle {
-    font-size: 16px;
+    font-size: 14px;
     padding: 5px 2px;
   }
 
   .FaqTypographySubTitle {
-    font-size: 14px;
+    font-size: 12px;
     width: 100%;
   }
 }
@@ -215,7 +215,7 @@
   }
 
   .FaqTypographyTitle {
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 5px;
   }
 
@@ -255,14 +255,14 @@
   }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1000px) {
+@media screen and (min-width: 801px) and (max-width: 1250px) {
   .faqTitleText {
     font-size: 40px;
   }
 
   .faqMenImage {
     display: flex;
-    width: 90%;
+    width: 80%;
     height: 100%;
     margin: 0 auto;
   }
@@ -286,7 +286,7 @@
   }
 }
 
-@media screen and (min-width: 1001px) and (max-width: 1550px) {
+@media screen and (min-width: 1250px) and (max-width: 1550px) {
   .faqAllDataContainer {
     margin-top: 100px;
   }
@@ -302,7 +302,7 @@
   }
 
   .faqMenImage {
-    width: 480px;
+    width: 500px;
     height: 500px;
   }
 
