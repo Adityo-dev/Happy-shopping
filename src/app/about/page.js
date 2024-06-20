@@ -3,6 +3,7 @@ import styles from "./about.module.css";
 import TeamMembers from "@/modules/about/teamMembers";
 import BrandPotential from "@/modules/about/brandPotential";
 import Feedback from "@/modules/home/feedback";
+import Blog from "@/modules/home/blog";
 
 export default function About() {
   return (
@@ -11,6 +12,7 @@ export default function About() {
       <TeamMembers />
       <Feedback />
       <BrandPotential />
+      <Blog />
     </>
   );
 }

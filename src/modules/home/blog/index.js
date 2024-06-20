@@ -69,7 +69,8 @@ export default function Blog() {
               {newsAndBlogs.newsAndBlog1.subTitle}
             </p>
             <Link className={styles.newsAndBlogReadMoreBtn} href={"?"}>
-              Read more <FaArrowRightLong />
+              Read more{" "}
+              <FaArrowRightLong className={styles.ArrowRightLongIcons} />
             </Link>
           </div>
         </div>
@@ -94,7 +95,8 @@ export default function Blog() {
               {newsAndBlogs.newsAndBlog2.subTitle}
             </p>
             <Link className={styles.newsAndBlogReadMoreBtn} href={"?"}>
-              Read more <FaArrowRightLong />
+              Read more{" "}
+              <FaArrowRightLong className={styles.ArrowRightLongIcons} />
             </Link>
           </div>
         </div>

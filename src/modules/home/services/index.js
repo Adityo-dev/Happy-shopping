@@ -17,21 +17,21 @@ export default function ServicesHome() {
       service: "Web Development",
       title:
         "Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply ",
-      url: "/service",
+      url: "/servicse",
     },
     {
       image: app_development_icon,
       service: "Mobile Development",
       title:
         "Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply ",
-      url: "/service",
+      url: "/services",
     },
     {
       image: security_icon,
       service: "Cyber Security",
       title:
         "Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply ",
-      url: "/service",
+      url: "/services",
     },
   ];
   return (
@@ -43,7 +43,7 @@ export default function ServicesHome() {
           <p>
             <Link
               className={styles.servicesViewAllServicesBtn}
-              href={"/service"}
+              href={"/services"}
             >
               View all Services
               <MdArrowForward className={styles.servicesViewAllServicesIcon} />
