@@ -4,8 +4,6 @@ import Image from "next/image";
 // IMPORT IMAGE
 import heco_Computer_img from "../../../assets/image/Hero/heco-computer-img.png";
 import points_group_img1 from "../../../assets/image/Hero/points-group1.png";
-import points_group_img2 from "../../../assets/image/Hero/points-group2.png";
-import points_group_img3 from "../../../assets/image/Hero/points-group3.png";
 import heco_Play_Bottun from "../../../assets/image/Hero/Play-Bottun.png";
 import spider_web_img from "../../../assets/image/Hero/spider-web.png";
 import Link from "next/link";
