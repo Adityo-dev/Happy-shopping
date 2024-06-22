@@ -29,7 +29,7 @@ export default function OurIntroduction() {
   const teamProjectAndReview = [
     { image: target, num: "200+", category: "Team member" },
     { image: H_line },
-    { image: report, num: "10k+", category: "Complete projectr" },
+    { image: report, num: "10k+", category: "Complete project" },
     { image: H_line },
     { image: star, num: "900+", category: "Client review" },
   ];

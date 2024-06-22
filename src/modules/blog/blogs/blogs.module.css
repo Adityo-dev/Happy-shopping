@@ -1,7 +1,7 @@
 .blogsContainer {
   width: 80%;
   margin: 0 auto;
-  margin-top: var(--section-top);
+  margin-top: 20px;
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
