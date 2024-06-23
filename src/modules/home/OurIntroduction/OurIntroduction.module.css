@@ -275,10 +275,6 @@
 }
 
 @media screen and (min-width: 380px) and (max-width: 550px) {
-  .ourIntroductionDataContainer {
-    width: 90%;
-  }
-
   .ourIntroductionSubTitleTextContainer {
     justify-content: center;
   }
@@ -457,10 +453,6 @@
 }
 
 @media screen and (min-width: 551px) and (max-width: 800px) {
-  .ourIntroductionDataContainer {
-    width: 90%;
-  }
-
   .ourIntroductionSubTitleTextContainer {
     justify-content: center;
   }
@@ -607,10 +599,6 @@
 }
 
 @media screen and (min-width: 801px) and (max-width: 1100px) {
-  .ourIntroductionDataContainer {
-    width: 90%;
-  }
-
   .ourIntroductionSubTitleTextContainer {
     justify-content: center;
   }

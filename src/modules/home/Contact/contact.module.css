@@ -9,6 +9,7 @@
 
 .contactDataContainer {
   width: 80%;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   gap: var(--gap-8);
@@ -117,13 +118,18 @@
 }
 
 .contactNameInputFieldContainer {
+  width: 100%;
   position: relative;
 }
 
 .contactInputFieldUserIcon {
   position: absolute;
-  right: 50px;
-  top: 18px;
+  background-color: var(--white);
+  width: 50px;
+  height: 90%;
+  padding: 17px;
+  right: 40px;
+  top: 2px;
   font-size: var(--font-lg);
 }
 
@@ -132,18 +138,28 @@
   display: flex;
   gap: var(--gap-2);
   align-items: center;
-  width: 92%;
+  width: 95%;
 }
 
 .contactInputFieldPhoneIcon {
   position: absolute;
-  left: 40%;
-  font-size: 18px;
+  background-color: var(--white);
+  width: 50px;
+  height: 90%;
+  padding: 17px;
+  right: 19px;
+  top: 2px;
+  font-size: var(--font-lg);
 }
 
 .contactInputFieldEmailIcon {
   position: absolute;
-  right: 3%;
+  background-color: var(--white);
+  width: 50px;
+  height: 90%;
+  padding: 17px;
+  right: 19px;
+  top: 2px;
   font-size: var(--font-lg);
 }
 
@@ -159,32 +175,25 @@
   border-radius: 5px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .contactAllDataContainer {
-    margin-top: 0px;
+    margin-top: 100px;
+    padding: 50px 0;
   }
 
   .contactDataContainer {
     width: 90%;
-    margin: 0 auto;
-    display: flex;
     flex-direction: column;
-    gap: 0px;
-    justify-content: center;
-  }
-
-  .contactFieldAllDataContainer {
-    position: relative;
   }
 
   .contactTextAllDataContainer {
     width: 100%;
-    margin-bottom: 150px;
+    text-align: center;
   }
 
   .contactHeaderTitleText {
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
     font-size: 16px;
   }
 
@@ -194,60 +203,51 @@
   }
 
   .contactTitleText {
-    text-align: center;
-    font-size: 28px;
-    line-height: 42px;
-    margin: 20px 0 30px 0;
-  }
-
-  .contactSubTitleText {
-    text-align: center;
-    font-size: 15px;
+    font-size: 30px;
+    line-height: 37px;
+    margin: 15px 0 20px 0;
   }
 
   .contactIconsContainer {
     justify-content: center;
   }
 
-  .contactIconsList {
-    font-size: 20px;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e8eff6;
-    border-radius: 22.5px 0px;
-    color: var(--secondary);
-    transition: 0.3s;
-  }
-
   .contactWomenImage {
     display: none;
   }
+
   .contactFieldContainer {
-    left: 0;
+    position: relative;
+    right: 0;
     width: 100%;
+    height: 100%;
     border-top: 4px solid var(--secondary);
-    padding: 20px;
+    padding: 10px;
   }
 
   .contactFieldHeaderTitleText {
     font-size: 16px;
+    text-align: center;
     margin-top: 20px;
   }
 
   .contactInputFieldContainer {
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
 
   .contactInputField {
     width: 100%;
+    height: 100%;
+  }
+
+  .contactNameInputFieldContainer {
+    position: relative;
   }
 
   .contactInputFieldUserIcon {
-    right: 18px;
-    font-size: 16px;
+    right: 1px;
   }
 
   .contactNumberAndEmailInputFieldContainer {
@@ -256,134 +256,68 @@
   }
 
   .contactInputFieldPhoneIcon {
-    top: 18px;
-    left: 88%;
-    font-size: 16px;
+    right: 1px;
   }
 
   .contactInputFieldEmailIcon {
-    top: 95px;
-    right: 18px;
+    right: 1px;
+  }
+
+  .contactSendMessageBtn {
+    width: 100%;
     font-size: 16px;
   }
 
   .contactSendMessageBtn {
     width: 100%;
-    margin: 0 auto;
-    padding: 15px 40px;
     font-size: 16px;
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
-  .contactInputFieldPhoneIcon {
-    left: 90%;
-  }
-}
-@media screen and (min-width: 500px) and (max-width: 600px) {
-  .contactInputFieldPhoneIcon {
-    left: 93%;
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 800px) {
-  .contactAllDataContainer {
-    margin-top: 0px;
-  }
-
-  .contactDataContainer {
-    width: 90%;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .contactTextAllDataContainer {
-    width: 100%;
-  }
-
-  .contactHeaderTitleText {
-    justify-content: center;
-    gap: 12px;
-    font-size: 17px;
-  }
-
-  .contactTitleHtLine {
-    width: 30px;
-    height: 2px;
-  }
-
-  .contactTitleText {
-    text-align: center;
-    font-size: 35px;
-    line-height: 48px;
-    margin: 20px 0 30px 0;
-  }
-
+@media screen and (max-width: 379px) {
   .contactSubTitleText {
-    text-align: center;
+    font-size: 14px;
   }
 
-  .contactIconsContainer {
-    justify-content: center;
+  .contactIconsList {
+    font-size: 18px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 900px) {
+  .contactSubTitleText {
+    font-size: 16px;
   }
 
-  .contactWomenImage {
-    display: none;
-  }
   .contactFieldContainer {
-    width: 90%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    padding: 20px;
   }
 
   .contactFieldHeaderTitleText {
-    color: var(--primary);
     font-size: 18px;
-    font-weight: 600;
-    margin-top: 25px;
-  }
-
-  .contactInputFieldContainer {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contactInputField {
-    width: 100%;
-  }
-
-  .contactInputFieldUserIcon {
-    right: 20px;
-  }
-
-  .contactNumberAndEmailInputFieldContainer {
-    width: 100%;
-  }
-
-  .contactInputFieldPhoneIcon {
-    left: 41.5%;
-  }
-
-  .contactSendMessageBtn {
-    width: 100%;
-    margin: 0 auto;
-    padding: 16px 40px;
   }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1000px) {
+@media screen and (min-width: 901px) and (max-width: 1000px) {
   .contactAllDataContainer {
-    margin-top: 0px;
+    position: relative;
+    margin-top: var(--section-top);
+    background-color: #faf9f7;
+    padding: 100px 0;
+    display: flex;
+    overflow: hidden;
   }
 
   .contactDataContainer {
-    width: 90%;
+    width: 80%;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 80px;
-    justify-content: center;
+    gap: var(--gap-8);
+    justify-content: space-between;
   }
 
   .contactFieldAllDataContainer {
@@ -391,14 +325,14 @@
   }
 
   .contactTextAllDataContainer {
-    width: 40%;
+    width: 100%;
   }
 
   .contactHeaderTitleText {
     display: flex;
     align-items: center;
-    gap: 15px;
-    font-size: 24px;
+    gap: var(--gap-1);
+    font-size: var(--font-2xl);
     font-weight: 600;
     color: var(--secondary);
   }
@@ -411,11 +345,11 @@
   }
 
   .contactTitleText {
-    font-size: 48px;
+    font-size: var(--font-5xl);
     color: var(--primary);
     font-weight: 700;
     line-height: 58px;
-    margin: 30px 0 35px 0;
+    margin: var(--margin-2) 0 var(--margin-3) 0;
   }
 
   .contactSubTitleText {
@@ -427,12 +361,12 @@
   .contactIconsContainer {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-top: 30px;
+    gap: var(--gap-1);
+    margin-top: var(--margin-3);
   }
 
   .contactIconsList {
-    font-size: 20px;
+    font-size: var(--font-2xl);
     width: 48px;
     height: 48px;
     display: flex;
@@ -450,35 +384,38 @@
   }
 
   .contactWomenImage {
+    position: absolute;
+    bottom: 0;
     width: 300px;
     height: 568px;
-    position: relative;
+    margin-left: 60%;
     z-index: 100;
   }
+
   .contactFieldContainer {
-    position: absolute;
+    position: relative;
     top: -5px;
-    right: 224px;
+    right: 0;
     width: 500px;
     height: 570px;
     background-color: var(--white);
     border-top: 6px solid var(--secondary);
-    padding: 30px;
+    padding: var(--padding-3);
     border-radius: 10px;
   }
 
   .contactFieldHeaderTitleText {
     color: var(--primary);
-    font-size: 18px;
+    font-size: var(--font-lg);
     font-weight: 600;
-    margin-top: 25px;
+    margin-top: var(--margin-3);
   }
 
   .contactInputFieldContainer {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin-top: 40px;
+    gap: var(--gap-3);
+    margin-top: var(--margin-4);
   }
 
   .contactInputField {
@@ -488,34 +425,49 @@
   }
 
   .contactNameInputFieldContainer {
+    width: 100%;
     position: relative;
   }
 
   .contactInputFieldUserIcon {
     position: absolute;
-    right: 50px;
-    top: 18px;
-    font-size: 18px;
+    background-color: var(--white);
+    width: 50px;
+    height: 90%;
+    padding: 17px;
+    right: 40px;
+    top: 2px;
+    font-size: var(--font-lg);
   }
 
   .contactNumberAndEmailInputFieldContainer {
     position: relative;
     display: flex;
-    gap: 20px;
+    gap: var(--gap-2);
     align-items: center;
-    width: 92%;
+    width: 95%;
   }
 
   .contactInputFieldPhoneIcon {
     position: absolute;
-    left: 40%;
-    font-size: 18px;
+    background-color: var(--white);
+    width: 50px;
+    height: 90%;
+    padding: 17px;
+    right: 19px;
+    top: 2px;
+    font-size: var(--font-lg);
   }
 
   .contactInputFieldEmailIcon {
     position: absolute;
-    right: 3%;
-    font-size: 18px;
+    background-color: var(--white);
+    width: 50px;
+    height: 90%;
+    padding: 17px;
+    right: 19px;
+    top: 2px;
+    font-size: var(--font-lg);
   }
 
   .contactSendMessageBtn {

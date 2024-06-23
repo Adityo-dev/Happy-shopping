@@ -9,7 +9,7 @@ import ClientCompany from "@/modules/home/clientCompany";
 import Pricing from "@/modules/home/pricing";
 import Blog from "@/modules/home/blog";
 import FAQ from "@/modules/home/FAQ";
-import OurIntroduction from "@/modules/home/OurIntroduction/OurIntroduction";
+import OurIntroduction from "@/modules/home/OurIntroduction";
 import Contact from "@/modules/home/Contact";
 import AboutHome from "@/modules/home/about";
 import WhoWeAre from "@/modules/home/WhoWeAre/WhoWeAre";
@@ -27,7 +27,7 @@ export default function Home() {
       <Feedback />
       {/* <ClientCompany /> */}
       <Pricing />
-      {/* <Contact /> */}
+      <Contact />
       <FAQ />
       <Blog />
     </>

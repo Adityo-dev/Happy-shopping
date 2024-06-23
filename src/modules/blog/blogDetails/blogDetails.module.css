@@ -1,0 +1,217 @@
+.blogDetailsAllDataContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  margin-top: var(--section-top);
+  justify-content: space-between;
+  grid-template-columns: 68% 28%;
+}
+
+.blogDetailsATopImage {
+  width: 1035px;
+  height: 510px;
+}
+
+.blogDetailsTextContainer {
+  margin-top: 40px;
+}
+
+.blogDetailsTitleText {
+  color: var(--primary);
+  font-size: var(--font-4xl);
+  font-weight: 700;
+  line-height: 46px;
+}
+
+.blogDetailsParagraphTextContainer {
+  color: #797e88;
+  font-size: var(--font-base);
+  line-height: 26px;
+  margin-top: var(--margin-3);
+}
+
+.sectionInfoParagraphMt {
+  margin-top: var(--margin-2);
+}
+
+.blogDetailsPage2ImageContainer {
+  margin-top: var(--margin-4);
+  display: flex;
+  gap: var(--gap-3);
+}
+
+.blogDetailsPage2Image {
+  width: 505px;
+  height: 320px;
+}
+
+/*  Add Comment */
+.addCommentAllDataContainer {
+  margin-top: var(--margin-5);
+}
+
+/* GB ST */
+.leftSectionHeaderTitle {
+  color: var(--primary);
+  font-size: var(--font-2xl);
+  font-weight: 700;
+  line-height: 34px;
+  text-transform: capitalize;
+  margin-bottom: var(--margin-3);
+  text-transform: capitalize;
+}
+/* GB END */
+
+.addCommentTextFieldContainer {
+  display: flex;
+  gap: var(--gap-3);
+  margin-bottom: var(--margin-2);
+}
+.addCommentTextField {
+  border-radius: 4px;
+  background: #f5f9fe;
+}
+
+.postCommentBtn {
+  text-decoration: none;
+  display: inline-flex;
+  padding: 16px 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: var(--secondary);
+  color: var(--white);
+  font-size: var(--font-base);
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-top: var(--margin-3);
+}
+
+/* -------Right section-------- */
+
+.RightSectionAllDataContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-3);
+}
+
+/* GB ST */
+.rightSectionContainer {
+  border-radius: 10px;
+  background: #f5f9fe;
+  padding: var(--padding-4);
+}
+
+.rightSectionHeaderTitle {
+  color: var(--primary);
+  font-size: var(--font-2xl);
+  font-weight: 700;
+  line-height: 34px;
+  text-transform: capitalize;
+  margin-bottom: var(--margin-3);
+  text-transform: capitalize;
+}
+/* GB END */
+
+/* ------Right section All Services section----- */
+
+.serviceItemsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-1);
+}
+
+.serviceInfoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  background: var(--white);
+  padding: var(--padding-2) var(--padding-3);
+  border-radius: 10px;
+  border-left: 4px solid var(--secondary);
+  transition: all 0.3s;
+}
+
+.serviceName {
+  color: var(--primary);
+  font-size: var(--font-base);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.arrowRightIcons {
+  width: 40px;
+  height: 40px;
+  background-color: #edf4fd;
+  border-radius: 100%;
+  color: var(--secondary);
+  padding: var(--padding-1);
+}
+
+/* ------Right section Recent Post section----- */
+.rightSectionRecentPostDataContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-4);
+}
+
+.rightSectionRecentPostData {
+  display: flex;
+  gap: var(--gap-2);
+}
+
+.recentPostImage {
+  width: 80px;
+  height: 80px;
+}
+
+.rightSectionRecentPostInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rightSectionRecentPostTitle {
+  color: var(--primary);
+  font-size: var(--font-base);
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.rightSectionRecentPostDateContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.calendarMonthIcon {
+  color: var(--secondary);
+  font-size: var(--font-lg);
+}
+
+.rightSectionRecentPostDate {
+  color: #797e88;
+  font-size: var(--font-sm);
+  font-weight: 500;
+  line-height: 26px;
+}
+
+/* ------Right section Popular Tag section----- */
+.rightSectionTagContainer {
+  display: flex;
+  gap: var(--gap-1);
+  flex-wrap: wrap;
+}
+
+.rightSectionTag {
+  padding: 12px 29px;
+  gap: 10px;
+  border-radius: 5px;
+  background: var(--white);
+  color: var(--primary);
+  font-size: var(--font-base);
+  font-weight: 600;
+  text-transform: capitalize;
+}

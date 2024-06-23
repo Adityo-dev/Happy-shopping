@@ -83,24 +83,28 @@ export default function Contact() {
                 <div
                   className={styles.contactNumberAndEmailInputFieldContainer}
                 >
-                  <TextField
-                    className={styles.contactInputField}
-                    id="outlined-name-input"
-                    label="Phome"
-                    type="text"
-                  />
-                  <FiPhone className={styles.contactInputFieldPhoneIcon} />
+                  <div className={styles.contactNameInputFieldContainer}>
+                    <TextField
+                      className={styles.contactInputField}
+                      id="outlined-name-input"
+                      label="Phome"
+                      type="text"
+                    />
+                    <FiPhone className={styles.contactInputFieldPhoneIcon} />
+                  </div>
 
-                  <TextField
-                    className={styles.contactInputField}
-                    id="outlined-email-input"
-                    label="Email"
-                    type="email"
-                  />
+                  <div className={styles.contactNameInputFieldContainer}>
+                    <TextField
+                      className={styles.contactInputField}
+                      id="outlined-email-input"
+                      label="Email"
+                      type="email"
+                    />
 
-                  <MdOutlineEmail
-                    className={styles.contactInputFieldEmailIcon}
-                  />
+                    <MdOutlineEmail
+                      className={styles.contactInputFieldEmailIcon}
+                    />
+                  </div>
                 </div>
                 <TextField
                   className={styles.contactInputField}
@@ -123,12 +127,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      {/* <Image
-        className={styles.contactSpiderWebFrameImage}
-        src={spider_web_frame}
-        width={577}
-        height={578}
-      /> */}
     </section>
   );
 }
