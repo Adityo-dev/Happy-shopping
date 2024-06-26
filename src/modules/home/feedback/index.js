@@ -2,10 +2,13 @@
 import styles from "./feedback.module.css";
 import Image from "next/image";
 import Link from "next/link";
+
 // import slick slider
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import NextArrow from "./NextArrow";
+import PrevArrow from "./PrevArrow";
 
 // import image
 import logo from "../../../assets/logo/clientsFeedback/”.png";
@@ -13,8 +16,6 @@ import Ellipse1 from "../../../assets/image/clientsFeedback/Ellipse1.png";
 import Ellipse2 from "../../../assets/image/clientsFeedback/Ellipse2.png";
 import Ellipse3 from "../../../assets/image/clientsFeedback/Ellipse3.png";
 import start from "../../../assets/logo/clientsFeedback/start.png";
-import NextArrow from "./NextArrow";
-import PrevArrow from "./PrevArrow";
 
 export default function Feedback() {
   var settings = {

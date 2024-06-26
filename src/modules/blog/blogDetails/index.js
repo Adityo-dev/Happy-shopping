@@ -9,10 +9,27 @@ import Rectangle3 from "../../../assets/image/BlogDetails/Rectangle3.png";
 import RecentPost1 from "../../../assets/image/BlogDetails/recentPost1.png";
 import RecentPost2 from "../../../assets/image/BlogDetails/recentPost2.png";
 import RecentPost3 from "../../../assets/image/BlogDetails/recentPost3.png";
+import SandyLukaImage from "../../../assets/image/BlogDetails/SandyLukaImage.png";
+import PreviewsPost1 from "../../../assets/image/BlogDetails/PreviewsPost1.png";
+import PreviewsPost2 from "../../../assets/image/BlogDetails/recentPost2.png";
+import comment1Image from "../../../assets/image/BlogDetails/CommentImage1.png";
+import comment2Image from "../../../assets/image/BlogDetails/CommentImage2.png";
+import comment3Image from "../../../assets/image/BlogDetails/CommentImage3.png";
+import WritingSectionIcons from "../../../assets/image/BlogDetails/WritingSectionIcons.png";
 
 //Import react icons
 import { GoArrowRight } from "react-icons/go";
 import { MdCalendarMonth } from "react-icons/md";
+import { FaRegUser } from "react-icons/fa";
+import { FaRegCalendarAlt } from "react-icons/fa";
+import { LiaSmsSolid } from "react-icons/lia";
+import { FaFacebookF } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaPinterestP } from "react-icons/fa";
+import { MdArrowRightAlt } from "react-icons/md";
+import { LuMoveLeft } from "react-icons/lu";
+import { PiArrowUUpLeftLight } from "react-icons/pi";
 
 // import mui
 import * as React from "react";
@@ -54,6 +71,13 @@ export default function BlogDetails() {
     },
   ];
 
+  const contactIconsData = [
+    { icon: <FaFacebookF />, url: "" },
+    { icon: <FaXTwitter />, url: "" },
+    { icon: <FaLinkedinIn />, url: "" },
+    { icon: <FaPinterestP />, url: "" },
+  ];
+
   const popularTag = [
     "Fruits",
     "Agriculture",
@@ -64,16 +88,71 @@ export default function BlogDetails() {
     "Organic",
   ];
 
+  const commentData = [
+    {
+      image: comment1Image,
+      name: "Romeo Paul",
+      dateAndTime: "September, 12 2023 at 07:23 AM",
+      comment:
+        "Fermentum dolor at, consectetur magna. Praesent fringilla consequat erat, ac cursus dolor Ultricies sit amet. Sed ipsum dolor, viverra eu libero a, tempus",
+    },
+
+    {
+      image: comment2Image,
+      name: "Angela Lucy",
+      dateAndTime: "September, 12 2023 at 07:23 AM",
+      comment:
+        "Fermentum dolor at, consectetur magna. Praesent fringilla consequat erat, ac cursus dolor Ultricies sit amet. Sed ipsum dolor, viverra eu",
+    },
+
+    {
+      image: comment3Image,
+      name: "Beatrice Vicki",
+      dateAndTime: "September, 12 2023 at 07:23 AM",
+      comment:
+        "Fermentum dolor at, consectetur magna. Praesent fringilla consequat erat, ac cursus dolor Ultricies sit amet. Sed ipsum dolor, viverra eu libero a, tempus",
+    },
+  ];
+
   return (
     <main className={styles.blogDetailsAllDataContainer}>
       <section>
         {/* Page 1 */}
         <div>
-          <Image
-            className={styles.blogDetailsATopImage}
-            src={Rectangle1}
-            alt=""
-          />
+          <div>
+            <Image
+              className={styles.blogDetailsATopImage}
+              src={Rectangle1}
+              alt=""
+            />
+
+            <div className={styles.blogDetailsUserCalendarAndSmsContainer}>
+              <div className={styles.blogDetailsUserCalendarAndSms}>
+                <FaRegUser
+                  className={styles.blogDetailsUserCalendarAndSmsIcons}
+                />
+                <p className={styles.blogDetailsUserCalendarAndSmsText}>
+                  Albert Flores
+                </p>
+              </div>
+              <div className={styles.blogDetailsUserCalendarAndSms}>
+                <FaRegCalendarAlt
+                  className={styles.blogDetailsUserCalendarAndSmsIcons}
+                />
+                <p className={styles.blogDetailsUserCalendarAndSmsText}>
+                  Jul 16, 2024
+                </p>
+              </div>
+              <div className={styles.blogDetailsUserCalendarAndSms}>
+                <LiaSmsSolid
+                  className={styles.blogDetailsUserCalendarAndSmsIcons}
+                />
+                <p className={styles.blogDetailsUserCalendarAndSmsText}>
+                  5 Comments
+                </p>
+              </div>
+            </div>
+          </div>
 
           <div className={styles.blogDetailsTextContainer}>
             <h3 className={styles.blogDetailsTitleText}>
@@ -106,9 +185,30 @@ export default function BlogDetails() {
               </p>
             </div>
           </div>
+
+          <div className={styles.blogDetailsWritingContainer}>
+            <p className={styles.blogDetailsWritingText}>
+              “It's a Joy to collaborate with Bunker. They comprehended our
+              brand positioning guidelines and skillfully and consistently
+              incorporated them into our ongoing
+            </p>
+
+            <div className={styles.blogDetailsWriterAllDataContainer}>
+              <div className={styles.blogDetailsWriterContainer}>
+                <p className={styles.blogDetailsWriterLineText}></p>
+                <p className={styles.blogDetailsWriterText}>Julian Aidan</p>
+              </div>
+
+              <Image
+                className={styles.blogDetailsWritingSectionIcons}
+                src={WritingSectionIcons}
+                alt=""
+              />
+            </div>
+          </div>
         </div>
 
-        {/* Page 2 */}
+        {/********************Page 2*****************/}
         <div>
           <div className={styles.blogDetailsPage2ImageContainer}>
             <Image
@@ -155,6 +255,119 @@ export default function BlogDetails() {
           </div>
         </div>
 
+        {/*******************Page3****************/}
+        <div>
+          <p className={styles.relatedTagsText}>Related Tags:</p>
+          <div className={styles.relatedTagAndContactIconsContainer}>
+            <div className={styles.relatedTagContainer}>
+              {popularTag.slice(0, 3).map((tag, ind) => (
+                <div key={ind}>
+                  <p className={styles.relatedTag}>{tag}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className={styles.ContactIconsContainer}>
+              {contactIconsData.map((icon, ind) => (
+                <div key={ind}>
+                  <Link className={styles.ContactIcons} href={icon.url}>
+                    {icon.icon}
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.relatedTagsPublicInformationContainer}>
+          <Image
+            className={styles.relatedTagsPublicInformationImage}
+            src={SandyLukaImage}
+            alt=""
+          />
+
+          <div>
+            <h4 className={styles.relatedTagsPublicInformationName}>
+              Sandy Luka
+            </h4>
+            <p className={styles.relatedTagsPublicInformationSubTitleText}>
+              Proin vitae nisi pharetra tellus imperdiet venenatis eget eu nunc.
+              Nam vitae est non felis dictum ornare vitae eu ipsum. Nulla
+              facilisi. Fusce eget sapien ut mauris dapibus tempus a sed odio.
+              Etiam egestas justo, imperdiet enim aliquet eu.
+            </p>
+          </div>
+        </div>
+
+        <div className={styles.recentPostAllDataContainer}>
+          <div className={styles.recentPostDataInfoContainer1}>
+            <Image
+              className={styles.recentPostImage}
+              src={PreviewsPost1}
+              alt=""
+            />
+
+            <div className={styles.recentPostInfoTextContainer1}>
+              <h4 className={styles.recentPostInfoTitle1}>
+                Creative & smart business ideas
+              </h4>
+              <p className={styles.recentBtn1}>
+                <LuMoveLeft className={styles.recentIconBtn1} /> Previews Post
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.recentPostDataInfoContainer2}>
+            <div className={styles.recentPostInfoTextContainer2}>
+              <h4 className={styles.recentPostInfoTitle2}>
+                History & Future of AI in Marketing
+              </h4>
+              <p className={styles.recentBtn2}>
+                Previews Post{" "}
+                <MdArrowRightAlt className={styles.recentIconBtn2} />
+              </p>
+            </div>
+
+            <Image
+              className={styles.recentPostImage}
+              src={PreviewsPost2}
+              alt=""
+            />
+          </div>
+        </div>
+
+        {/**************Comment*************/}
+        <div>
+          <div className={styles.commentAllDataContainer}>
+            {commentData.map((commentData, ind) => (
+              <div className={styles.commentDataInfoContainer} key={ind}>
+                <Image
+                  className={styles.commentImage}
+                  src={commentData.image}
+                  alt=""
+                />
+
+                <div className={styles.commentDataInfoTextContainer}>
+                  <p className={styles.commentNameText}>{commentData.name}</p>
+                  <p className={styles.commentDateAndTimeText}>
+                    {commentData.dateAndTime}
+                  </p>
+                  <p className={styles.commentTitleText}>
+                    {commentData.comment}
+                  </p>
+
+                  <Link className={styles.commentReplyBtn} href={""}>
+                    <PiArrowUUpLeftLight
+                      className={styles.commentReplyBtnIcon}
+                    />
+                    reply
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/*  Add Comment */}
         <div className={styles.addCommentAllDataContainer}>
           <div>
@@ -189,7 +402,7 @@ export default function BlogDetails() {
         </div>
       </section>
 
-      {/* Right section */}
+      {/*****************Right section********************/}
       <section className={styles.RightSectionAllDataContainer}>
         {/* Right section Page 1 */}
         <div className={styles.rightSectionContainer}>
@@ -215,7 +428,7 @@ export default function BlogDetails() {
           </Paper>
         </div>
 
-        {/* Right section Page 2 */}
+        {/*{/******************Right section Page 2{/*******************/}
         <div className={styles.rightSectionContainer}>
           <h3 className={styles.rightSectionHeaderTitle}>All Services</h3>
 
@@ -229,7 +442,7 @@ export default function BlogDetails() {
           </div>
         </div>
 
-        {/* Right section Page 3 */}
+        {/******************Right section Page 3******************/}
         <div className={styles.rightSectionContainer}>
           <h3 className={styles.rightSectionHeaderTitle}>Recent Post</h3>
 
@@ -259,7 +472,7 @@ export default function BlogDetails() {
           </div>
         </div>
 
-        {/* Right section Page 4 */}
+        {/*{/******************Right section Page 4{/*******************/}
         <div className={styles.rightSectionContainer}>
           <h3 className={styles.rightSectionHeaderTitle}>Popular Tag</h3>
 

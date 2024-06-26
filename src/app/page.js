@@ -5,7 +5,7 @@ import Services from "@/modules/home/services";
 
 import CaseStudies from "@/modules/home/caseStudy";
 import Feedback from "@/modules/home/feedback";
-import ClientCompany from "@/modules/home/clientCompany";
+import ClientCompany from "@/modules/home/leastWork";
 import Pricing from "@/modules/home/pricing";
 import Blog from "@/modules/home/blog";
 import FAQ from "@/modules/home/FAQ";
@@ -22,12 +22,12 @@ export default function Home() {
       <AboutHome />
       <Services />
       <WhoWeAre />
+      <Feedback />
       <OurIntroduction />
       {/* <CaseStudies /> */}
-      <Feedback />
-      {/* <ClientCompany /> */}
+      <ClientCompany />
       <Pricing />
-      <Contact />
+      {/* <Contact /> */}
       <FAQ />
       <Blog />
     </>
