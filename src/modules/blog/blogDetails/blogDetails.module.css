@@ -17,9 +17,10 @@
 }
 
 .blogDetailsUserCalendarAndSmsContainer {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  width: 43%;
+  justify-content: left;
+  gap: 25px;
   margin-top: 20px;
 }
 
@@ -505,4 +506,688 @@
   font-size: var(--font-base);
   font-weight: 600;
   text-transform: capitalize;
+}
+
+@media screen and (max-width: 1300px) {
+  .blogDetailsAllDataContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .blogDetailsATopImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .blogDetailsTextContainer {
+    margin-top: 30px;
+  }
+
+  .blogDetailsUserCalendarAndSmsContainer {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .blogDetailsUserCalendarAndSmsIcons {
+    font-size: 12px;
+  }
+
+  .blogDetailsUserCalendarAndSmsText {
+    font-size: 12px;
+  }
+
+  .blogDetailsUserCalendarAndSms {
+    gap: 8px;
+  }
+
+  .blogDetailsTitleText {
+    text-align: center;
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+  .blogDetailsTitleTextBr {
+    display: none;
+  }
+
+  .blogDetailsParagraphTextContainer {
+    font-size: 14px;
+    margin-top: 0px;
+  }
+
+  .sectionInfoParagraphMt {
+    margin-top: 10px;
+  }
+
+  .blogDetailsWritingContainer {
+    padding: 20px;
+    border-left: 2px solid #4895ef;
+    margin-top: 30px;
+  }
+
+  .blogDetailsWritingText {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .blogDetailsWriterAllDataContainer {
+    width: 100%;
+  }
+
+  .blogDetailsWriterContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .blogDetailsWriterLineText {
+    width: 30px;
+    height: 2px;
+  }
+
+  .blogDetailsWriterText {
+    font-size: 16px;
+  }
+
+  .blogDetailsWritingSectionIcons {
+    width: 20px;
+    height: 15px;
+    margin-top: 10px;
+  }
+
+  /* ........Page2............ */
+
+  .blogDetailsPage2ImageContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .blogDetailsPage2Image {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ........Page3............ */
+
+  .relatedTagsText {
+    text-align: center;
+    margin: 30px 0 20px 0;
+  }
+
+  .relatedTagAndContactIconsContainer {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .relatedTag {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .ContactIcons {
+    padding: 12px;
+  }
+
+  .relatedTagsPublicInformationContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+  }
+
+  .relatedTagsPublicInformationImage {
+    width: 100px;
+    height: 100px;
+  }
+
+  .relatedTagsPublicInformationName {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .relatedTagsPublicInformationSubTitleText {
+    font-size: 14px;
+  }
+
+  .recentPostAllDataContainer {
+    gap: 30px;
+    flex-direction: column;
+    padding: 40px 0;
+  }
+
+  .recentPostInfoTitle1 {
+    font-size: 16px;
+  }
+
+  .recentPostInfoTitle2 {
+    font-size: 16px;
+  }
+
+  .recentBtn1 {
+    gap: 8px;
+  }
+
+  .recentBtn2 {
+    gap: 8px;
+  }
+
+  .recentIconBtn1 {
+    font-size: 14px;
+  }
+
+  .recentIconBtn2 {
+    font-size: 18px;
+  }
+
+  /* -------Comment-------- */
+
+  .commentDataInfoContainer {
+    gap: 20px;
+  }
+
+  .commentImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .commentNameText {
+    font-size: 16px;
+  }
+
+  .commentDateAndTimeText {
+    margin: 8px 0;
+  }
+
+  .commentTitleText {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .commentReplyBtn {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .commentReplyBtnIcon {
+    margin-top: 4px;
+  }
+
+  /*  Add Comment */
+  .addCommentAllDataContainer {
+    margin-top: 40px;
+  }
+
+  /* GB ST */
+  .leftSectionHeaderTitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  /* GB END */
+
+  .addCommentTextFieldContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .postCommentBtn {
+    padding: 14px 30px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  /* -------Right section-------- */
+
+  .RightSectionAllDataContainer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 500px) {
+  .blogDetailsATopImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .blogDetailsTextContainer {
+    margin-top: 30px;
+  }
+
+  .blogDetailsUserCalendarAndSmsContainer {
+    gap: 25px;
+    justify-content: left;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .blogDetailsUserCalendarAndSmsIcons {
+    font-size: 14px;
+  }
+
+  .blogDetailsUserCalendarAndSmsText {
+    font-size: 14px;
+  }
+
+  .blogDetailsTitleText {
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .blogDetailsTitleTextBr {
+    display: none;
+  }
+
+  .blogDetailsParagraphTextContainer {
+    font-size: 14px;
+    margin-top: 0px;
+  }
+
+  .sectionInfoParagraphMt {
+    margin-top: 10px;
+  }
+
+  .blogDetailsWritingContainer {
+    padding: 20px;
+    border-left: 3px solid #4895ef;
+    margin-top: 30px;
+  }
+
+  .blogDetailsWritingText {
+    font-size: 14px;
+  }
+
+  .blogDetailsWriterAllDataContainer {
+    width: 100%;
+  }
+
+  .blogDetailsWriterContainer {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .blogDetailsWriterLineText {
+    width: 30px;
+    height: 2px;
+  }
+
+  .blogDetailsWriterText {
+    font-size: 16px;
+  }
+
+  .blogDetailsWritingSectionIcons {
+    width: 22px;
+    height: 18px;
+    margin-top: 10px;
+  }
+
+  /* ........Page2............ */
+
+  .blogDetailsPage2ImageContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .blogDetailsPage2Image {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ........Page3............ */
+
+  .relatedTagsText {
+    text-align: center;
+    margin: 30px 0 20px 0;
+  }
+
+  .relatedTagAndContactIconsContainer {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .relatedTag {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .ContactIcons {
+    padding: 12px;
+  }
+
+  .relatedTagsPublicInformationContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+  }
+
+  .relatedTagsPublicInformationImage {
+    width: 100px;
+    height: 100px;
+  }
+
+  .relatedTagsPublicInformationName {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .relatedTagsPublicInformationSubTitleText {
+    font-size: 14px;
+  }
+
+  .recentPostAllDataContainer {
+    gap: 30px;
+    flex-direction: column;
+    padding: 40px 0;
+  }
+
+  .recentPostInfoTitle1 {
+    font-size: 16px;
+  }
+
+  .recentPostInfoTitle2 {
+    font-size: 16px;
+  }
+
+  .recentBtn1 {
+    gap: 8px;
+  }
+
+  .recentBtn2 {
+    gap: 8px;
+  }
+
+  .recentIconBtn1 {
+    font-size: 14px;
+  }
+
+  .recentIconBtn2 {
+    font-size: 18px;
+  }
+
+  /* -------Comment-------- */
+
+  .commentDataInfoContainer {
+    gap: 20px;
+  }
+
+  .commentImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .commentNameText {
+    font-size: 16px;
+  }
+
+  .commentDateAndTimeText {
+    margin: 8px 0;
+  }
+
+  .commentTitleText {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .commentReplyBtn {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .commentReplyBtnIcon {
+    margin-top: 4px;
+  }
+
+  /*  Add Comment */
+  .addCommentAllDataContainer {
+    margin-top: 40px;
+  }
+
+  /* GB ST */
+  .leftSectionHeaderTitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  /* GB END */
+
+  .addCommentTextFieldContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .postCommentBtn {
+    padding: 14px 30px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  /* -------Right section-------- */
+
+  .RightSectionAllDataContainer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .blogDetailsATopImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .blogDetailsTextContainer {
+    margin-top: 30px;
+  }
+
+  .blogDetailsUserCalendarAndSmsContainer {
+    gap: 25px;
+    justify-content: left;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .blogDetailsTitleText {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .blogDetailsTitleTextBr {
+    display: none;
+  }
+
+  .blogDetailsParagraphTextContainer {
+    font-size: 16px;
+    margin-top: 0px;
+  }
+
+  .sectionInfoParagraphMt {
+    margin-top: 10px;
+  }
+
+  .blogDetailsWritingContainer {
+    padding: 25px;
+    border-left: 3px solid #4895ef;
+    margin-top: 30px;
+  }
+
+  .blogDetailsWritingText {
+    font-size: 16px;
+  }
+
+  .blogDetailsWriterAllDataContainer {
+    width: 100%;
+  }
+
+  .blogDetailsWriterContainer {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .blogDetailsWriterLineText {
+    width: 30px;
+    height: 2px;
+  }
+
+  .blogDetailsWriterText {
+    font-size: 16px;
+  }
+
+  .blogDetailsWritingSectionIcons {
+    width: 22px;
+    height: 18px;
+    margin-top: 10px;
+  }
+
+  /* ........Page2............ */
+
+  .blogDetailsPage2ImageContainer {
+    gap: 20px;
+  }
+
+  .blogDetailsPage2Image {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ........Page3............ */
+
+  .relatedTagAndContactIconsContainer {
+    gap: 50px;
+  }
+
+  .relatedTag {
+    font-size: 16px;
+  }
+
+  .ContactIcons {
+    padding: 12px;
+  }
+
+  .relatedTagsPublicInformationContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+  }
+
+  .relatedTagsPublicInformationImage {
+    width: 100px;
+    height: 100px;
+  }
+
+  .relatedTagsPublicInformationName {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .relatedTagsPublicInformationSubTitleText {
+    font-size: 16px;
+  }
+
+  .recentPostAllDataContainer {
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .recentPostInfoTitle1 {
+    font-size: 16px;
+  }
+
+  .recentPostInfoTitle2 {
+    font-size: 16px;
+  }
+
+  .recentIconBtn1 {
+    font-size: 16px;
+  }
+
+  .recentIconBtn2 {
+    font-size: 22px;
+  }
+
+  /* -------Comment-------- */
+
+  .commentNameText {
+    font-size: 16px;
+  }
+
+  .commentTitleText {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .addCommentTextFieldContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .postCommentBtn {
+    padding: 14px 30px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  /* -------Right section-------- */
+
+  .RightSectionAllDataContainer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1300px) {
+  .blogDetailsATopImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .blogDetailsTitleText {
+    font-size: 40px;
+  }
+
+  /* ........Page2............ */
+
+  .blogDetailsPage2Image {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* -------Comment-------- */
+
+  /* -------Right section-------- */
+
+  .RightSectionAllDataContainer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1860px) {
+  .blogDetailsAllDataContainer {
+    width: 90%;
+    grid-template-columns: 68% 28%;
+  }
+
+  .blogDetailsATopImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ........Page2............ */
+
+  .blogDetailsPage2Image {
+    width: 100%;
+    height: 100%;
+  }
 }

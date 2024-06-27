@@ -225,8 +225,9 @@ export default function BlogDetails() {
 
           <div className={styles.blogDetailsTextContainer}>
             <h3 className={styles.blogDetailsTitleText}>
-              Extraordinary claims necessitate a <br /> network of wormhole
-              colonies.
+              Extraordinary claims necessitate a{" "}
+              <br className={styles.blogDetailsTitleTextBr} /> network of
+              wormhole colonies.
             </h3>
 
             <div className={styles.blogDetailsParagraphTextContainer}>
