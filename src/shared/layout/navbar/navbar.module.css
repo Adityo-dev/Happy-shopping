@@ -1,221 +1,45 @@
-.navBarBtnAllDataContainer {
-  background: linear-gradient(135deg, #0b3d91, #47236e);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 8px 0;
-  width: 100%;
-  z-index: 10000;
-  position: relative;
-}
-
-.navbarContainer {
-  width: 80%;
+.navBarAllDataContainer {
+  max-width: 60%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 30px 0;
 }
 
-.ecoyLogo {
-  width: 100%;
-  height: 65px;
+/* Nav Bar Left Section */
+
+/* Nav Bar Center Section */
+.navItemsContainer {
+  display: flex;
+  gap: 20px;
 }
 
-.navBavItemsContainer {
+.navItemsButton {
+  text-decoration: none;
+  font-size: 1.12rem;
+  color: black;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: all 0.2s;
+}
+
+.navItemsButton:hover {
+  color: #0a85d1;
+}
+
+.navItemsButtonArrowDown {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+/* Nav Bar Right Section */
+.navRightItemsContainer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: var(--gap-4);
+  gap: 20px;
 }
 
-.navBavItemData {
-  text-transform: capitalize;
-  text-decoration: none;
-  list-style-type: none;
-  color: #fff;
-  font-size: var(--font-base);
-  font-weight: 600;
-  letter-spacing: 1.8px;
-}
-
-.navBarBtn {
-  background-color: #fff;
-  color: #1b3447;
-  border: none;
-  padding: 15px 25px;
-  border-radius: 6px;
-  line-height: 28px;
-  font-size: var(--font-lg);
-  font-weight: 600;
-  text-transform: capitalize;
-  cursor: pointer;
-}
-
-.togoContainer {
-  display: none;
-}
-
-@media screen and (min-width: 1250px) and (max-width: 1500px) {
-  .navbarContainer {
-    width: 90%;
-  }
-}
-
-@media screen and (min-width: 1050px) and (max-width: 1249px) {
-  .navbarContainer {
-    width: 90%;
-  }
-
-  .navBavItemsContainer {
-    gap: 30px;
-  }
-
-  .navBavItemData {
-    letter-spacing: 1px;
-  }
-
-  .navBarBtn {
-    padding: 12px 25px;
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width: 900px) and (max-width: 1049px) {
-  .navbarContainer {
-    width: 90%;
-  }
-
-  .navBavItemsContainer {
-    gap: 29px;
-  }
-
-  .navBavItemData {
-    letter-spacing: 0.4px;
-  }
-
-  .navBarBtn {
-    padding: 12px 25px;
-    font-size: 15px;
-  }
-}
-
-@media screen and (min-width: 700px) and (max-width: 900px) {
-  .navbarContainer {
-    width: 90%;
-  }
-
-  .togoContainer {
-    display: block;
-    font-size: 35px;
-    color: #fff;
-  }
-
-  .navBavItemsContainer {
-    display: none;
-  }
-
-  .navBavItemsContainer {
-    position: absolute;
-    top: 88px;
-    left: -1000px;
-    background: linear-gradient(135deg, #47236e, #0b3d91);
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 100vw;
-    padding: 50px 0 100vh 0;
-    transition: all 0.5s;
-  }
-
-  .navBarResContact {
-    left: 0;
-  }
-
-  .navBarBtn {
-    padding: 12px 25px;
-    font-size: 15px;
-  }
-}
-
-@media screen and (min-width: 500px) and (max-width: 700px) {
-  .navbarContainer {
-    width: 92%;
-  }
-
-  .togoContainer {
-    display: block;
-    font-size: 35px;
-    color: #fff;
-  }
-
-  .ecoyLogo {
-    width: 95%;
-    height: 55px;
-  }
-
-  .navBavItemsContainer {
-    display: none;
-  }
-
-  .navBavItemsContainer {
-    position: absolute;
-    top: 78px;
-    left: -700px;
-    background: linear-gradient(135deg, #47236e, #0b3d91);
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 100vw;
-    padding: 50px 0 100vh 0;
-    transition: all 0.5s;
-  }
-
-  .navBarResContact {
-    left: 0;
-  }
-
-  .navBarBtn {
-    padding: 8px 17px;
-    font-size: 11px;
-    letter-spacing: 0.2px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .navbarContainer {
-    width: 92%;
-  }
-
-  .togoContainer {
-    display: block;
-    font-size: 30px;
-    color: #fff;
-  }
-
-  .ecoyLogo {
-    width: 95%;
-    height: 53px;
-  }
-
-  .navBavItemsContainer {
-    position: absolute;
-    top: 76px;
-    left: -500px;
-    background: linear-gradient(135deg, #47236e, #0b3d91);
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 100vw;
-    padding: 50px 0 100vh 0;
-    transition: all 0.5s;
-  }
-
-  .navBarResContact {
-    left: 0;
-  }
-
-  .navBarBtn {
-    padding: 8px 17px;
-    font-size: 11px;
-    letter-spacing: 0.2px;
-  }
+.navIcon {
+  font-size: 1.25rem;
 }

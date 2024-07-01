@@ -1,0 +1,49 @@
+.bestSellingAllDataContainer {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  max-width: 1550px;
+}
+
+.bestSellingTextAndTabsContainer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.bestSellingText {
+  font-size: 35px;
+  white-space: nowrap;
+  position: absolute;
+  top: -12px;
+}
+
+.bestSellingTabListContainer {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  justify-content: end;
+}
+
+.bestSellingTabBtn {
+  border: none;
+  font-size: 1.15rem;
+  background-color: white;
+}
+
+.bestSellingTabBtn.active {
+  border: 2px solid salmon;
+}
+
+.bestSellingTabPanelsContainer {
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+}
+
+.bestSellingCar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}

@@ -8,9 +8,8 @@ const ttl_web = Titillium_Web({
   weight: ["300", "400", "600", "700"],
 });
 export const metadata = {
-  title: "ecoysoft environment",
-  description:
-    "Elevating Your Brand and Business Environment to the Next Level.",
+  title: "Happy shopping",
+  description: "Happy shopping E-Commerce",
 };
 export default function RootLayout({ children }) {
   return (

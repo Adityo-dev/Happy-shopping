@@ -1,0 +1,19 @@
+.timerContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.timeSegment {
+  background-color: #ffffff;
+  width: 100px;
+  height: 80px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}

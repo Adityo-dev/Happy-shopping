@@ -4,6 +4,7 @@
   width: 80%;
   margin: 0 auto;
   padding-top: var(--section-top);
+  max-width: 1550px;
 }
 
 .servicesCategoryHeaderTitle {

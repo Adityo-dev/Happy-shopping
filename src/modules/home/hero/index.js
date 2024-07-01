@@ -1,79 +1,76 @@
-import AboutHome from "../about";
+"use client";
 import styles from "./hero.module.css";
 import Image from "next/image";
-// IMPORT IMAGE
-import heco_Computer_img from "../../../assets/image/Hero/heco-computer-img.png";
-import points_group_img1 from "../../../assets/image/Hero/points-group1.png";
-import heco_Play_Bottun from "../../../assets/image/Hero/Play-Bottun.png";
-import spider_web_img from "../../../assets/image/Hero/spider-web.png";
-import Link from "next/link";
+
+// Import Image
+import men_image from "../../../assets/Home/Image/men.png";
+import woMen_image from "../../../assets/Home/Image/women.png";
+import baby_image from "../../../assets/Home/Image/baby.png";
+
+// React Slick
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import Button from "@/components/button";
 
 export default function Hero() {
+  var settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+  };
+
+  const homeHeroSliderData = [
+    {
+      title: "Men collection",
+      subTitle: "Elevate Your Basics with a Touch of Glam",
+      image: men_image,
+      url: "/",
+    },
+    {
+      title: "Women collection",
+      subTitle: "Elevate Your Basics with a Touch of Glam",
+      image: woMen_image,
+      url: "/",
+    },
+    {
+      title: "Baby collection",
+      subTitle: "Elevate Your Basics with a Touch of Glam",
+      image: baby_image,
+      url: "/",
+    },
+  ];
+
   return (
     <>
-      <section>
-        <div className={styles.heroContainer}>
-          <div className={styles.heroAllDataContainer}>
-            <div className={styles.heroDataTextContainer}>
-              <p className={styles.hecoFirstTitleText}>IT Software & Design</p>
-              <div className={styles.heroTitleText}>
-                <h1>Your Operations with </h1>
-                <h1>Smart IT Solutions</h1>
-              </div>
-              <p className={styles.heroSubTitleText}>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable.
-              </p>
+      <section className={styles.sliderAllDataContainer}>
+        <Slider {...settings}>
+          {homeHeroSliderData.map((sliderData, ind) => (
+            <div key={ind}>
+              <div className={styles.sliderDataContainer}>
+                <div>
+                  <h3 className={styles.sliderDataTitle}>{sliderData.title}</h3>
+                  <p className={styles.sliderDataSubTitle}>
+                    {sliderData.subTitle}
+                  </p>
+                  <Button btnName={"Shop now"} btnUrl={sliderData.url} />
+                </div>
 
-              <div className={styles.ButtonContainer}>
-                <Link href={"/"}>
-                  <button className={styles.heroStartNowBtn}>Start Now</button>
-                </Link>
-
-                <Link href={"/"}>
+                <div>
                   <Image
-                    className={styles.heroPalyBtn}
-                    src={heco_Play_Bottun}
-                    width={60}
-                    height={60}
+                    className={styles.sliderDataImage}
+                    src={sliderData.image}
                     alt=""
-                  ></Image>
-                </Link>
-                <p className={styles.heroPalyBtnText}>Watch Demo </p>
+                  />
+                </div>
               </div>
             </div>
-
-            <div className={styles.heroDataImageContainer}>
-              <Image
-                className={styles.heroComputerImage}
-                src={heco_Computer_img}
-                width={1500}
-                height={1000}
-                alt=""
-              ></Image>
-
-              <Image
-                className={styles.heroPontsGroupImage1}
-                src={points_group_img1}
-                width={1000}
-                height={1000}
-                alt=""
-              ></Image>
-            </div>
-          </div>
-
-          <div>
-            <Image
-              className={styles.heroSpiderWebImage}
-              src={spider_web_img}
-              width={1000}
-              height={1000}
-              alt=""
-            ></Image>
-          </div>
-        </div>
+          ))}
+        </Slider>
       </section>
     </>
   );

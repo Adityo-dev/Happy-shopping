@@ -1,0 +1,32 @@
+.suitsFormalWearAndTopsGownsAllDataContainer {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1550px;
+}
+
+.suitsFormalWearAndTopsGownsDataContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: #ebebeb;
+}
+
+.suitsFormalWearAndTopsGownsTitle {
+  white-space: nowrap;
+  color: #111111;
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 28px;
+}
+
+.suitsFormalWearAndTopsGownsImage {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+}

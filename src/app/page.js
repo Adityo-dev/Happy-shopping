@@ -1,35 +1,18 @@
 import styles from "./page.module.css";
-import Button from "@/components/button";
 import Hero from "@/modules/home/hero";
+import BestSelling from "@/modules/home/bestSelling";
+import BestOffer from "@/modules/home/bestOffer";
 import Services from "@/modules/home/services";
-
-import CaseStudies from "@/modules/home/caseStudy";
-import Feedback from "@/modules/home/feedback";
-import LeastWork from "@/modules/home/leastWork";
-import Pricing from "@/modules/home/pricing";
-import Blog from "@/modules/home/blog";
-import FAQ from "@/modules/home/FAQ";
-import OurIntroduction from "@/modules/home/OurIntroduction";
-import Contact from "@/modules/home/Contact";
-import AboutHome from "@/modules/home/about";
-import WhoWeAre from "@/modules/home/WhoWeAre/WhoWeAre";
+import SuitsFormalWearAndTopsGowns from "@/modules/home/suitsFormalWearAndTopsGowns";
 
 export default function Home() {
   return (
-    <>
-      {/* <Button /> */}
+    <main className={styles.pageMainAllDataContainer}>
       <Hero />
-      <AboutHome />
+      <SuitsFormalWearAndTopsGowns />
+      <BestSelling />
+      <BestOffer />
       <Services />
-      <WhoWeAre />
-      <Feedback />
-      <OurIntroduction />
-      {/* <CaseStudies /> */}
-      <LeastWork />
-      <Pricing />
-      {/* <Contact /> */}
-      <FAQ />
-      <Blog />
-    </>
+    </main>
   );
 }

@@ -1,63 +1,118 @@
 "use client";
-
-import { useState } from "react";
 import styles from "./navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
-// IMPORT IMAGE
-import ecoysoft from "../../../assets/ecoysoft/ecoysoft.webp";
-// IMPORT REACT ICON
-import { FiMenu } from "react-icons/fi";
-import { FiX } from "react-icons/fi";
+
+// Import Mui
+import * as React from "react";
+import Badge from "@mui/material/Badge";
+// React Icons
+import { FiUser } from "react-icons/fi";
+import { IoSearchOutline } from "react-icons/io5";
+import { HiOutlineShoppingCart } from "react-icons/hi2";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 export default function Navbar() {
-  const navItems = [
+  const navAllDataItems = [
     { name: "home", url: "/" },
-    { name: "About us", url: "/about" },
-    { name: "services", url: "/services" },
-    { name: "blog", url: "/blogs" },
-    { name: "contact", url: "/contact" },
+    {
+      name: "shop",
+      shopData: [
+        {
+          name: "Women's Fashion",
+          items: [
+            "Dresses",
+            "Tops & Blouses",
+            "Sweaters & Cardigans",
+            "Jackets & Coats",
+            "Pants & Jeans",
+            "Skirts",
+            "Activewear",
+            "Lingerie & Sleepwear",
+          ],
+        },
+        {
+          name: "Men's Fashion",
+          items: [
+            "Shirts",
+            "T-Shirts & PolosHot",
+            "Sweaters & Hoodies",
+            "Jackets & Blazers",
+            "Jeans",
+            "Suits & Formalwear",
+            "Activewear",
+          ],
+        },
+        {
+          name: "Accessories",
+          items: [
+            "Bags & Purses",
+            "Hats & Caps",
+            "Scarves & Shawls",
+            "Belts & Suspenders",
+            "Sunglasses",
+            "Jewelry",
+            "Watches",
+          ],
+        },
+        {
+          name: "Footwear",
+          items: [
+            "Flats & Loafers",
+            "Heels & Pumps",
+            "Sneakers & Athletic",
+            "Dress Shoes",
+            "Casual Shoes",
+            "Boots & Chukkas",
+            "Sandals & Slides",
+          ],
+        },
+      ],
+    },
+
+    { name: "categories" },
+    { name: "Products" },
+    { name: "blog" },
+    { name: "pages" },
   ];
 
-  const [open, setOpen] = useState(false);
   return (
     <>
-      <section className={styles.navBarBtnAllDataContainer}>
-        <nav className={styles.navbarContainer}>
-          <div onClick={() => setOpen(!open)} className={styles.togoContainer}>
-            {open ? <FiX /> : <FiMenu />}
-          </div>
+      <section className={styles.navBarAllDataContainer}>
+        <div>
+          <h2>NavLogo</h2>
+        </div>
 
-          <div>
-            <Link href="/">
-              <Image
-                className={styles.ecoyLogo}
-                src={ecoysoft}
-                width={120}
-                height={100}
-                alt="Logo"
-              ></Image>
-            </Link>
-          </div>
-
-          <ul
-            className={`${styles.navBavItemsContainer} ${
-              open === true ? styles.navBarResContact : ""
-            }`}
-          >
-            {navItems.map((item, ind) => (
-              <Link href={item.url} className={styles.navBavItemData} key={ind}>
-                <li onClick={open == true}>{item.name}</li>
+        <div className={styles.navItemsContainer}>
+          {navAllDataItems.map((navItemsData, ind) => (
+            <div key={ind}>
+              <Link href={""} className={styles.navItemsButton}>
+                {navItemsData.name}
+                {ind === 0 ? (
+                  ""
+                ) : (
+                  <MdOutlineKeyboardArrowDown
+                    className={styles.navItemsButtonArrowDown}
+                  />
+                )}
               </Link>
-            ))}
-          </ul>
+            </div>
+          ))}
+        </div>
 
+        <div className={styles.navRightItemsContainer}>
           <div>
-            <Link href={"/"}>
-              <button className={styles.navBarBtn}>Explore Now</button>
-            </Link>
+            <IoSearchOutline className={styles.navIcon} />
           </div>
-        </nav>
+          <div>
+            <FiUser className={styles.navIcon} />
+          </div>
+          <div>
+            <Badge color="secondary" badgeContent={1}>
+              <HiOutlineShoppingCart className={styles.navIcon} />
+            </Badge>
+          </div>
+        </div>
       </section>
     </>
   );

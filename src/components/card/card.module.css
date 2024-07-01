@@ -1,0 +1,97 @@
+.cardAllDataContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cardImageContainer {
+  position: relative;
+  width: 100%;
+}
+
+.cardAllDataContainer:hover .cardImage2 {
+  display: block;
+}
+
+.cardImage1 {
+  position: relative;
+  width: 262px;
+  height: 280px;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.cardImage2 {
+  width: 262px;
+  height: 280px;
+  background-color: #ebebeb;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.cardTextDataContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardDataName {
+  font-size: 1rem;
+}
+
+.cardDataPriceContainer {
+  display: flex;
+  gap: 15px;
+  margin-top: 6px;
+  font-size: 1rem;
+}
+
+.cardDiscountPrice {
+  color: #858383;
+  font-weight: 500;
+}
+
+.cardCurrentPrice {
+  color: #0a85d1;
+  font-weight: 700;
+}
+
+.cardPreviewAllDataContainer {
+  width: 100%;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-38%, -30%);
+  display: none;
+}
+
+.cardPreviewContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cardAllDataContainer:hover .cardPreviewAllDataContainer {
+  display: block;
+}
+
+.cardPreviewIcon {
+  background-color: #ffffff;
+  width: 40px;
+  height: 100%;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.cardPreviewIcon:hover {
+  background-color: #0a85d1;
+  color: #ffffff;
+}
