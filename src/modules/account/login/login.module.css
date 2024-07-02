@@ -1,0 +1,69 @@
+.handleFromBtnStyle {
+  background-color: #0a85d1;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.loginAllDataContainer {
+  position: relative;
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+}
+
+.loginDataContainer {
+  background-color: #ebebeb;
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 70px;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.loginText {
+  font-size: 30px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  color: #111111;
+}
+
+.loginSubText {
+  font-size: 1rem;
+  color: #111111;
+  width: 100%;
+  height: 20px;
+}
+
+.inputFieldContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.inputField {
+  background-color: #ffffff;
+}
+
+.singInAndForgotPsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  text-transform: capitalize;
+}
+
+.createAccountText {
+  text-align: left;
+  margin-top: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.createAccountText:hover {
+  color: #0a85d1;
+}

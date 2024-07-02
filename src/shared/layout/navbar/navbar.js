@@ -17,6 +17,7 @@ export default function Navbar() {
     { name: "home", url: "/" },
     {
       name: "shop",
+      url: "/",
       shopData: [
         {
           name: "Women's Fashion",
@@ -70,10 +71,10 @@ export default function Navbar() {
       ],
     },
 
-    { name: "categories" },
-    { name: "Products" },
-    { name: "blog" },
-    { name: "pages" },
+    { name: "categories", url: "/" },
+    { name: "Products", url: "/" },
+    { name: "blog", url: "/" },
+    { name: "pages", url: "/" },
   ];
 
   return (
@@ -86,7 +87,7 @@ export default function Navbar() {
         <div className={styles.navItemsContainer}>
           {navAllDataItems.map((navItemsData, ind) => (
             <div key={ind}>
-              <Link href={""} className={styles.navItemsButton}>
+              <Link href={navItemsData.url} className={styles.navItemsButton}>
                 {navItemsData.name}
                 {ind === 0 ? (
                   ""
@@ -105,12 +106,16 @@ export default function Navbar() {
             <IoSearchOutline className={styles.navIcon} />
           </div>
           <div>
-            <FiUser className={styles.navIcon} />
+            <Link href={"account"}>
+              <FiUser className={styles.navIcon} />
+            </Link>
           </div>
           <div>
-            <Badge color="secondary" badgeContent={1}>
-              <HiOutlineShoppingCart className={styles.navIcon} />
-            </Badge>
+            <Link href={"/yourShoppingCards"}>
+              <Badge color="secondary" badgeContent={1}>
+                <HiOutlineShoppingCart className={styles.navIcon} />
+              </Badge>
+            </Link>
           </div>
         </div>
       </section>

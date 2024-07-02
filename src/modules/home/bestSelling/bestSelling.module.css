@@ -30,10 +30,7 @@
   border: none;
   font-size: 1.15rem;
   background-color: white;
-}
-
-.bestSellingTabBtn.active {
-  border: 2px solid salmon;
+  cursor: pointer;
 }
 
 .bestSellingTabPanelsContainer {

@@ -9,10 +9,6 @@ import { GiSelfLove } from "react-icons/gi";
 import { GoArrowSwitch } from "react-icons/go";
 import ViewCardDetailsModal from "../viewCardDetailsModal";
 
-// const handleCardPreview = () => {
-// ;
-// };
-
 export default function Card({ cardData }) {
   const { cover, name, discountPrice, currentPrice } = cardData;
   return (

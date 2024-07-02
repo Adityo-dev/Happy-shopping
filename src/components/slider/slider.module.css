@@ -1,0 +1,48 @@
+.sliderAllDataContainer {
+  position: relative;
+  width: 63%;
+  margin: 0 auto;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+.viewAllBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* ---------------- */
+
+.prevArrowContainer,
+.nextArrowContainer {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  background-color: #ffff;
+  color: black;
+  border: 1px solid #ebebeb;
+  cursor: pointer;
+  z-index: 100;
+  top: 40%;
+  display: none;
+}
+.prevArrowContainer {
+  left: 0;
+}
+
+.nextArrowContainer {
+  right: 20px;
+}
+
+.sliderAllDataContainer:hover .nextArrowContainer {
+  display: block;
+  right: -2%;
+}
+
+.sliderAllDataContainer:hover .prevArrowContainer {
+  display: block;
+  left: -4.6%;
+}

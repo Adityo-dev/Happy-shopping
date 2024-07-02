@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Blogs() {
   return (
     <>
-      <h1>000</h1>
+      <h1>Blog</h1>
     </>
   );
 }

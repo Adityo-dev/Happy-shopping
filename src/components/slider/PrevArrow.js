@@ -1,4 +1,4 @@
-import styles from "./feedback.module.css";
+import styles from "./slider.module.css";
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 
 const PrevArrow = ({ onClick }) => {
