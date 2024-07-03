@@ -1,5 +1,6 @@
 "use client";
 import styles from "./login.module.css";
+import Link from "next/link";
 
 //Mui Text Field
 import * as React from "react";
@@ -32,7 +33,9 @@ export default function Login() {
           <p className={styles.createAccountText}>Forgot your password?</p>
         </div>
 
-        <p className={styles.createAccountText}>Create account</p>
+        <Link href={"/account/register"} className={styles.createAccountText}>
+          Create account
+        </Link>
       </div>
     </section>
   );

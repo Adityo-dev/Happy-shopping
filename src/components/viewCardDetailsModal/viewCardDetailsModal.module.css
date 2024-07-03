@@ -6,7 +6,7 @@
 .viewCardDetailsModalDataInfoContainer {
   width: 59%;
   position: absolute;
-  top: 48%;
+  top: 45%;
   left: 49.2%;
   transform: translate(-49.5%, -50%);
   margin: 0 auto;
@@ -16,7 +16,7 @@
   background-color: #ffffff;
   padding: 50px;
   border-radius: 10px;
-  height: 65%;
+  height: 60%;
 }
 
 .viewCardDetailsModalImageContainer {

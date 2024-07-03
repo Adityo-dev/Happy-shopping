@@ -2,6 +2,7 @@
 import styles from "./navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import logo from "../../../assets/Home/icons/nav_logo.png";
 
 // Import Mui
 import * as React from "react";
@@ -87,7 +88,8 @@ export default function Navbar() {
     <>
       <section className={styles.navBarAllDataContainer}>
         <div>
-          <h2>NavLogo</h2>
+          <h1>Nav Logo</h1>
+          {/* <Image className={styles.navLogo} src={logo} alt="" /> */}
         </div>
 
         <div className={styles.navItemsContainer}>
