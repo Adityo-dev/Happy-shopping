@@ -1,10 +1,12 @@
 .navBarAllDataContainer {
+  position: relative;
   max-width: 60%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 30px 0;
+  z-index: 200;
 }
 
 /* Nav Bar Left Section */
@@ -43,4 +45,48 @@
 .navIcon {
   font-size: 1.25rem;
   color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.navIcon:hover {
+  color: #0a85d1;
+}
+
+.navUserContainer {
+  position: relative;
+}
+
+.navUserContainer:hover .navUserItemsContainer {
+  display: block;
+}
+
+.navUserItemsContainer {
+  position: absolute;
+  top: 100%;
+  right: -5%;
+  background-color: #ffffff;
+  padding: 10px 30px 25px 30px;
+  box-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
+  border-top: 1px solid #e1e6ff;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.navUserItemsText {
+  white-space: nowrap;
+  font-size: 1rem;
+  color: #111111;
+  transition: all 0.3s;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+
+.navUserItemsText:hover {
+  color: #0a85d1;
+  font-size: 1rem;
 }

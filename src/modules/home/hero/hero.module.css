@@ -30,3 +30,51 @@
   width: 600px;
   height: 600px;
 }
+
+/* ---------------- */
+
+.prevArrowContainer,
+.nextArrowContainer {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  color: black;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+  top: 48%;
+  z-index: 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.prevArrowContainer {
+  left: -3%;
+}
+
+.nextArrowContainer {
+  right: -3%;
+}
+
+.sliderAllDataContainer:hover .nextArrowContainer {
+  z-index: 20;
+  opacity: 1;
+  right: 0;
+}
+
+.sliderAllDataContainer:hover .prevArrowContainer {
+  z-index: 20;
+  opacity: 1;
+  left: 0;
+}
+
+.prevArrowContainer:hover {
+  background-color: #0a85d1;
+  color: #ffffff;
+}
+
+.nextArrowContainer:hover {
+  background-color: #0a85d1;
+  color: #ffffff;
+}

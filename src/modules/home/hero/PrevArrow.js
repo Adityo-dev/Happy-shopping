@@ -1,4 +1,4 @@
-import styles from "./slider.module.css";
+import styles from "./hero.module.css";
 import { IoIosArrowBack } from "react-icons/io";
 
 const PrevArrow = ({ onClick }) => {

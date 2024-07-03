@@ -27,7 +27,9 @@
   cursor: pointer;
   z-index: 100;
   top: 40%;
-  display: none;
+  z-index: 0;
+  opacity: 0;
+  transition: all 0.3s;
 }
 .prevArrowContainer {
   left: 0;
@@ -38,11 +40,23 @@
 }
 
 .sliderAllDataContainer:hover .nextArrowContainer {
-  display: block;
+  z-index: 20;
+  opacity: 1;
   right: -2%;
 }
 
 .sliderAllDataContainer:hover .prevArrowContainer {
-  display: block;
-  left: -4.6%;
+  z-index: 20;
+  opacity: 1;
+  left: -4.7%;
+}
+
+.prevArrowContainer:hover {
+  background-color: #0a85d1;
+  color: #ffffff;
+}
+
+.nextArrowContainer:hover {
+  background-color: #0a85d1;
+  color: #ffffff;
 }

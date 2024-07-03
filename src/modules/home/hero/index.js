@@ -2,6 +2,10 @@
 import styles from "./hero.module.css";
 import Image from "next/image";
 
+// Import Compo
+import NextArrow from "./NextArrow";
+import PrevArrow from "./PrevArrow";
+
 // Import Image
 import men_image from "../../../assets/Home/Image/men.png";
 import woMen_image from "../../../assets/Home/Image/women.png";
@@ -22,6 +26,8 @@ export default function Hero() {
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
 
   const homeHeroSliderData = [

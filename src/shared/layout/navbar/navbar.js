@@ -77,6 +77,12 @@ export default function Navbar() {
     { name: "pages", url: "/" },
   ];
 
+  const userPageData = [
+    { name: "My Account", url: "/account/login" },
+    { name: "register", url: "/account/register" },
+    { name: "Wishlist", url: "/wishlist" },
+  ];
+
   return (
     <>
       <section className={styles.navBarAllDataContainer}>
@@ -105,10 +111,20 @@ export default function Navbar() {
           <div>
             <IoSearchOutline className={styles.navIcon} />
           </div>
-          <div>
-            <Link href={"account"}>
-              <FiUser className={styles.navIcon} />
-            </Link>
+          <div className={styles.navUserContainer}>
+            <FiUser className={styles.navIcon} />
+
+            <div className={styles.navUserItemsContainer}>
+              {userPageData.map((userData, ind) => (
+                <Link
+                  className={styles.navUserItemsText}
+                  key={ind}
+                  href={userData.url}
+                >
+                  {userData.name}
+                </Link>
+              ))}
+            </div>
           </div>
           <div>
             <Link href={"/yourShoppingCards"}>
