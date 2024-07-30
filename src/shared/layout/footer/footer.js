@@ -76,7 +76,12 @@ export default function Footer() {
 
           <div className={styles.contactIconsContainer}>
             {contactIcons.map((icon, ind) => (
-              <Link className={styles.contactIcons} href={icon.url} key={ind}>
+              <Link
+                target="_blank"
+                className={styles.contactIcons}
+                href={icon.url}
+                key={ind}
+              >
                 {icon.icon}
               </Link>
             ))}

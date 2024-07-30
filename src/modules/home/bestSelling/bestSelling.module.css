@@ -2,7 +2,6 @@
   width: 60%;
   margin: 0 auto;
   position: relative;
-  display: flex;
   max-width: 1550px;
 }
 
@@ -33,6 +32,10 @@
   cursor: pointer;
 }
 
+.markTabBtn {
+  color: red;
+}
+
 .bestSellingTabPanelsContainer {
   width: 100%;
   height: 100%;
@@ -43,4 +46,10 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+}
+
+.viewAllButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }

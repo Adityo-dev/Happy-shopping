@@ -62,6 +62,7 @@ import BabyShoes3_Image from "../../../assets/Baby/BabyShoes3.png";
 //Tabs
 import { Tab } from "@headlessui/react";
 import Card from "@/components/card";
+import Button from "@/components/button";
 
 export default function BestSelling() {
   const mens = [
@@ -340,44 +341,59 @@ export default function BestSelling() {
       currentPrice: 16.99,
     },
   ];
-  return (
-    <section className={styles.bestSellingAllDataContainer}>
-      <div className={styles.bestSellingTextAndTabsContainer}>
-        <h1 className={styles.bestSellingText}>Best Selling</h1>
 
-        <div>
-          <Tab.Group>
-            <Tab.List className={styles.bestSellingTabListContainer}>
-              <Tab className={styles.bestSellingTabBtn}>Men</Tab>
-              <Tab className={styles.bestSellingTabBtn}>Women</Tab>
-              <Tab className={styles.bestSellingTabBtn}>Baby</Tab>
-            </Tab.List>
-            <Tab.Panels className={styles.bestSellingTabPanelsContainer}>
-              <Tab.Panel>
-                <div className={styles.bestSellingCar}>
-                  {mens.map((men, ind) => (
-                    <Card key={ind} cardData={men} />
-                  ))}
-                </div>
-              </Tab.Panel>
-              <Tab.Panel>
-                <div className={styles.bestSellingCar}>
-                  {woMens.map((woMen, ind) => (
-                    <Card key={ind} cardData={woMen} />
-                  ))}
-                </div>
-              </Tab.Panel>
-              <Tab.Panel>
-                <div className={styles.bestSellingCar}>
-                  {babys.map((baby, ind) => (
-                    <Card key={ind} cardData={baby} />
-                  ))}
-                </div>
-              </Tab.Panel>
-            </Tab.Panels>
-          </Tab.Group>
+  return (
+    <>
+      <section className={styles.bestSellingAllDataContainer}>
+        <div className={styles.bestSellingTextAndTabsContainer}>
+          <h1 className={styles.bestSellingText}>Best Selling</h1>
+
+          <div>
+            <Tab.Group>
+              <Tab.List className={styles.bestSellingTabListContainer}>
+                <Tab className={styles.bestSellingTabBtn}>Men</Tab>
+                <Tab className={styles.bestSellingTabBtn}>Women</Tab>
+                <Tab className={styles.bestSellingTabBtn}>Baby</Tab>
+              </Tab.List>
+              <Tab.Panels className={styles.bestSellingTabPanelsContainer}>
+                <Tab.Panel>
+                  <div className={styles.bestSellingCar}>
+                    {mens.map((men, ind) => (
+                      <Card key={ind} cardData={men} />
+                    ))}
+                  </div>
+                  <div className={styles.viewAllButton}>
+                    <Button btnName={"View All"} btnUrl={"/collections/mens"} />
+                  </div>
+                </Tab.Panel>
+                <Tab.Panel>
+                  <div className={styles.bestSellingCar}>
+                    {woMens.map((woMen, ind) => (
+                      <Card key={ind} cardData={woMen} />
+                    ))}
+                  </div>
+                  <div className={styles.viewAllButton}>
+                    <Button
+                      btnName={"View All"}
+                      btnUrl={"/collections/womens"}
+                    />
+                  </div>
+                </Tab.Panel>
+                <Tab.Panel>
+                  <div className={styles.bestSellingCar}>
+                    {babys.map((baby, ind) => (
+                      <Card key={ind} cardData={baby} />
+                    ))}
+                  </div>
+                  <div className={styles.viewAllButton}>
+                    <Button btnName={"View All"} btnUrl={"/collections/baby"} />
+                  </div>
+                </Tab.Panel>
+              </Tab.Panels>
+            </Tab.Group>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

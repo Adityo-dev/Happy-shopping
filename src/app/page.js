@@ -6,6 +6,8 @@ import BestOffer from "@/modules/home/bestOffer";
 import FeaturedCollection from "@/modules/home/featuredCollection";
 import Services from "@/modules/home/services";
 import NewArrivals from "@/modules/home/newArrivals";
+import Marquee from "@/modules/home/marquee";
+import ProductsDetails from "@/components/products";
 
 export default function Home() {
   return (
@@ -16,7 +18,9 @@ export default function Home() {
       <BestOffer />
       <FeaturedCollection />
       <NewArrivals />
+      <Marquee />
       <Services />
+      <ProductsDetails />
     </main>
   );
 }

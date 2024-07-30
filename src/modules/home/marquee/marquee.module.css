@@ -1,0 +1,23 @@
+.marqueeDataContainer {
+  background-color: #ebebeb;
+  padding: 30px 0;
+}
+
+.marqueeTextContainer {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.marqueeDotted {
+  width: 10px;
+  height: 10px;
+  border-radius: 99px;
+  background-color: #303030;
+}
+
+.marqueeText {
+  font-size: 35px;
+  color: #303030;
+  margin-right: 45px;
+}

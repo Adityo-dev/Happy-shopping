@@ -1,0 +1,74 @@
+.wishlistContainer {
+  background-color: #ebebeb;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 80px;
+}
+
+.wishlistText {
+  font-size: 36px;
+  color: #111111;
+}
+
+.wishlistAndHomeText {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.wishlistSubText {
+  color: #0a85d1;
+}
+
+.wishlistAllDataContainer {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.wishlistDataContainer {
+  width: 262px;
+  height: 100%;
+}
+
+.Image {
+  width: 262px;
+  height: 280px;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.wishlistTextContainer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.cardDataName {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.cardDataPriceContainer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 6px;
+  font-size: 1rem;
+}
+
+.cardDiscountPrice {
+  color: #858383;
+  font-weight: 500;
+}
+
+.cardCurrentPrice {
+  color: #0a85d1;
+  font-weight: 700;
+}

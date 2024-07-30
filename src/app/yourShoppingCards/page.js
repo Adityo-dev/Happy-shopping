@@ -1,11 +1,11 @@
 import styles from "./yourShoppingCards.module.css";
-import AddCard from "@/modules/addCard";
+import AddYourShoppingCard from "@/modules/addYourShoppingCard";
 import FeaturedProduct from "@/modules/home/featuredProduct";
 
 export default function YourShoppingCards() {
   return (
     <>
-      <AddCard />
+      <AddYourShoppingCard />
       <FeaturedProduct />
     </>
   );

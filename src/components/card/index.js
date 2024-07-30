@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 // React Icons
-import { IoEyeSharp } from "react-icons/io5";
 import { FiShoppingCart } from "react-icons/fi";
 import { GiSelfLove } from "react-icons/gi";
 import { GoArrowSwitch } from "react-icons/go";
@@ -13,7 +12,7 @@ export default function Card({ cardData }) {
   const { cover, name, discountPrice, currentPrice } = cardData;
   return (
     <section className={styles.cardAllDataContainer}>
-      <Link href={""}>
+      <Link href={"/collections/products"}>
         <div className={styles.cardImageContainer}>
           <Image className={styles.cardImage1} src={cover[0]} alt="" />
           <Image className={styles.cardImage2} src={cover[1]} alt="" />

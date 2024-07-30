@@ -35,19 +35,19 @@ export default function Hero() {
       title: "Men collection",
       subTitle: "Elevate Your Basics with a Touch of Glam",
       image: men_image,
-      url: "/",
+      url: "/collections/mens",
     },
     {
       title: "Women collection",
       subTitle: "Elevate Your Basics with a Touch of Glam",
       image: woMen_image,
-      url: "/",
+      url: "/collections/womens",
     },
     {
       title: "Baby collection",
       subTitle: "Elevate Your Basics with a Touch of Glam",
       image: baby_image,
-      url: "/",
+      url: "/collections/baby",
     },
   ];
 

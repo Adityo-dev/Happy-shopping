@@ -1,0 +1,21 @@
+.collectionCardAllDataContainer {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
+}
+
+.asideBarAllDataContainer {
+  width: 30%;
+}
+
+.cardAllDataContainer {
+  width: 100%;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}

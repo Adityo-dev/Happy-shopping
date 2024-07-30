@@ -1,4 +1,3 @@
-"use client";
 import styles from "./navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,68 +18,88 @@ export default function Navbar() {
     {
       name: "shop",
       url: "/",
-      shopData: [
+      pageData: [
         {
           name: "Women's Fashion",
           items: [
-            "Dresses",
-            "Tops & Blouses",
-            "Sweaters & Cardigans",
-            "Jackets & Coats",
-            "Pants & Jeans",
-            "Skirts",
-            "Activewear",
-            "Lingerie & Sleepwear",
+            { itemName: "Dresses", url: "/women/dresses" },
+            { itemName: "Tops", url: "/women/tops" },
+            { itemName: "Shoes", url: "/women/shoes" },
+            { itemName: "Accessories", url: "/women/accessories" },
           ],
         },
         {
           name: "Men's Fashion",
           items: [
-            "Shirts",
-            "T-Shirts & PolosHot",
-            "Sweaters & Hoodies",
-            "Jackets & Blazers",
-            "Jeans",
-            "Suits & Formalwear",
-            "Activewear",
+            { itemName: "Shirts", url: "/men/shirts" },
+            { itemName: "Pants", url: "/men/pants" },
+            { itemName: "Shoes", url: "/men/shoes" },
+            { itemName: "Accessories", url: "/men/accessories" },
           ],
         },
         {
-          name: "Accessories",
+          name: "Men's Fashion",
           items: [
-            "Bags & Purses",
-            "Hats & Caps",
-            "Scarves & Shawls",
-            "Belts & Suspenders",
-            "Sunglasses",
-            "Jewelry",
-            "Watches",
+            { itemName: "Shirts", url: "/men/shirts" },
+            { itemName: "Pants", url: "/men/pants" },
+            { itemName: "Shoes", url: "/men/shoes" },
+            { itemName: "Accessories", url: "/men/accessories" },
           ],
         },
         {
-          name: "Footwear",
+          name: "Men's Fashion",
           items: [
-            "Flats & Loafers",
-            "Heels & Pumps",
-            "Sneakers & Athletic",
-            "Dress Shoes",
-            "Casual Shoes",
-            "Boots & Chukkas",
-            "Sandals & Slides",
+            { itemName: "Shirts", url: "/men/shirts" },
+            { itemName: "Pants", url: "/men/pants" },
+            { itemName: "Shoes", url: "/men/shoes" },
+            { itemName: "Accessories", url: "/men/accessories" },
           ],
         },
       ],
     },
-
-    { name: "categories", url: "/" },
-    { name: "Products", url: "/" },
-    { name: "blog", url: "/" },
-    { name: "pages", url: "/" },
+    {
+      name: "categories",
+      url: "/",
+      pageData: [
+        { itemName: "Category 1", url: "/categories/1" },
+        { itemName: "Category 2", url: "/categories/2" },
+        { itemName: "Category 3", url: "/categories/3" },
+      ],
+    },
+    {
+      name: "products",
+      url: "/",
+      pageData: [
+        { itemName: "Product 1", url: "/products/1" },
+        { itemName: "Product 2", url: "/products/2" },
+        { itemName: "Product 3", url: "/products/3" },
+      ],
+    },
+    {
+      name: "blog",
+      url: "/",
+      pageData: [
+        { itemName: "Blog 1", url: "/blog/1" },
+        { itemName: "Blog 2", url: "/blog/2" },
+        { itemName: "Blog 3", url: "/blog/3" },
+      ],
+    },
+    {
+      name: "pages",
+      url: "/",
+      pageData: [
+        { itemName: "Contact", url: "/pages/1" },
+        { itemName: "About us", url: "/pages/2" },
+        { itemName: "Service", url: "/pages/3" },
+        { itemName: "Faq", url: "/pages/3" },
+        { itemName: "Size Chart", url: "/pages/3" },
+      ],
+    },
   ];
 
   const userPageData = [
     { name: "My Account", url: "/account/login" },
-    { name: "register", url: "/account/register" },
+    { name: "Register", url: "/account/register" },
     { name: "Wishlist", url: "/wishlist" },
   ];
 
@@ -88,34 +107,67 @@ export default function Navbar() {
     <>
       <section className={styles.navBarAllDataContainer}>
         <div>
-          <h1>Nav Logo</h1>
-          {/* <Image className={styles.navLogo} src={logo} alt="" /> */}
+          <h1>NavLogo</h1>
+          {/* <Link href="/">
+            <Image className={styles.navLogo} src={logo} alt="Nav Logo" />
+          </Link> */}
         </div>
 
         <div className={styles.navItemsContainer}>
           {navAllDataItems.map((navItemsData, ind) => (
-            <div key={ind}>
+            <div key={ind} className={styles.navItem}>
               <Link href={navItemsData.url} className={styles.navItemsButton}>
                 {navItemsData.name}
-                {ind === 0 ? (
-                  ""
-                ) : (
+                {ind === 0 ? null : (
                   <MdOutlineKeyboardArrowDown
                     className={styles.navItemsButtonArrowDown}
                   />
                 )}
               </Link>
+              <div className={styles.dropdownMenuAllDataContainer}>
+                {navItemsData.pageData && (
+                  <div className={styles.dropdownMenu}>
+                    {navItemsData.pageData.map((pageData, pageIndex) => (
+                      <div key={pageIndex} className={styles.dropdownSection}>
+                        <h3 className={styles.dropdownSectionName}>
+                          {pageData.name}
+                        </h3>
+                        {pageData.items ? (
+                          <ul>
+                            {pageData.items.map((item, itemIndex) => (
+                              <li
+                                key={itemIndex}
+                                className={styles.dropdownItem}
+                              >
+                                <Link href={item.url}>{item.itemName}</Link>
+                              </li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <div>
+                            <Link
+                              className={styles.dropdownItemLink}
+                              href={pageData.url}
+                            >
+                              {pageData.itemName}
+                            </Link>
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           ))}
         </div>
 
         <div className={styles.navRightItemsContainer}>
           <div>
-            <IoSearchOutline className={styles.navIcon} />
+            <IoSearchOutline className={styles.navIcon} aria-label="Search" />
           </div>
           <div className={styles.navUserContainer}>
-            <FiUser className={styles.navIcon} />
-
+            <FiUser className={styles.navIcon} aria-label="User" />
             <div className={styles.navUserItemsContainer}>
               {userPageData.map((userData, ind) => (
                 <Link
@@ -129,9 +181,12 @@ export default function Navbar() {
             </div>
           </div>
           <div>
-            <Link href={"/yourShoppingCards"}>
+            <Link href="/yourShoppingCards">
               <Badge color="secondary" badgeContent={1}>
-                <HiOutlineShoppingCart className={styles.navIcon} />
+                <HiOutlineShoppingCart
+                  className={styles.navIcon}
+                  aria-label="Shopping Cart"
+                />
               </Badge>
             </Link>
           </div>

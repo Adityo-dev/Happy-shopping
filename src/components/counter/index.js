@@ -9,7 +9,7 @@ const Counter = () => {
     setCount((prevCount) => Math.max(prevCount - 1, 1));
   };
 
-  const handlePlus = () => {
+  const handlePlus = ({ value }) => {
     setCount((prevCount) => prevCount + 1);
   };
 

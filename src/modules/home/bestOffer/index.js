@@ -1,7 +1,7 @@
-"use client";
 import styles from "./bestOffer.module.css";
 import Link from "next/link";
 import Image from "next/image";
+// import json from "../../.."
 
 // Import Image
 import BestOfferUpTo_image2 from "../../../assets/Home/Image/BestOfferUpToImage2.png";
@@ -26,7 +26,7 @@ export default function BestOffer() {
 
             <Countdown />
 
-            <Button btnName={"Shop now"} btnUrl={"/"} />
+            <Button btnName={"Shop now"} btnUrl={"/collections/sale"} />
           </div>
 
           <div>

@@ -1,4 +1,3 @@
-"use client";
 import styles from "./suitsFormalWearAndTopsGowns.module.css";
 import Image from "next/image";
 

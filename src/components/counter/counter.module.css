@@ -9,6 +9,7 @@
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
+  padding: 5px;
 }
 
 .plus {
@@ -22,6 +23,7 @@
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
+  padding: 10px;
 }
 
 .inputField {

@@ -1,4 +1,4 @@
-import styles from "./addCard.module.css";
+import styles from "./addYourShoppingCard.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import { Textarea } from "@headlessui/react";
@@ -9,15 +9,15 @@ import Watch_Image from "../../assets/Men/AppleWatchSeries8GPS1.png";
 import { GoX } from "react-icons/go";
 import Counter from "@/components/counter";
 
-const handleButton = (name) => {
+const handleButton = (btnName) => {
   return (
     <>
-      <button className={styles.handleButtonStyle}>{name}</button>
+      <button className={styles.handleButtonStyle}>{btnName}</button>
     </>
   );
 };
 
-export default function AddCard() {
+export default function AddYourShoppingCard() {
   return (
     <>
       <h1 className={styles.yourShoppingCardText}>Your Shopping Cart</h1>
@@ -34,7 +34,7 @@ export default function AddCard() {
 
           <p className={styles.priceText}>$80.00</p>
           <Counter />
-          <p className={styles.priceText}>$240.00</p>
+          <p className={styles.priceText}>$80.00</p>
           <GoX className={styles.addCardGoxIcon} />
         </div>
 
@@ -48,7 +48,10 @@ export default function AddCard() {
             <h2 className={styles.instructionsAndTotalPriceText}>
               Special instructions for seller
             </h2>
-            <Textarea className={styles.textArea} />
+            <Textarea
+              className={styles.textArea}
+              placeholder="Special instructions for seller..."
+            />
           </div>
 
           <div className={styles.instructionsAndTotalPriceDataContainer}>
@@ -59,12 +62,12 @@ export default function AddCard() {
             <div>
               <div className={styles.cardTotalsDataContainer}>
                 <h3 className={styles.cardTotalsDataText1}>Subtotal</h3>
-                <h3 className={styles.cardTotalsDataPrice1}>$240.00</h3>
+                <h3 className={styles.cardTotalsDataPrice1}>$80.00</h3>
               </div>
 
               <div className={styles.cardTotalsDataContainer}>
                 <h3 className={styles.cardTotalsDataText2}>Total</h3>
-                <h3 className={styles.cardTotalsDataPrice2}>$240.00</h3>
+                <h3 className={styles.cardTotalsDataPrice2}>$80.00</h3>
               </div>
 
               <div className={styles.cardTotalsPriceBtn}>

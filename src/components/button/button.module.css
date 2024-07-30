@@ -12,6 +12,12 @@
   transition: 800ms ease all;
   outline: none;
   text-transform: capitalize;
+  gap: 8px;
+}
+
+.bntIcon {
+  padding-top: 5px;
+  font-size: 20px;
 }
 
 .btn:hover {

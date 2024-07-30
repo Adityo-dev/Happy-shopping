@@ -30,7 +30,7 @@ export default function DSlider({ sliderData }) {
         breakpoint: 2500,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
           infinite: true,
           dots: false,
         },
@@ -38,7 +38,7 @@ export default function DSlider({ sliderData }) {
       {
         breakpoint: 1400,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
           slidesToScroll: 1,
           initialSlide: 2,
         },
@@ -46,7 +46,7 @@ export default function DSlider({ sliderData }) {
       {
         breakpoint: 900,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 4,
           slidesToScroll: 1,
         },
       },

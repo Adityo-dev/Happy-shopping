@@ -1,7 +1,4 @@
-import styles from "./featuredProduct.module.css";
-import Link from "next/link";
-import Image from "next/image";
-import DSlider from "@/components/slider";
+import styles from "./collectionCardData.module.css";
 
 // Mens Image
 import BaroccoSeaCamp1_Image from "../../../assets/Men/BaroccoSeaCamp-CollarPrintedSilk-TwillShirt1.png";
@@ -25,8 +22,10 @@ import ShortSleeveTShirt3_Image from "../../../assets/Men/MenKnittedCasua_ShortS
 import POLOShortsForMen1_Image from "../../../assets/Men/POLO-Shorts-for-Men1.png";
 import POLOShortsForMen2_Image from "../../../assets/Men/POLO-Shorts-for-Men3.png";
 import POLOShortsForMen3_Image from "../../../assets/Men/POLO-Shorts-for-Men1.png";
+import Card from "@/components/card";
 
-export default function FeaturedProduct() {
+const CollectionCardData = ({ cartData }) => {
+  const { productName } = cartData;
   const mens = [
     {
       cover: [
@@ -64,7 +63,7 @@ export default function FeaturedProduct() {
       currentPrice: 15.99,
     },
     {
-      cover: [MenSunglass2_Image, MenSunglass1_Image, MenSunglass3_Image],
+      cover: [MenSunglass2_Image, MenSunglass1_Image, MenSunglass2_Image],
       name: "W. Men Formal T-shirt",
       title:
         " Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum....",
@@ -125,11 +124,21 @@ export default function FeaturedProduct() {
       currentPrice: 16.99,
     },
   ];
-
   return (
-    <section>
-      <h1 className={styles.featuredProductText}>featured Product</h1>
-      <DSlider sliderData={mens} />
+    <section className={styles.collectionCardAllDataContainer}>
+      <div className={styles.asideBarAllDataContainer}>
+        <h2>Categories</h2>
+      </div>
+
+      <div className={styles.cardAllDataContainer}>
+        <div className={styles.cardContainer}>
+          {mens.map((cardData, ind) => (
+            <Card key={ind} cardData={cardData} />
+          ))}
+        </div>
+      </div>
     </section>
   );
-}
+};
+
+export default CollectionCardData;
